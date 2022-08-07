@@ -1,0 +1,24 @@
+.site__btn_pri{
+    background-color: $siteColor-sec !important;
+    color: $siteColor-tri !important;
+    font-weight: 600 !important;
+    font-family: $font-Manrope !important;
+    border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+}
+
+.site__btn_pri-outline{
+    font-family: $font-Manrope !important;
+    color: $siteColor-sec !important;
+    border: 1px solid  $siteColor-sec !important;
+    font-weight: 600 !important;
+}
+
+.site__btn_pri:focus, 
+.site__btn_pri-outline:focus{
+    outline: none    !important;
+    box-shadow: none !important;
+}

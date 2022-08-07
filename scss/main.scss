@@ -1,0 +1,19 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";  
+
+@import "components/bg-video";  
+@import "components/button";
+@import "components/swip";
+    
+@import "pages/telehealth_helpCenter";
+@import "pages/telemedicine";
+@import "pages/telehealth__solution.scss";
+@import "pages/telehealth_features";
+
+@import "layouts/header";
+@import "layouts/navigation";
+

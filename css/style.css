@@ -1,0 +1,574 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  background-color: #F5F5F5; }
+
+a,
+a:link,
+a:visited,
+a:hover {
+  text-decoration: none !important; }
+
+section {
+  width: 100%; }
+
+.heading__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px; }
+
+.op-1 {
+  opacity: 1 !important; }
+
+.body {
+  font-family: "Inter", sans-serif !important; }
+
+.heading__pimary {
+  font-size: 4.4rem;
+  letter-spacing: -2px;
+  font-weight: 700;
+  color: #222254;
+  letter-spacing: -2px !important;
+  line-height: 5.2rem;
+  font-family: "Manrope" !important;
+  padding-top: 1.1rem;
+  background-color: #F7F7F9; }
+
+.heading__secondary {
+  font-size: 4.5rem;
+  font-family: "Manrope";
+  font-weight: 800;
+  letter-spacing: -2px;
+  text-align: center; }
+
+.secondary__headline {
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.64px;
+  color: #697883;
+  display: block;
+  padding-top: 1rem; }
+
+.Headline__primary {
+  font-size: 1.9rem;
+  line-height: 1.4;
+  font-family: "Manrope" !important;
+  letter-spacing: -0.64px !important; }
+
+.heading__tertiary {
+  font-size: 3rem;
+  letter-spacing: -1.2px;
+  font-family: "Manrope";
+  color: #222254;
+  font-weight: 800; }
+
+.site__btn_pri {
+  background-color: #190354 !important;
+  color: #F2E33A !important;
+  font-weight: 600 !important;
+  font-family: "Manrope" !important;
+  border-radius: 4px !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  -ms-border-radius: 4px !important;
+  -o-border-radius: 4px !important; }
+
+.site__btn_pri-outline {
+  font-family: "Manrope" !important;
+  color: #190354 !important;
+  border: 1px solid #190354 !important;
+  font-weight: 600 !important; }
+
+.site__btn_pri:focus,
+.site__btn_pri-outline:focus {
+  outline: none    !important;
+  box-shadow: none !important; }
+
+.section__slider {
+  padding: 32px 0;
+  margin-bottom: 50px;
+  width: 100%;
+  position: relative; }
+  .section__slider::before, .section__slider::after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    width: 11%;
+    height: 100px;
+    background-color: #fff;
+    top: 15px;
+    filter: blur(1px);
+    -webkit-filter: blur(1px); }
+  .section__slider::before {
+    left: 0;
+    box-shadow: 30px 0px 60px #fff; }
+  .section__slider::after {
+    right: 0;
+    box-shadow: -30px 0px 60px #fff; }
+
+.silder__box {
+  width: 80% !important;
+  position: relative; }
+  .silder__box-slide {
+    text-align: center;
+    font-size: 18px;
+    padding: 12px 24px !important;
+    width: fit-content !important;
+    text-align: start;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px; }
+    .silder__box-slide .slider__heading {
+      font-weight: 700; }
+    .silder__box-slide .slider__heading, .silder__box-slide .slider__text {
+      font-size: 1.5rem;
+      letter-spacing: -0.6px;
+      font-family: "Inter", sans-serif; }
+    .silder__box-slide .slider__text {
+      color: #7b7b7b !important;
+      font-weight: 500; }
+
+.silder__box-slide--1,
+.silder__box-slide--6 {
+  background-color: #E1F8FB !important;
+  color: #000321 !important; }
+
+.silder__box-slide--2 {
+  background: #FFF0F7 !important;
+  color: #994167; }
+
+.silder__box-slide--3 {
+  background: #FEFCEB !important;
+  color: #615B17; }
+
+.silder__box-slide--4 {
+  background: #F5F6FA !important;
+  color: #474876; }
+
+.silder__box-slide--5 {
+  background: #EEF9F4 !important;
+  color: #2A614B; }
+
+.telehealth__helpCenter {
+  background-color: #F7F7F9;
+  height: 182vh;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+  .telehealth__helpCenter .th__circle {
+    position: absolute;
+    align-self: center;
+    margin: 0 auto;
+    width: 994px;
+    height: 914px;
+    border: 1px solid rgba(235, 85, 69, 0.3);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%; }
+    .telehealth__helpCenter .th__circle .th__box {
+      position: absolute; }
+      .telehealth__helpCenter .th__circle .th__box .th__popup--box {
+        text-align: start;
+        padding: 12px 16px;
+        background-color: #fff;
+        margin-top: 8px;
+        box-shadow: 0px 10px 10px rgba(21, 17, 58, 0.06);
+        border-radius: 32px 32px 32px 0px; }
+        .telehealth__helpCenter .th__circle .th__box .th__popup--box span {
+          font-size: 1.4rem;
+          font-family: "Inter", sans-serif;
+          letter-spacing: -0.24px;
+          color: #190354; }
+          .telehealth__helpCenter .th__circle .th__box .th__popup--box span:first-child {
+            font-weight: 600 !important; }
+          .telehealth__helpCenter .th__circle .th__box .th__popup--box span:last-child {
+            font-weight: 300 !important; }
+    .telehealth__helpCenter .th__circle .th__box--1 {
+      top: -150px;
+      left: 121px; }
+    .telehealth__helpCenter .th__circle .th__box--2 {
+      top: -184px;
+      right: 134px; }
+    .telehealth__helpCenter .th__circle .th__box--3 {
+      top: 195px;
+      left: -121px; }
+    .telehealth__helpCenter .th__circle .th__box--4 {
+      bottom: 238px;
+      right: -134px; }
+    .telehealth__helpCenter .th__circle .th__box--5 {
+      bottom: -92px;
+      left: 23px; }
+    .telehealth__helpCenter .th__circle .th__box--6 {
+      bottom: -84px;
+      right: -24px; }
+  .telehealth__helpCenter .th__content {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0); }
+    .telehealth__helpCenter .th__content h2,
+    .telehealth__helpCenter .th__content span {
+      color: #190354; }
+
+.section__telemedicine {
+  padding-top: 5.7rem;
+  padding-bottom: 33.7rem;
+  position: relative; }
+  .section__telemedicine .telemedicine__heading_box {
+    margin-top: 30px; }
+  .section__telemedicine .telemedicine__text_box {
+    height: fit-content; }
+    .section__telemedicine .telemedicine__text_box--row-1 {
+      margin-bottom: 10rem; }
+      .section__telemedicine .telemedicine__text_box--row-1 .col__1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .section__telemedicine .telemedicine__text_box--row-1 .col__1 .silder__telemedicine-box {
+          width: 50% !important; }
+          .section__telemedicine .telemedicine__text_box--row-1 .col__1 .silder__telemedicine-box .silder__box-slide {
+            padding: 8px 23px !important;
+            border: 1px solid #E2E2EA;
+            border-radius: 6px; }
+            .section__telemedicine .telemedicine__text_box--row-1 .col__1 .silder__telemedicine-box .silder__box-slide span {
+              font-size: 1.5rem;
+              color: #1D1C1F !important;
+              font-weight: 800;
+              letter-spacing: -0.12px;
+              font-family: "Manrope"; }
+          .section__telemedicine .telemedicine__text_box--row-1 .col__1 .silder__telemedicine-box .telemedicine__active {
+            background-color: #190354 !important; }
+            .section__telemedicine .telemedicine__text_box--row-1 .col__1 .silder__telemedicine-box .telemedicine__active span {
+              color: #F2E33A !important; }
+        .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card {
+          width: 100%;
+          display: flex;
+          text-align: center;
+          flex-direction: column;
+          justify-content: center; }
+          .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card .card__box {
+            width: 49%;
+            display: flex;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0px 10px 18px rgba(21, 17, 58, 0.03);
+            border-radius: 12px;
+            position: relative; }
+            .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card .card__box .card__text {
+              margin-right: auto;
+              line-height: -2px;
+              text-align: start;
+              padding-left: 10px;
+              display: flex;
+              align-items: center; }
+              .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card .card__box .card__text h3 {
+                font-family: "Manrope";
+                font-size: 1.8rem;
+                font-weight: 800;
+                letter-spacing: -0.36px;
+                color: #1D1C1F;
+                margin: 0 !important; }
+              .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card .card__box .card__text span {
+                font-family: "Inter", sans-serif;
+                font-size: 1.4rem;
+                letter-spacing: -0.24px;
+                font-weight: 500;
+                color: #798085;
+                padding-left: 0; }
+            .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card .card__box .card__button button {
+              font-family: "Manrope" !important;
+              font-weight: 800 !important;
+              font-size: 1.3rem;
+              letter-spacing: 0.2px;
+              padding: 7px 10px;
+              border-radius: 6px !important;
+              -webkit-border-radius: 6px !important;
+              -moz-border-radius: 6px !important;
+              -ms-border-radius: 6px !important;
+              -o-border-radius: 6px !important; }
+          .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card .card__1 {
+            filter: drop-shadow(0px 0px 0px rgba(21, 17, 58, 0.1));
+            z-index: 2;
+            -webkit-filter: drop-shadow(0px 0px 0px rgba(21, 17, 58, 0.1)); }
+          .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card .card__2 {
+            opacity: 0.7; }
+      .section__telemedicine .telemedicine__text_box--row-1 .col__2 {
+        width: 1.33333% !important;
+        border-left: 1px dashed #E2E2EA;
+        height: 80px;
+        transform: scale(1.7);
+        margin-top: 13rem; }
+      .section__telemedicine .telemedicine__text_box--row-1 .col__3 {
+        position: relative;
+        top: 45px;
+        left: 32px;
+        background: url(/images/video.png);
+        background-position: -2% -66%;
+        background-repeat: no-repeat; }
+        .section__telemedicine .telemedicine__text_box--row-1 .col__3 .col__content__box {
+          display: flex;
+          top: 50%;
+          left: 50%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%); }
+    .section__telemedicine .telemedicine__text_box--row-2 {
+      position: relative;
+      top: 5rem; }
+      .section__telemedicine .telemedicine__text_box--row-2 .col__1 {
+        left: 7rem; }
+        .section__telemedicine .telemedicine__text_box--row-2 .col__1 .col__content__box {
+          height: auto !important;
+          background: url(/images/calendar-time.png);
+          background-position: 19% 81%;
+          background-repeat: no-repeat; }
+          .section__telemedicine .telemedicine__text_box--row-2 .col__1 .col__content__box h3 {
+            background: url(/images/pers.png);
+            background-repeat: no-repeat;
+            background-position: 26rem 53%; }
+            .section__telemedicine .telemedicine__text_box--row-2 .col__1 .col__content__box h3 span:nth-child(1) {
+              font-size: 6.5rem; }
+            .section__telemedicine .telemedicine__text_box--row-2 .col__1 .col__content__box h3 span:nth-child(2) {
+              font-size: 2.9rem; }
+      .section__telemedicine .telemedicine__text_box--row-2 .col__2 .boder__box {
+        width: 70%;
+        position: relative;
+        left: -17px;
+        top: 6rem;
+        margin-right: 2rem;
+        border-top: 1px dashed #E2E2EA;
+        transform: scale(1.7);
+        -webkit-transform: scale(1.7);
+        -moz-transform: scale(1.7);
+        -ms-transform: scale(1.7);
+        -o-transform: scale(1.7); }
+      .section__telemedicine .telemedicine__text_box--row-2 .col__3 {
+        position: relative; }
+        .section__telemedicine .telemedicine__text_box--row-2 .col__3--card {
+          position: absolute;
+          top: 50%;
+          left: 45%;
+          width: 75%;
+          transform: translate(-50%, 0%);
+          -webkit-transform: translate(-50%, 0%);
+          -moz-transform: translate(-50%, 0%);
+          -ms-transform: translate(-50%, 0%);
+          -o-transform: translate(-50%, 0%); }
+          .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body {
+            background-color: #fff;
+            padding: 10px 18px;
+            box-shadow: 0px 10px 20px rgba(21, 17, 58, 0.03);
+            border-radius: 12px; }
+            .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row {
+              display: flex;
+              justify-content: space-between;
+              width: 100%; }
+              .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row:first-child .card__row--box {
+                border-bottom: 1px solid #E2E2EA; }
+              .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row--1 span, .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row--2 span {
+                font-size: 1.4rem; }
+              .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row--2 {
+                margin-right: 18px; }
+              .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row .text {
+                color: #697883; }
+              .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row .value {
+                color: #1D1C1F;
+                font-weight: 600; }
+              .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row--button {
+                text-align: center;
+                padding-right: 78px;
+                width: 5%; }
+                .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row--button button {
+                  background-color: #fff;
+                  padding: 5px 10px;
+                  font-size: 1.4rem;
+                  font-weight: 700 !important;
+                  border-radius: 4px !important;
+                  -webkit-border-radius: 4px !important;
+                  -moz-border-radius: 4px !important;
+                  -ms-border-radius: 4px !important;
+                  -o-border-radius: 4px !important; }
+            .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body hr {
+              width: 63%; }
+    .section__telemedicine .telemedicine__text_box--img {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      padding-bottom: 20px;
+      justify-content: center;
+      align-items: center; }
+      .section__telemedicine .telemedicine__text_box--img-vector {
+        width: 80%; }
+  .section__telemedicine .col__content__box {
+    position: absolute;
+    font-family: "Manrope";
+    width: 100%;
+    height: 100%; }
+    .section__telemedicine .col__content__box h3 span:nth-child(1) {
+      color: inherit;
+      letter-spacing: -3px;
+      font-size: 5.5rem;
+      font-weight: 800; }
+    .section__telemedicine .col__content__box h3 span:nth-child(2) {
+      color: inherit;
+      font-size: 2.5rem;
+      font-weight: 800; }
+    .section__telemedicine .col__content__box span {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #1D1C1F; }
+
+.telehealth__solution {
+  padding: 5rem 0;
+  margin-bottom: 5.5rem;
+  background-color: #fff; }
+  .telehealth__solution__heading_box h2 {
+    color: #222254;
+    font-weight: 700 !important; }
+  .telehealth__solution--container {
+    width: 78%;
+    margin: 0 auto; }
+    .telehealth__solution--container .row__1 .col__1 {
+      display: flex;
+      justify-content: start;
+      align-items: start;
+      flex-direction: column;
+      line-height: 1.4; }
+      .telehealth__solution--container .row__1 .col__1 p {
+        font-size: 2rem;
+        letter-spacing: -0.48px;
+        color: #697883;
+        padding-left: 6.4rem; }
+
+.telehealth__features {
+  height: 120%;
+  position: relative;
+  margin: 13px 0;
+  padding-bottom: 200px; }
+  .telehealth__features__heading_box span {
+    font-size: 1.9rem !important; }
+  .telehealth__features .tf__btn__list {
+    width: 70.8%;
+    margin: 0 auto; }
+    .telehealth__features .tf__btn__list .tf__btn {
+      padding: .8rem 2.2rem;
+      font-size: 1.4rem !important;
+      background: #F5F6FA;
+      font-weight: 650 !important;
+      color: #190354; }
+  .telehealth__features .tf__container {
+    width: 76%;
+    position: relative;
+    margin: 0 auto; }
+    .telehealth__features .tf__container--row {
+      width: 100%; }
+      .telehealth__features .tf__container--row .col__2--line div img {
+        padding-top: .1rem; }
+      .telehealth__features .tf__container--row .col__2--line div p {
+        font-size: 1.6rem;
+        font-weight: 500; }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background: url("/images/Patterns.png"), url("/images/Patterns2.png"), #F7F7F9;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 0;
+  box-sizing: content-box;
+  position: relative; }
+  .header__content {
+    position: relative; }
+    .header__content-box {
+      position: absolute;
+      top: 48.6%;
+      left: 61%;
+      width: 80%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%); }
+      .header__content-box--button {
+        padding: 11px 29px !important;
+        font-size: 1.5rem !important;
+        margin-top: 41px; }
+  .header__img-box {
+    padding-top: 12rem;
+    position: relative; }
+    .header__img-box img {
+      position: absolute; }
+  .header__img-phone {
+    right: 95px;
+    width: 61%;
+    height: 660px; }
+  .header__img-watch {
+    top: 23.5rem;
+    left: 9.8rem; }
+  .header__img-heartbeat {
+    bottom: 4px;
+    left: 49%; }
+
+.navigation {
+  background-color: #fff;
+  width: 100%;
+  height: 72px;
+  box-shadow: 0px 8px 80px #15113a29;
+  display: grid;
+  grid-template-columns: 14% 55% 31%;
+  position: fixed;
+  z-index: 20; }
+  .navigation__nav {
+    padding-left: 47px; }
+  .navigation__list {
+    list-style: none;
+    width: 100%; }
+  .navigation__item {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding-right: 30px; }
+  .navigation__link {
+    font-family: "Manrope" !important;
+    color: #1D1C1F !important;
+    font-weight: 550; }
+  .navigation__buttons button {
+    padding: 10px 29px !important;
+    font-size: 1.3rem  !important; }
+  .navigation__buttons button:focus {
+    outline: none    !important;
+    box-shadow: none !important; }
+  .navigation__login {
+    margin-right: 15px;
+    font-weight: 650 !important; }
+  .navigation__tryFree {
+    background-color: #54C295 !important;
+    color: #fff !important;
+    font-weight: 500    !important; }

@@ -1,0 +1,47 @@
+.body{
+    font-family: $font-Inter !important;
+}
+
+.heading__pimary{
+    font-size: 4.4rem;
+    letter-spacing: -2px;
+    font-weight: 700;
+    color: $siteColor-pri;
+    letter-spacing: -2px !important;
+    line-height: 5.2rem;
+    font-family: $font-Manrope !important;
+    padding-top: 1.1rem;
+    background-color: $color-light-1;
+}
+
+.heading__secondary{
+    font-size: 4.5rem;
+    font-family: $font-Manrope;
+    font-weight: 800;
+    letter-spacing: -2px;
+    text-align: center;
+}
+.secondary__headline{
+    font-size: 2rem;
+    font-family: $font-Inter;
+    font-weight: 400;
+    letter-spacing: -0.64px;
+    color: #697883;
+    display: block;
+    padding-top: 1rem;
+}
+
+.Headline__primary{
+    font-size: 1.9rem;
+    line-height: 1.4;
+    font-family: $font-Manrope !important;
+    letter-spacing: -0.64px !important;
+}
+
+.heading__tertiary{
+    font-size: 3rem;
+    letter-spacing: -1.2px;
+    font-family: $font-Manrope;
+    color: $siteColor-pri;
+    font-weight: 800;
+}

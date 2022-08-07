@@ -1,0 +1,52 @@
+.navigation{
+    background-color: $color-white;
+    width: 100%;
+    height: 72px;
+    box-shadow: 0px 8px 80px #15113a29;
+    display: grid;
+    grid-template-columns: 14% 55% 31%;
+    position: fixed;
+    z-index: 20;
+
+    &__nav{
+        padding-left: 47px;
+    }
+
+    &__list{
+        list-style: none;
+        width: 100%;
+    }
+
+    &__item{
+        display: inline-block;
+        font-size: 1.5rem;
+        padding-right: 30px ;
+        
+    }
+    &__link{
+        font-family: $font-Manrope !important;
+        color: $color-dark-1       !important;
+        font-weight: 550;
+    }
+
+    &__buttons button{
+        padding: 10px 29px !important;
+        font-size: 1.3rem  !important;
+    }
+
+    &__buttons button:focus{
+        outline: none    !important;
+        box-shadow: none !important;
+    }
+
+    &__login{
+        margin-right: 15px;
+        font-weight: 650 !important;
+    }
+
+    &__tryFree{
+        background-color: #54C295 !important;
+        color: $color-white !important;
+        font-weight: 500    !important;
+    }
+}

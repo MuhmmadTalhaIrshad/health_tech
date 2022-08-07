@@ -1,0 +1,49 @@
+.telehealth__features{
+    height: 120%;
+    position: relative;
+    margin: 13px 0;
+    padding-bottom: 200px;
+
+    &__heading_box{
+        span{
+            font-size: 1.9rem !important;
+        }
+    }
+
+    .tf__btn__list{    
+        width: 70.8%;
+        margin: 0 auto;
+
+        .tf__btn{
+            padding: .8rem 2.2rem;
+            font-size: 1.4rem !important;
+            background: #F5F6FA;
+            font-weight: 650 !important;
+            color: $siteColor-sec;
+        }
+    }
+    .tf__container{
+        width: 76%;
+        position: relative;
+        margin: 0 auto;
+
+        &--row{
+            width: 100%;
+
+            .col__2{
+
+                &--line{
+
+                    div img{
+                        padding-top: .1rem;
+                    }
+
+                    div p{
+                        font-size: 1.6rem ;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}

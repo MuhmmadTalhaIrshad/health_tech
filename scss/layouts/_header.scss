@@ -1,0 +1,64 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    background:url('/images/Patterns.png'), url('/images/Patterns2.png'), $color-light-1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 0;
+    box-sizing: content-box;
+    position: relative;
+
+    &__content{
+        position: relative;
+
+        &-box{
+            position: absolute;
+            top: 48.6%;
+            left: 61%;
+            width: 80%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            -moz-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+
+            &--button{
+                padding: 11px 29px !important;
+                font-size: 1.5rem !important;
+                margin-top: 41px;
+            }
+            
+        }
+
+    }
+
+    &__img-box{ 
+        padding-top: 12rem;
+        position: relative;
+
+        img{
+            position: absolute;
+        }
+
+    }
+
+    &__img-phone{
+        right: 95px;
+        width: 61%;
+        height: 660px;
+    }
+
+    &__img-watch{
+        top: 23.5rem;
+        left: 9.8rem;
+    }
+
+    &__img-heartbeat{
+        bottom: 4px;
+        left: 49%;
+    }
+
+}
