@@ -1,19 +1,22 @@
-@import "abstracts/mixins";
 @import "abstracts/variables";
 
-@import "base/animation";
-@import "base/base";
+
+@import "base/base";    
 @import "base/typography";  
 
-@import "components/bg-video";  
-@import "components/button";
-@import "components/swip";
-    
-@import "pages/telehealth_helpCenter";
-@import "pages/telemedicine";
-@import "pages/telehealth__solution.scss";
-@import "pages/telehealth_features";
-
-@import "layouts/header";
 @import "layouts/navigation";
+@import "layouts/header";
+@import "layouts/footer";
 
+
+@import "sections/telemedicine";
+@import "sections/VdoTok-helpCenter";
+@import "sections/telehealth-features";
+@import "sections/VdoTok-features";
+@import "sections/testimonial";
+@import "sections/Vdotok-advantages";
+@import "sections/success-story";
+@import "sections/try-Vdotok";
+
+@import "components/silder-1";
+@import "components/testimonial-slider";

@@ -1,0 +1,15 @@
+.section-testimonial{
+    width: 100%;
+    padding: 11.3rem 0;
+    background-color: $color-light-1;
+    overflow-x: hidden;
+
+// ---------------------- Media Querys ------------------------ //
+
+    @media only screen and (max-width: 786px){
+        .hadding--box{
+            width: 75%;
+            margin: 0 auto;
+        }
+    }
+}

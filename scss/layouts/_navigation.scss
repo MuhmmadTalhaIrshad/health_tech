@@ -1,52 +1,221 @@
 .navigation{
-    background-color: $color-white;
     width: 100%;
-    height: 72px;
-    box-shadow: 0px 8px 80px #15113a29;
+    height: 75px;
+    background: $color-white;
+    box-shadow: 0px 8px 30px rgba(21, 17, 58, 0.06);
     display: grid;
-    grid-template-columns: 14% 55% 31%;
+    grid-template-columns: 14.5% 56% 31%;
     position: fixed;
     z-index: 20;
+    font-family: $font-Manrope;
 
-    &__nav{
-        padding-left: 47px;
+    &-logo-box{
+        align-items: center !important;
+        justify-content: flex-end;
     }
 
-    &__list{
-        list-style: none;
-        width: 100%;
+    &-nav{
+        padding-left: 2rem;
+        margin-left: 3rem;
     }
 
-    &__item{
-        display: inline-block;
-        font-size: 1.5rem;
-        padding-right: 30px ;
-        
+    &-item{
+        padding-right: 1rem;
     }
-    &__link{
+
+    &-list{
+        display: flex !important;
+    }
+
+    &-link{
+        color: $color-dark-1 !important;
+        letter-spacing: -0.5px;
+        font-family: inherit;
+        font-size: 1.6rem;
+        font-weight: 600;
+        padding-left: 1.4rem !important;
+        padding-right: 1.5rem !important;
+    }
+
+    &-buttons{
+        justify-content: flex-start;
+    }
+
+    &-buttons button {
+        padding: 12px 30px !important;
+    }
+
+    &-mob--icon{
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &-tryFree{
+        margin-left: 1.3rem;
         font-family: $font-Manrope !important;
-        color: $color-dark-1       !important;
-        font-weight: 550;
-    }
-
-    &__buttons button{
-        padding: 10px 29px !important;
-        font-size: 1.3rem  !important;
-    }
-
-    &__buttons button:focus{
-        outline: none    !important;
-        box-shadow: none !important;
-    }
-
-    &__login{
-        margin-right: 15px;
-        font-weight: 650 !important;
-    }
-
-    &__tryFree{
-        background-color: #54C295 !important;
+        font-weight: 500 !important;
+        border-radius: 4px !important;
+        background-color:  #54C295 !important;
         color: $color-white !important;
-        font-weight: 500    !important;
+        -webkit-border-radius: 4px !important;
+        -moz-border-radius: 4px !important;
+        -ms-border-radius: 4px !important;
+        -o-border-radius: 4px !important;
     }
+
+    &-login{
+        font-weight: 800 !important;
+    }
+
+    &-open{
+        background-color: #fff !important;
+        height: max-content !important;
+        box-shadow: 0px 8px 30px rgba(21, 17, 58, 0.06) !important;
+    }
+
+// ---------------------- Media Querys ------------------------ //
+
+    @media only screen and (max-width: 988px) {
+    
+        &-nav{
+            padding-left: 2rem;
+            margin-left: 0rem;
+        }
+    
+        &-link{
+            font-size: 1.5rem;
+            padding-left: 0rem !important;
+            padding-right: 1.5rem !important;
+        }
+    
+        &-buttons button {
+            padding: 1.5rem 2.5rem !important;
+        }
+    }
+
+    @media only screen and (max-width: 842px) {
+        grid-template-columns: 13% 53% 32%;
+
+        &-item{
+            padding-right: 0.5rem;
+        }
+    
+        &-buttons button {
+            padding: 1.3rem 2.3rem !important;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        grid-template-columns: 12% 53% 35%;
+    
+        &-nav{
+            padding-left: 1rem;
+            margin-left: 0rem;
+        }
+
+        &-list{
+            margin-left: 1rem !important;
+        }
+    
+        &-item{
+            padding-right: 0rem;
+        }
+    
+        &-link{
+            font-size: 1.4rem;
+            padding-left: 0rem !important;
+            padding-right: 1.5rem !important;
+        }
+    
+        &-buttons button {
+            padding: 10px 20px !important;
+        }
+    }
+
+    @media only screen and (max-width: 684px) {
+        grid-template-columns: 12% 54% 34%;
+    
+        &-nav{
+            padding-left: 1rem;
+            margin-left: 0rem;
+        }
+
+        &-list{
+            margin-left: 1rem !important;
+        }
+    
+        &-link{
+            font-size: 1.2rem;
+        }
+    
+        &-buttons button {
+            padding: .8rem 1.8rem !important;
+            font-size: 1.2rem !important;
+        }
+    }
+
+    @media only screen and (max-width: 620px) {
+        position: absolute;
+        padding: 2rem 0 ;
+        background-color: $color-light-1;
+        grid-template-columns:  50% 50%;
+        grid-template-rows: 35px repeat(2, 1fr);
+        box-shadow: 0px 8px 30px transparent;
+        height: 54px;
+        overflow: hidden;
+       
+        &-logo-box{
+            justify-content: start !important;
+            padding-left: 2rem;
+        }
+
+        &-mob--icon{
+            right: 0;
+            display: flex;
+            opacity: 1;
+            visibility: visible;
+            justify-content: flex-end !important;
+            padding-right: 2rem;
+            align-items: center;
+        }
+
+        &-nav{
+            padding-top: 1rem;
+            grid-row: 2 / 3;
+            grid-column: 1 / -1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-item{
+            padding-right: 1rem;
+        }
+    
+        &-list{
+            flex-direction: column;
+        }
+    
+        &-link{
+            font-size: 1.4rem;
+        }
+
+        &-buttons{
+            grid-row: 3 / 4;
+            grid-column: 1 / -1;
+            justify-content: center;
+            flex-direction: column;
+        }
+    
+        &-buttons button {
+            padding: 12px 30px !important;
+            font-size: 1.4rem;
+        }
+
+        &-tryFree{
+            margin-top: 2rem;
+        }
+    }
+    
 }

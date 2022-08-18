@@ -1,0 +1,120 @@
+.section-try-Vdotok{
+    // height: 100vh;
+    background-color: $color-light-1;
+    position: relative;
+    padding: 11.3rem 0;
+
+    .try-Vdotok-content{
+        width: 100%;
+        // background: url('/images/sections/Patterns.png'), url('/images/sections/Patterns-2.png');
+        background: url('/images/sections/Group\ 48095746.png');
+        background-position: -1rem center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+    }
+
+    .try-Vdotok-hero-img{
+        width: 96%;
+
+        img{
+            position: relative;
+            width: 67%;
+            margin-top: 3rem;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            -o-transform: translateX(-50%);
+        }
+    }
+
+// ---------------------- Media Querys ------------------------ //
+    @media only screen and (max-width: 968px){
+        padding-bottom: 10.3rem;
+        
+        .try-Vdotok-hero-img{
+            img{
+                width: 856px;
+                height: 532px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 870px){
+        padding-bottom: 10rem;
+        
+        .try-Vdotok-hero-img{
+            img{
+                width: 756px;
+                height: 432px;
+                transform: translateX(-49%);
+                -webkit-transform: translateX(-49%);
+                -moz-transform: translateX(-49%);
+                -ms-transform: translateX(-49%);
+                -o-transform: translateX(-49%);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px){
+        padding-bottom: 9.3rem;
+
+        .try-Vdotok-hadding--box-1{
+            display: none;
+        }
+
+        .try-Vdotok-hadding--box-2{
+            display: flex !important;
+            width: 87%;
+            margin: 0 auto;
+        }
+
+        .try-Vdotok-content{
+            background: url('/images/sections/patterns-lablet-sl.png');
+            background-position: 0rem 75%;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        
+        .try-Vdotok-hero-img{
+            img{
+                width: 100%;
+                height: 100%;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+            }
+        }
+
+        .try-Vdotok-tablet-btn-box{
+            display: flex !important;
+            justify-content: center;
+            margin-top: 5rem;
+            width: 100%;
+
+            .try-Vdotok-tablet-btn{
+                padding: 1.5rem 6.5rem !important;
+                background-color: $siteColor-tri;
+                font-family: $font-Manrope;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 18px;
+                text-align: center;
+                letter-spacing: 0.2px;
+                text-transform: uppercase;
+                color: $siteColor-sec;
+                margin-right: 4rem;
+                border-radius: 6px !important;
+                -webkit-border-radius: 6px !important;
+                -moz-border-radius: 6px !important;
+                -ms-border-radius: 6px !important;
+                -o-border-radius: 6px !important;
+            }
+        }
+    }
+}

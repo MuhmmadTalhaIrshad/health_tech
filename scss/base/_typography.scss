@@ -2,46 +2,167 @@
     font-family: $font-Inter !important;
 }
 
-.heading__pimary{
-    font-size: 4.4rem;
+.secondary-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+// ---------------  Buttons ---------------------- //
+.site-btn--pri{
+    background-color: $siteColor-sec !important;
+    color: $siteColor-tri !important;
+    font-weight: 600 !important;
+    font-family: $font-Manrope !important;
+    border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+}
+
+.site-btn-pri--outline{
+    font-family: $font-Manrope !important;
+    color: $siteColor-sec !important;
+    border: 1px solid  $siteColor-sec !important;
+    font-weight: 700 !important;
+    border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+}
+
+.site-btn-3{
+    background-color: #F5F6FA !important;
+    color: $siteColor-sec !important;
+    font-weight: 700 !important;
+    font-family: $font-Manrope !important;
+    border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1px;
+}
+
+// ---------------  Haddings ---------------------- //
+.heading--pimary{
+    font-size: 4.8rem;
     letter-spacing: -2px;
     font-weight: 700;
     color: $siteColor-pri;
     letter-spacing: -2px !important;
-    line-height: 5.2rem;
+    line-height: 5.5rem;
     font-family: $font-Manrope !important;
     padding-top: 1.1rem;
-    background-color: $color-light-1;
 }
 
-.heading__secondary{
-    font-size: 4.5rem;
+.secondary--hadding{
     font-family: $font-Manrope;
-    font-weight: 800;
+    font-weight: 700;
+    font-size: 4.8rem;
     letter-spacing: -2px;
-    text-align: center;
-}
-.secondary__headline{
-    font-size: 2rem;
-    font-family: $font-Inter;
-    font-weight: 400;
-    letter-spacing: -0.64px;
-    color: #697883;
-    display: block;
-    padding-top: 1rem;
+    font-style: normal;
+    line-height: 56px;
 }
 
-.Headline__primary{
+.hadding--tertiary{
+    font-family: $font-Manrope;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 42px;
+    letter-spacing: -1.2px;
+}
+
+// ---------------  Text & headlines ---------------------- //
+.headline--primary{
     font-size: 1.9rem;
     line-height: 1.4;
-    font-family: $font-Manrope !important;
+    font-weight: 500;
+    font-family: $font-Inter !important;
     letter-spacing: -0.64px !important;
 }
 
-.heading__tertiary{
-    font-size: 3rem;
-    letter-spacing: -1.2px;
-    font-family: $font-Manrope;
-    color: $siteColor-pri;
-    font-weight: 800;
+.headline--secondary{
+    font-family: $font-Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: -0.64px;
+    color: $color-gray-1;
+    line-height: 28px;
 }
+
+.color-dark-1{
+    color: $color-dark-1 !important;
+}
+
+.color-pri{
+    color: $siteColor-pri !important;
+}
+.latter-space-1{
+    letter-spacing: -0.6px !important;
+}
+
+.padding-12-24{ 
+    padding: 1.2rem 2.4rem !important;
+}
+.padding-12-16{ 
+    padding: 1.2rem 1.6rem !important;
+}
+// ---------------------- Media Querys ------------------------ //
+@media only screen and (max-width: 964px){
+    .heading--pimary{
+        font-size: 4.5rem;
+    }
+}
+@media only screen and (max-width: 866px){
+    .padding-12-24{ 
+        padding: 1rem 2rem !important;
+    }
+    .padding-12-16{ 
+        padding: 1rem 1.4rem !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .padding-12-24{ 
+        padding: 1.2rem 2.4rem !important;
+    }
+    .padding-12-16{ 
+        padding: 1.2rem 1.6rem !important;
+    }
+
+    .heading--pimary{
+        font-size: 4.8rem;
+    }
+
+    .hadding--tertiary{
+        font-size: 2.4rem;
+        line-height: 36px;
+        letter-spacing: -0.72px;
+    }
+
+    .secondary--hadding{
+        font-size: 3.6rem;
+        letter-spacing: -1.4px;
+        line-height: 44px;
+    }
+}
+
+// @media only screen and (max-width: 598px){
+//     .heading--pimary{
+//         font-size: 3rem;
+//         line-height: 1;
+//     }
+
+//     .headline--primary{
+//         font-size: 1.5rem;
+//     }
+// }

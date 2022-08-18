@@ -1,0 +1,825 @@
+.section-VdoTok-helpCenter{
+    background-color: $color-light-1;
+    position: relative;
+    height: 1162px;
+    overflow-x: hidden;
+
+    .VdoTok-helpCenter-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 36%;
+        margin: auto;
+        text-align: center;
+        height: max-content;
+    }
+
+    .red-circle{
+        width: 994px;
+        height: 914px;
+        border: 1px solid rgba(235, 85, 69, 0.3);
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+
+        .tablet-img{
+            position: absolute;
+            top: 19rem;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: max-content;
+            height: max-content;
+        }
+
+
+        .VdoTok-helpCenter--box{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+            width: max-content;
+            height: 194px;
+            padding-right: 2rem;
+            padding-left: .5rem;
+            text-align: center;
+            
+
+            .msg-box{
+                text-align: start;
+                padding: 12px 16px;
+                background-color: $color-white;
+                margin-top: 8px;
+                box-shadow: 0px 10px 10px rgba(21, 17, 58, 0.06);
+                border-radius: 32px 32px 32px 0px;
+
+                span{
+                    font-size: 1.4rem;
+                    font-family: $font-Inter;
+                    letter-spacing: -0.24px;
+                    color: #190354;
+
+                    &:first-child{
+                        font-weight: 600 !important;
+                    }
+
+                    &:last-child{
+                        font-weight: 300 !important;
+                    }
+                }
+
+            }
+        }   
+
+        .box--1{
+            transform: rotate(409deg) translate(-411px) rotate(-409deg);
+            -webkit-transform: rotate(409deg) translate(-411px) rotate(-409deg);
+            -moz-transform: rotate(409deg) translate(-411px) rotate(-409deg);
+            -ms-transform: rotate(409deg) translate(-411px) rotate(-409deg);
+            -o-transform: rotate(409deg) translate(-411px) rotate(-409deg);
+        }
+
+        .box--2{
+            transform: rotate(488deg) translate(-448px) rotate(-488deg);
+            -webkit-transform: rotate(488deg) translate(-448px) rotate(-488deg);
+            -moz-transform: rotate(488deg) translate(-448px) rotate(-488deg);
+            -ms-transform: rotate(488deg) translate(-448px) rotate(-488deg);
+            -o-transform: rotate(488deg) translate(-448px) rotate(-488deg);
+            .msg-box{
+                padding-right: 3rem !important;
+            }
+        }
+
+        .box--3{
+            height: 223px;
+            transform: rotate(356deg) translate(-486px) rotate(-356deg);
+            -webkit-transform: rotate(356deg) translate(-486px) rotate(-356deg);
+            -moz-transform: rotate(356deg) translate(-486px) rotate(-356deg);
+            -ms-transform: rotate(356deg) translate(-486px) rotate(-356deg);
+            -o-transform: rotate(356deg) translate(-486px) rotate(-356deg);
+        }
+
+        .box--4{
+            height: 223px;
+            transform: rotate(188deg) translate(-506px) rotate(-188deg);
+            -webkit-transform: rotate(188deg) translate(-506px) rotate(-188deg);
+            -moz-transform: rotate(188deg) translate(-506px) rotate(-188deg);
+            -ms-transform: rotate(188deg) translate(-506px) rotate(-188deg);
+            -o-transform: rotate(188deg) translate(-506px) rotate(-188deg);
+        }
+
+        .box--5{
+            transform: rotate(310deg) translate(-519px) rotate(-310deg);
+            -webkit-transform: rotate(310deg) translate(-519px) rotate(-310deg);
+            -moz-transform: rotate(310deg) translate(-519px) rotate(-310deg);
+            -ms-transform: rotate(310deg) translate(-519px) rotate(-310deg);
+            -o-transform: rotate(310deg) translate(-519px) rotate(-310deg);
+        }
+
+        .box--6{
+            transform: rotate(231deg) translate(-528px) rotate(-231deg);
+            -webkit-transform: rotate(231deg) translate(-528px) rotate(-231deg);
+            -moz-transform: rotate(231deg) translate(-528px) rotate(-231deg);
+            -ms-transform: rotate(231deg) translate(-528px) rotate(-231deg);
+            -o-transform: rotate(231deg) translate(-528px) rotate(-231deg);
+        }
+
+    }
+
+// ---------------------- Media Querys ------------------------ //
+    @media only screen and (max-width: 1278px){
+        height: 1000px;
+        
+        .red-circle{
+            width: 954px;
+            height: 874px;
+
+            .tablet-img{
+
+                img{
+                    width: 684px;
+                    height: 474px;
+                }
+            }
+
+            .box--1{
+                transform: rotate(409deg) translate(-391px) rotate(-409deg);
+                -webkit-transform: rotate(409deg) translate(-391px) rotate(-409deg);
+                -moz-transform: rotate(409deg) translate(-391px) rotate(-409deg);
+                -ms-transform: rotate(409deg) translate(-391px) rotate(-409deg);
+                -o-transform: rotate(409deg) translate(-391px) rotate(-409deg);
+            }
+    
+            .box--2{
+                transform: rotate(488deg) translate(-426px) rotate(-488deg);
+                -webkit-transform: rotate(488deg) translate(-426px) rotate(-488deg);
+                -moz-transform: rotate(488deg) translate(-426px) rotate(-488deg);
+                -ms-transform: rotate(488deg) translate(-426px) rotate(-488deg);
+                -o-transform: rotate(488deg) translate(-426px) rotate(-488deg);
+
+                .msg-box{
+                    padding-right: 3rem !important;
+                }
+            }
+    
+            .box--3{
+                height: 223px;
+                transform: rotate(356deg) translate(-464px) rotate(-356deg);
+                -webkit-transform: rotate(356deg) translate(-464px) rotate(-356deg);
+                -moz-transform: rotate(356deg) translate(-464px) rotate(-356deg);
+                -ms-transform: rotate(356deg) translate(-464px) rotate(-356deg);
+                -o-transform: rotate(356deg) translate(-464px) rotate(-356deg);
+            }
+    
+            .box--4{
+                height: 223px;
+                transform: rotate(188deg) translate(-467px) rotate(-188deg);
+                -webkit-transform: rotate(188deg) translate(-467px) rotate(-188deg);
+                -moz-transform: rotate(188deg) translate(-467px) rotate(-188deg);
+                -ms-transform: rotate(188deg) translate(-467px) rotate(-188deg);
+                -o-transform: rotate(188deg) translate(-467px) rotate(-188deg);
+            }
+    
+            .box--5{
+                transform: rotate(310deg) translate(-498px) rotate(-310deg);
+                -webkit-transform: rotate(310deg) translate(-498px) rotate(-310deg);
+                -moz-transform: rotate(310deg) translate(-498px) rotate(-310deg);
+                -ms-transform: rotate(310deg) translate(-498px) rotate(-310deg);
+                -o-transform: rotate(310deg) translate(-498px) rotate(-310deg);
+            }
+    
+            .box--6{
+                transform: rotate(231deg) translate(-506px) rotate(-231deg);
+                -webkit-transform: rotate(231deg) translate(-506px) rotate(-231deg);
+                -moz-transform: rotate(231deg) translate(-506px) rotate(-231deg);
+                -ms-transform: rotate(231deg) translate(-506px) rotate(-231deg);
+                -o-transform: rotate(231deg) translate(-506px) rotate(-231deg);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1208px){
+        
+        .red-circle{
+            width: 894px;
+            height: 814px;
+
+            .tablet-img{
+
+                img{
+                    width: 664px;
+                    height: 454px;
+                }
+            }
+
+            .box--1{
+                transform:rotate(409deg) translate(-360px) rotate(-409deg);
+                -webkit-transform:rotate(409deg) translate(-360px) rotate(-409deg);
+                -moz-transform:rotate(409deg) translate(-360px) rotate(-409deg);
+                -ms-transform:rotate(409deg) translate(-360px) rotate(-409deg);
+                -o-transform:rotate(409deg) translate(-360px) rotate(-409deg);
+            }
+    
+            .box--2{
+                transform: rotate(488deg) translate(-394px) rotate(-488deg);
+                -webkit-transform: rotate(488deg) translate(-394px) rotate(-488deg);
+                -moz-transform: rotate(488deg) translate(-394px) rotate(-488deg);
+                -ms-transform: rotate(488deg) translate(-394px) rotate(-488deg);
+                -o-transform: rotate(488deg) translate(-394px) rotate(-488deg);
+            }
+    
+            .box--3{
+                height: 223px;
+                transform: rotate(356deg) translate(-439px) rotate(-356deg);
+                -webkit-transform: rotate(356deg) translate(-439px) rotate(-356deg);
+                -moz-transform: rotate(356deg) translate(-439px) rotate(-356deg);
+                -ms-transform: rotate(356deg) translate(-439px) rotate(-356deg);
+                -o-transform: rotate(356deg) translate(-439px) rotate(-356deg);
+
+                .msg-box{
+                    margin-left: 6rem;
+                }
+            }
+    
+            .box--4{
+                height: 223px;
+                transform: rotate(188deg) translate(-447px) rotate(-188deg);
+                -webkit-transform: rotate(188deg) translate(-447px) rotate(-188deg);
+                -moz-transform: rotate(188deg) translate(-447px) rotate(-188deg);
+                -ms-transform: rotate(188deg) translate(-447px) rotate(-188deg);
+                -o-transform: rotate(188deg) translate(-447px) rotate(-188deg);
+            }
+    
+            .box--5{
+                transform: rotate(310deg) translate(-467px) rotate(-310deg);
+                -webkit-transform: rotate(310deg) translate(-467px) rotate(-310deg);
+                -moz-transform: rotate(310deg) translate(-467px) rotate(-310deg);
+                -ms-transform: rotate(310deg) translate(-467px) rotate(-310deg);
+                -o-transform: rotate(310deg) translate(-467px) rotate(-310deg);
+            }
+    
+            .box--6{
+                transform: rotate(231deg) translate(-476px) rotate(-231deg);
+                -webkit-transform: rotate(231deg) translate(-476px) rotate(-231deg);
+                -moz-transform: rotate(231deg) translate(-476px) rotate(-231deg);
+                -ms-transform: rotate(231deg) translate(-476px) rotate(-231deg);
+                -o-transform: rotate(231deg) translate(-476px) rotate(-231deg);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1162px){
+        .red-circle{
+            width: 874px;
+            height: 784px;
+
+            .tablet-img{
+
+                img{
+                    width: 624px;
+                    height: 414px;
+                }
+            }
+
+            .box--1{
+                transform:rotate(409deg) translate(-354px) rotate(-409deg);
+                -webkit-transform:rotate(409deg) translate(-354px) rotate(-409deg);
+                -moz-transform:rotate(409deg) translate(-354px) rotate(-409deg);
+                -ms-transform:rotate(409deg) translate(-354px) rotate(-409deg);
+                -o-transform:rotate(409deg) translate(-354px) rotate(-409deg);
+            }
+    
+            .box--2{
+                transform: rotate(488deg) translate(-379px) rotate(-488deg);
+                -webkit-transform: rotate(488deg) translate(-379px) rotate(-488deg);
+                -moz-transform: rotate(488deg) translate(-379px) rotate(-488deg);
+                -ms-transform: rotate(488deg) translate(-379px) rotate(-488deg);
+                -o-transform: rotate(488deg) translate(-379px) rotate(-488deg);
+                .msg-box{
+                    margin-left: 11rem !important;
+                }
+            }
+    
+            .box--3{
+                height: 223px;
+                transform: rotate(356deg) translate(-421px) rotate(-356deg);
+                -webkit-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+                -moz-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+                -ms-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+                -o-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+                .msg-box{
+                    margin-left: 6rem;
+                }
+            }
+    
+            .box--4{
+                height: 223px;
+                transform: rotate(188deg) translate(-421px) rotate(-188deg);
+                -webkit-transform: rotate(188deg) translate(-421px) rotate(-188deg);
+                -moz-transform: rotate(188deg) translate(-421px) rotate(-188deg);
+                -ms-transform: rotate(188deg) translate(-421px) rotate(-188deg);
+                -o-transform: rotate(188deg) translate(-421px) rotate(-188deg);
+            }
+    
+            .box--5{
+                transform: rotate(310deg) translate(-456px) rotate(-310deg);
+                -webkit-transform: rotate(310deg) translate(-456px) rotate(-310deg);
+                -moz-transform: rotate(310deg) translate(-456px) rotate(-310deg);
+                -ms-transform: rotate(310deg) translate(-456px) rotate(-310deg);
+                -o-transform: rotate(310deg) translate(-456px) rotate(-310deg);
+            }
+    
+            .box--6{
+                transform: rotate(231deg) translate(-463px) rotate(-231deg);
+                -webkit-transform: rotate(231deg) translate(-463px) rotate(-231deg);
+                -moz-transform: rotate(231deg) translate(-463px) rotate(-231deg);
+                -ms-transform: rotate(231deg) translate(-463px) rotate(-231deg);
+                -o-transform: rotate(231deg) translate(-463px) rotate(-231deg);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1115px){
+        
+        .red-circle{
+            .tablet-img{
+
+                img{
+                    width: 524px;
+                    height: 414px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1109px){
+        height: 1150px;
+        .VdoTok-helpCenter-content{
+            bottom:  86rem !important;
+        }
+        .red-circle{
+            top: 14rem;
+            width: 844px;
+            height: 754px;
+
+            .tablet-img{
+                top: -3rem;
+                img{
+                    width: 584px;
+                    height: 374px;
+                }
+            }
+
+            .box--1{
+                transform:rotate(409deg) translate(-336px) rotate(-409deg);
+                -webkit-transform:rotate(409deg) translate(-336px) rotate(-409deg);
+                -moz-transform:rotate(409deg) translate(-336px) rotate(-409deg);
+                -ms-transform:rotate(409deg) translate(-336px) rotate(-409deg);
+                -o-transform:rotate(409deg) translate(-336px) rotate(-409deg);
+            }
+    
+            .box--2{
+                transform: rotate(488deg) translate(-379px) rotate(-488deg);
+                -webkit-transform: rotate(488deg) translate(-379px) rotate(-488deg);
+                -moz-transform: rotate(488deg) translate(-379px) rotate(-488deg);
+                -ms-transform: rotate(488deg) translate(-379px) rotate(-488deg);
+                -o-transform: rotate(488deg) translate(-379px) rotate(-488deg);
+                .msg-box{
+                    margin-left: 11rem !important;
+                }
+            }
+    
+            .box--3{
+                height: 223px;
+                transform: rotate(356deg) translate(-421px) rotate(-356deg);
+                -webkit-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+                -moz-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+                -ms-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+                -o-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+                .msg-box{
+                    margin-left: 6rem;
+                }
+            }
+    
+            .box--4{
+                height: 223px;
+                transform: rotate(188deg) translate(-408px) rotate(-188deg);
+                -webkit-transform: rotate(188deg) translate(-408px) rotate(-188deg);
+                -moz-transform: rotate(188deg) translate(-408px) rotate(-188deg);
+                -ms-transform: rotate(188deg) translate(-408px) rotate(-188deg);
+                -o-transform: rotate(188deg) translate(-408px) rotate(-188deg);
+            }
+    
+            .box--5{
+                transform: rotate(310deg) translate(-443px) rotate(-310deg);
+                -webkit-transform: rotate(310deg) translate(-443px) rotate(-310deg);
+                -moz-transform: rotate(310deg) translate(-443px) rotate(-310deg);
+                -ms-transform: rotate(310deg) translate(-443px) rotate(-310deg);
+                -o-transform: rotate(310deg) translate(-443px) rotate(-310deg);
+            }
+    
+            .box--6{
+                transform: rotate(231deg) translate(-451px) rotate(-231deg);
+                -webkit-transform: rotate(231deg) translate(-451px) rotate(-231deg);
+                -moz-transform: rotate(231deg) translate(-451px) rotate(-231deg);
+                -ms-transform: rotate(231deg) translate(-451px) rotate(-231deg);
+                -o-transform: rotate(231deg) translate(-451px) rotate(-231deg);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1059px){
+        overflow: hidden;
+        .red-circle{
+
+            .tablet-img{
+                .img-1{
+                    display: none;
+                }
+                .img-2{
+                    display: block !important;
+                }
+            }
+            
+            .VdoTok-helpCenter--box{
+                img{
+                    display: none;
+                }
+            }
+
+            .box--1{
+                transform:rotate(409deg) translate(-336px) rotate(-409deg);
+                -webkit-transform:rotate(409deg) translate(-336px) rotate(-409deg);
+                -moz-transform:rotate(409deg) translate(-336px) rotate(-409deg);
+                -ms-transform:rotate(409deg) translate(-336px) rotate(-409deg);
+                -o-transform:rotate(409deg) translate(-336px) rotate(-409deg);
+            }
+    
+            .box--2{
+                transform: rotate(188deg) translate(-369px) rotate(-188deg);
+                -webkit-transform: rotate(188deg) translate(-369px) rotate(-188deg);
+                -moz-transform: rotate(188deg) translate(-369px) rotate(-188deg);
+                -ms-transform: rotate(188deg) translate(-369px) rotate(-188deg);
+                -o-transform: rotate(188deg) translate(-369px) rotate(-188deg);
+                .msg-box{
+                    margin-left: 11rem !important;
+                }
+            }
+    
+            .box--3{
+                height: 223px;
+                transform: rotate(310deg) translate(-443px) rotate(-310deg);
+                -webkit-transform: rotate(310deg) translate(-443px) rotate(-310deg);
+                -moz-transform: rotate(310deg) translate(-443px) rotate(-310deg);
+                -ms-transform: rotate(310deg) translate(-443px) rotate(-310deg);
+                -o-transform: rotate(310deg) translate(-443px) rotate(-310deg);
+                .msg-box{
+                    margin-left: 6rem;
+                }
+            }
+    
+            .box--4{
+                height: 223px;
+                transform: rotate(488deg) translate(-335px) rotate(-488deg);
+                -webkit-transform: rotate(488deg) translate(-335px) rotate(-488deg);
+                -moz-transform: rotate(488deg) translate(-335px) rotate(-488deg);
+                -ms-transform: rotate(488deg) translate(-335px) rotate(-488deg);
+                -o-transform: rotate(488deg) translate(-335px) rotate(-488deg);
+            }
+    
+            .box--5{
+                transform: rotate(356deg) translate(-421px) rotate(-356deg);
+                -webkit-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+                -moz-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+                -ms-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+                -o-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+            }
+    
+            .box--6{
+                transform: rotate(231deg) translate(-451px) rotate(-231deg);
+                -webkit-transform: rotate(231deg) translate(-451px) rotate(-231deg);
+                -moz-transform: rotate(231deg) translate(-451px) rotate(-231deg);
+                -ms-transform: rotate(231deg) translate(-451px) rotate(-231deg);
+                -o-transform: rotate(231deg) translate(-451px) rotate(-231deg);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 869px){
+        height: 932px;
+        .VdoTok-helpCenter-content{
+            bottom:  72rem !important;
+
+            h2{
+                font-size:  4.5rem;
+            }
+        }
+        .red-circle{
+            width: 656px;
+            height: 603px;
+
+            .tablet-img{
+                top: 4rem;
+                .img-2{
+                    width: 496px;
+                    height: 335px;
+                }
+            }
+
+            .box--1{
+                transform:rotate(402deg) translate(-261px) rotate(-402deg);
+                -webkit-transform:rotate(402deg) translate(-261px) rotate(-402deg);
+                -moz-transform:rotate(402deg) translate(-261px) rotate(-402deg);
+                -ms-transform:rotate(402deg) translate(-261px) rotate(-402deg);
+                -o-transform:rotate(402deg) translate(-261px) rotate(-402deg);
+            }
+    
+            .box--2{
+                transform: rotate(188deg) translate(-328px) rotate(-188deg);
+                -webkit-transform: rotate(188deg) translate(-328px) rotate(-188deg);
+                -moz-transform: rotate(188deg) translate(-328px) rotate(-188deg);
+                -ms-transform: rotate(188deg) translate(-328px) rotate(-188deg);
+                -o-transform: rotate(188deg) translate(-328px) rotate(-188deg);
+                .msg-box{
+                    margin-left: 11rem !important;
+                }
+            }
+    
+            .box--3{
+                height: 223px;
+                transform: rotate(296deg) translate(-383px) rotate(-296deg);
+                -webkit-transform: rotate(296deg) translate(-383px) rotate(-296deg);
+                -moz-transform: rotate(296deg) translate(-383px) rotate(-296deg);
+                -ms-transform: rotate(296deg) translate(-383px) rotate(-296deg);
+                -o-transform: rotate(296deg) translate(-383px) rotate(-296deg);
+            }
+    
+            .box--4{
+                height: 223px;
+                transform: rotate(488deg) translate(-250px) rotate(-488deg);
+                -moz-transform: rotate(488deg) translate(-250px) rotate(-488deg);
+                -ms-transform: rotate(488deg) translate(-250px) rotate(-488deg);
+                -o-transform: rotate(488deg) translate(-250px) rotate(-488deg);
+                -webkit-transform: rotate(488deg) translate(-250px) rotate(-488deg);
+            }
+    
+            .box--5{
+                transform: rotate(356deg) translate(-369px) rotate(-356deg);
+                -webkit-transform: rotate(356deg) translate(-369px) rotate(-356deg);
+                -moz-transform: rotate(356deg) translate(-369px) rotate(-356deg);
+                -ms-transform: rotate(356deg) translate(-369px) rotate(-356deg);
+                -o-transform: rotate(356deg) translate(-369px) rotate(-356deg);
+            }
+    
+            .box--6{
+                transform: rotate(230deg) translate(-386px) rotate(-230deg);
+                -webkit-transform: rotate(230deg) translate(-386px) rotate(-230deg);
+                -moz-transform: rotate(230deg) translate(-386px) rotate(-230deg);
+                -ms-transform: rotate(230deg) translate(-386px) rotate(-230deg);
+                -o-transform: rotate(230deg) translate(-386px) rotate(-230deg);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 869px){
+        .VdoTok-helpCenter-content{
+            h2{
+                font-size:  3.2rem;
+            }
+            span{
+                font-size: 1.8rem;
+            }
+        }
+        .red-circle{
+            width: 556px;
+            height: 503px;
+
+            .tablet-img{
+                top: 2rem;
+                .img-2{
+                    width: 496px;
+                    height: 335px;
+                }
+            }
+            .box--3{
+                transform: rotate(296deg) translate(-339px) rotate(-296deg);
+                -webkit-transform: rotate(296deg) translate(-339px) rotate(-296deg);
+                -moz-transform: rotate(296deg) translate(-339px) rotate(-296deg);
+                -ms-transform: rotate(296deg) translate(-339px) rotate(-296deg);
+                -o-transform: rotate(296deg) translate(-339px) rotate(-296deg);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px){
+        height: 1000px;
+
+        .VdoTok-helpCenter-content{
+            h2{
+                font-size: 3.6rem !important;
+
+            }
+        }
+
+        .red-circle{
+            width: 656px;
+            height: 603px;
+
+            .tablet-img{
+
+                img{
+                    width: 501px;
+                    height: 383px;
+                }
+            }
+
+            .box--1{
+                transform: rotate(409deg) translate(-267px) rotate(-409deg);
+                -webkit-transform: rotate(409deg) translate(-267px) rotate(-409deg);
+                -moz-transform: rotate(409deg) translate(-267px) rotate(-409deg);
+                -ms-transform: rotate(409deg) translate(-267px) rotate(-409deg);
+                -o-transform: rotate(409deg) translate(-267px) rotate(-409deg);
+            }
+
+            .box--2{
+                transform: rotate(188deg) translate(-355px) rotate(-188deg);
+                -webkit-transform: rotate(188deg) translate(-355px) rotate(-188deg);
+                -moz-transform: rotate(188deg) translate(-355px) rotate(-188deg);
+                -ms-transform: rotate(188deg) translate(-355px) rotate(-188deg);
+                -o-transform: rotate(188deg) translate(-355px) rotate(-188deg);
+                .msg-box{
+                    padding-right: 3rem;
+                }
+            }
+
+            .box--3{
+                height: 223px;
+                transform: rotate(294deg) translate(-376px) rotate(-294deg);
+                -webkit-transform: rotate(294deg) translate(-376px) rotate(-294deg);
+                -moz-transform: rotate(294deg) translate(-376px) rotate(-294deg);
+                -ms-transform: rotate(294deg) translate(-376px) rotate(-294deg);
+                -o-transform: rotate(294deg) translate(-376px) rotate(-294deg);
+            }
+
+            .box--4{
+                height: 223px;
+                transform: rotate(488deg) translate(-250px) rotate(-488deg);
+                -webkit-transform: rotate(488deg) translate(-250px) rotate(-488deg);
+                -moz-transform: rotate(488deg) translate(-250px) rotate(-488deg);
+                -ms-transform: rotate(488deg) translate(-250px) rotate(-488deg);
+                -o-transform: rotate(488deg) translate(-250px) rotate(-488deg);
+            }
+
+            .box--5{
+                transform: rotate(356deg) translate(-398px) rotate(-356deg);
+                -webkit-transform: rotate(356deg) translate(-398px) rotate(-356deg);
+                -moz-transform: rotate(356deg) translate(-398px) rotate(-356deg);
+                -ms-transform: rotate(356deg) translate(-398px) rotate(-356deg);
+                -o-transform: rotate(356deg) translate(-398px) rotate(-356deg);
+            }
+
+            .box--6{
+                transform: rotate(232deg) translate(-383px) rotate(-232deg);
+                -webkit-transform: rotate(232deg) translate(-383px) rotate(-232deg);
+                -moz-transform: rotate(232deg) translate(-383px) rotate(-232deg);
+                -ms-transform: rotate(232deg) translate(-383px) rotate(-232deg);
+                -o-transform: rotate(232deg) translate(-383px) rotate(-232deg);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 670px){
+
+
+        .red-circle{
+            width: 636px ;
+            height: 583px ;
+
+            .tablet-img{
+
+                img{
+                    width: 501px ;
+                    height: 383px ;
+                }
+            }
+
+            .box--1{
+                transform: rotate(409deg) translate(-250px) rotate(-409deg);
+                -webkit-transform: rotate(409deg) translate(-250px) rotate(-409deg);
+                -moz-transform: rotate(409deg) translate(-250px) rotate(-409deg);
+                -ms-transform: rotate(409deg) translate(-250px) rotate(-409deg);
+                -o-transform: rotate(409deg) translate(-250px) rotate(-409deg);
+            }
+
+            .box--2{
+                transform: rotate(188deg) translate(-326px) rotate(-188deg);
+                -webkit-transform: rotate(188deg) translate(-326px) rotate(-188deg);
+                -moz-transform: rotate(188deg) translate(-326px) rotate(-188deg);
+                -ms-transform: rotate(188deg) translate(-326px) rotate(-188deg);
+                -o-transform: rotate(188deg) translate(-326px) rotate(-188deg);
+            }
+
+            .box--3{
+                height: 223px;
+                transform: rotate(294deg) translate(-357px) rotate(-294deg);
+                -webkit-transform: rotate(294deg) translate(-357px) rotate(-294deg);
+                -moz-transform: rotate(294deg) translate(-357px) rotate(-294deg);
+                -ms-transform: rotate(294deg) translate(-357px) rotate(-294deg);
+                -o-transform: rotate(294deg) translate(-357px) rotate(-294deg);
+            }
+
+            .box--4{
+                transform: rotate(492deg) translate(-248px) rotate(-492deg);
+                -webkit-transform: rotate(492deg) translate(-248px) rotate(-492deg);
+                -moz-transform: rotate(492deg) translate(-248px) rotate(-492deg);
+                -ms-transform: rotate(492deg) translate(-248px) rotate(-492deg);
+                -o-transform: rotate(492deg) translate(-248px) rotate(-492deg);
+            }
+
+            .box--5{
+                transform: rotate(356deg) translate(-370px) rotate(-356deg);
+                -webkit-transform: rotate(356deg) translate(-370px) rotate(-356deg);
+                -moz-transform: rotate(356deg) translate(-370px) rotate(-356deg);
+                -ms-transform: rotate(356deg) translate(-370px) rotate(-356deg);
+                -o-transform: rotate(356deg) translate(-370px) rotate(-356deg);
+            }
+
+            .box--6{
+                transform: rotate(232deg) translate(-383px) rotate(-232deg);
+                -webkit-transform: rotate(232deg) translate(-383px) rotate(-232deg);
+                -moz-transform: rotate(232deg) translate(-383px) rotate(-232deg);
+                -ms-transform: rotate(232deg) translate(-383px) rotate(-232deg);
+                -o-transform: rotate(232deg) translate(-383px) rotate(-232deg);
+            }
+        }
+    }
+
+    @media only screen and (max-width: 640px){
+        height: 719px;
+        .VdoTok-helpCenter-content{
+            bottom: 46rem !important;
+        }
+        .red-circle{
+            width: 398px;
+            height: 350px;
+
+            .tablet-img{
+                .img-2{
+                    width: 366px;
+                    height: 248px;
+                }
+            }
+
+            .box--1,
+            .box--6{
+                display: none;
+            }
+
+            .box--2{
+                transform:rotate(270deg)translate(-242px)rotate(-270deg);
+                -moz-transform:rotate(270deg)translate(-242px)rotate(-270deg);
+                -ms-transform:rotate(270deg)translate(-242px)rotate(-270deg);
+                -o-transform:rotate(270deg)translate(-242px)rotate(-270deg);
+                -webkit-transform:rotate(270deg)translate(-242px)rotate(-270deg);
+            }
+            
+            .box--4{
+                height: 223px;
+                transform:rotate(445deg)translate(-125px)rotate(-445deg);
+                -moz-transform:rotate(445deg)translate(-125px)rotate(-445deg);
+                -ms-transform:rotate(445deg)translate(-125px)rotate(-445deg);
+                -o-transform:rotate(445deg)translate(-125px)rotate(-445deg);
+                -webkit-transform:rotate(445deg)translate(-125px)rotate(-445deg);
+            }
+    
+            .box--5{
+                transform: rotate(352deg) translate(-312px) rotate(-352deg);
+                -webkit-transform: rotate(352deg) translate(-312px) rotate(-352deg);
+                -moz-transform: rotate(352deg) translate(-312px) rotate(-352deg);
+                -ms-transform: rotate(352deg) translate(-312px) rotate(-352deg);
+                -o-transform: rotate(352deg) translate(-312px) rotate(-352deg);
+            }
+    
+            .box--3{
+                transform: rotate(195deg) translate(-262px) rotate(-195deg);
+                -webkit-transform: rotate(195deg) translate(-262px) rotate(-195deg);
+                -moz-transform: rotate(195deg) translate(-262px) rotate(-195deg);
+                -ms-transform: rotate(195deg) translate(-262px) rotate(-195deg);
+                -o-transform: rotate(195deg) translate(-262px) rotate(-195deg);
+            }
+        }
+    }
+}

@@ -1,0 +1,235 @@
+.section-VodTok-features{
+    width: 100%;
+    height: max-content;
+    background-color: $color-white;
+    padding: 11.3rem 0;
+
+    .hadding--box{
+        margin: 0 auto;
+
+        span{
+            width: 75%;
+            max-width: 100rem;
+            margin: 0 auto;
+        }
+    }
+
+    .vf-button{
+        border: none !important;
+        letter-spacing: 0.2px !important;
+    }
+
+    .vf-buttons-1{
+        margin-top: 4.5rem;
+    }
+
+    .Vdotok-features-buttons{
+        width: 100%;
+
+        .vf-buttton-box{
+            padding-left: 3rem;
+            margin: 0 auto;
+
+            div{
+                margin-right: 3rem;
+            }
+        }
+    }
+
+    .VodTok-features-content{
+        width: 100%;
+        margin-top: 5rem;
+
+        .vf-content-row{
+            width: 71% ;
+            margin: 0 auto;
+            display: flex;
+            
+            .vf-content-col--1{
+                width: 43%;
+                max-width: 50%;
+                margin-left: 1rem;
+
+                .vf-img-1{
+                    width: 360px;
+                    height: 370px;
+                }
+
+                .vf-img-2{
+                    display: none;
+                }
+            }
+
+            .vf-content-col--2{
+                // width: 65%;
+                width: 75%;
+
+                .vf-list{
+                    list-style: none;
+                    margin-top: .2rem;
+
+                    .vf-item{
+                        text-decoration: none;
+                        display: flex;
+
+                        .vf-item-img{
+                            margin-right: 0.7rem;
+                            margin-top: 0.3rem;
+                        }
+
+                        .vf-list-content{
+                            letter-spacing: -0.38px;
+                            font-family: $font-Inter;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+// ---------------------- Media Querys ------------------------ //
+    @media only screen and (max-width: 1214px){
+        .vf-content-row{
+            width: 81% !important;
+        }
+    }
+
+    @media only screen and (max-width: 1074px){
+        .vf-content-row{
+            width: 91% !important;
+        }
+
+        .vf-button{
+            letter-spacing: 0.1px !important;
+            font-size: 1.2rem !important;
+        }
+    }
+
+    @media only screen and (max-width: 1074px){
+        .vf-content-row{
+            width: 100% !important;
+        }
+
+        .Vdotok-features-buttons{
+    
+            .vf-buttton-box{
+                div{
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 868px){
+        .vf-list-content{
+            font-size: 1.4rem !important;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding-bottom: 8.5rem;
+        .hadding--box{
+            width: 77%;
+            span{
+                margin: 0 3rem;
+                width: 92%;
+            }
+        }
+
+        .vf-button{
+            letter-spacing: 0.2px !important;
+            font-size: 1.4rem !important;
+        }
+
+        .Vdotok-features-buttons-tablet{
+            display: block !important;
+        }
+
+        .Vdotok-features-buttons-tablet .slider-2 .owl-carousel-2 .owl-stage-outer .owl-stage .owl-item{
+            width: max-content !important;
+        }
+
+        .Vdotok-features-buttons{
+            display: none;
+        }
+
+        .VodTok-features-content{
+            margin-top: 0rem;
+
+            .vf-content-row{
+                width: 90% !important;
+                margin: 0 auto;
+                display: block;
+                position: relative;
+                
+                .vf-content-col--1{
+                    width: 100%;
+                    margin-left: 1rem;
+    
+                    .vf-img-2{
+                        display: block ;
+                        border-radius: 6px;
+                        -webkit-border-radius: 6px;
+                        -moz-border-radius: 6px;
+                        -ms-border-radius: 6px;
+                        -o-border-radius: 6px;
+                    }
+
+                    .vf-img-1{
+                        display: none;
+                    }
+                }
+    
+                .vf-content-col--2{
+                    width: 100%;
+                    .vf-list{
+                        list-style: none;
+                        padding-left: 1rem;
+                        margin-top: 3.2rem;
+    
+                        .vf-item{
+                            text-decoration: none;
+                            display: flex;
+    
+                            .vf-item-img{
+                                margin-right: 0.7rem;
+                                margin-top: 0.3rem;
+                            }
+    
+                            .vf-list-content{
+                                letter-spacing: -0.38px;
+                                font-family: $font-Inter;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 597px){
+        padding-top: 6.5rem;
+        .Vdotok-features-buttons-tablet{
+            margin-bottom: 3rem;
+        }
+    }
+
+    @media only screen and (max-width: 480px){
+        .vf-content-row{
+            .vf-content-col--1{
+
+                .vf-img-2{
+                    display: none !important;
+                }
+
+                .vf-img-1{
+                    display: block !important;
+                    width: 100% !important;
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
+}

@@ -8,7 +8,8 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #F5F5F5; }
+  background-color: #F7F7F9 !important;
+  overflow-x: hidden; }
 
 a,
 a:link,
@@ -19,13 +20,11 @@ a:hover {
 section {
   width: 100%; }
 
-.heading__box {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 5px; }
+.font-size-1 {
+  font-size: 1.4rem !important; }
+
+.font-size-2 {
+  font-size: 1.6rem !important; }
 
 .op-1 {
   opacity: 1 !important; }
@@ -33,47 +32,14 @@ section {
 .body {
   font-family: "Inter", sans-serif !important; }
 
-.heading__pimary {
-  font-size: 4.4rem;
-  letter-spacing: -2px;
-  font-weight: 700;
-  color: #222254;
-  letter-spacing: -2px !important;
-  line-height: 5.2rem;
-  font-family: "Manrope" !important;
-  padding-top: 1.1rem;
-  background-color: #F7F7F9; }
-
-.heading__secondary {
-  font-size: 4.5rem;
-  font-family: "Manrope";
-  font-weight: 800;
-  letter-spacing: -2px;
+.secondary-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center; }
 
-.secondary__headline {
-  font-size: 2rem;
-  font-family: "Inter", sans-serif;
-  font-weight: 400;
-  letter-spacing: -0.64px;
-  color: #697883;
-  display: block;
-  padding-top: 1rem; }
-
-.Headline__primary {
-  font-size: 1.9rem;
-  line-height: 1.4;
-  font-family: "Manrope" !important;
-  letter-spacing: -0.64px !important; }
-
-.heading__tertiary {
-  font-size: 3rem;
-  letter-spacing: -1.2px;
-  font-family: "Manrope";
-  color: #222254;
-  font-weight: 800; }
-
-.site__btn_pri {
+.site-btn--pri {
   background-color: #190354 !important;
   color: #F2E33A !important;
   font-weight: 600 !important;
@@ -82,96 +48,932 @@ section {
   -webkit-border-radius: 4px !important;
   -moz-border-radius: 4px !important;
   -ms-border-radius: 4px !important;
-  -o-border-radius: 4px !important; }
+  -o-border-radius: 4px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1px; }
 
-.site__btn_pri-outline {
+.site-btn-pri--outline {
   font-family: "Manrope" !important;
   color: #190354 !important;
   border: 1px solid #190354 !important;
-  font-weight: 600 !important; }
+  font-weight: 700 !important;
+  border-radius: 4px !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  -ms-border-radius: 4px !important;
+  -o-border-radius: 4px !important; }
 
-.site__btn_pri:focus,
-.site__btn_pri-outline:focus {
-  outline: none    !important;
-  box-shadow: none !important; }
+.site-btn-3 {
+  background-color: #F5F6FA !important;
+  color: #190354 !important;
+  font-weight: 700 !important;
+  font-family: "Manrope" !important;
+  border-radius: 4px !important;
+  -webkit-border-radius: 4px !important;
+  -moz-border-radius: 4px !important;
+  -ms-border-radius: 4px !important;
+  -o-border-radius: 4px !important;
+  text-transform: uppercase;
+  letter-spacing: 0.1px; }
 
-.section__slider {
-  padding: 32px 0;
-  margin-bottom: 50px;
+.heading--pimary {
+  font-size: 4.8rem;
+  letter-spacing: -2px;
+  font-weight: 700;
+  color: #222254;
+  letter-spacing: -2px !important;
+  line-height: 5.5rem;
+  font-family: "Manrope" !important;
+  padding-top: 1.1rem; }
+
+.secondary--hadding {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 4.8rem;
+  letter-spacing: -2px;
+  font-style: normal;
+  line-height: 56px; }
+
+.hadding--tertiary {
+  font-family: "Manrope";
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 42px;
+  letter-spacing: -1.2px; }
+
+.headline--primary {
+  font-size: 1.9rem;
+  line-height: 1.4;
+  font-weight: 500;
+  font-family: "Inter", sans-serif !important;
+  letter-spacing: -0.64px !important; }
+
+.headline--secondary {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  letter-spacing: -0.64px;
+  color: #697883;
+  line-height: 28px; }
+
+.color-dark-1 {
+  color: #1D1C1F !important; }
+
+.color-pri {
+  color: #222254 !important; }
+
+.latter-space-1 {
+  letter-spacing: -0.6px !important; }
+
+.padding-12-24 {
+  padding: 1.2rem 2.4rem !important; }
+
+.padding-12-16 {
+  padding: 1.2rem 1.6rem !important; }
+
+@media only screen and (max-width: 964px) {
+  .heading--pimary {
+    font-size: 4.5rem; } }
+
+@media only screen and (max-width: 866px) {
+  .padding-12-24 {
+    padding: 1rem 2rem !important; }
+  .padding-12-16 {
+    padding: 1rem 1.4rem !important; } }
+
+@media only screen and (max-width: 768px) {
+  .padding-12-24 {
+    padding: 1.2rem 2.4rem !important; }
+  .padding-12-16 {
+    padding: 1.2rem 1.6rem !important; }
+  .heading--pimary {
+    font-size: 4.8rem; }
+  .hadding--tertiary {
+    font-size: 2.4rem;
+    line-height: 36px;
+    letter-spacing: -0.72px; }
+  .secondary--hadding {
+    font-size: 3.6rem;
+    letter-spacing: -1.4px;
+    line-height: 44px; } }
+
+.navigation {
   width: 100%;
-  position: relative; }
-  .section__slider::before, .section__slider::after {
-    content: '';
-    position: absolute;
-    z-index: 3;
-    width: 11%;
-    height: 100px;
-    background-color: #fff;
-    top: 15px;
-    filter: blur(1px);
-    -webkit-filter: blur(1px); }
-  .section__slider::before {
-    left: 0;
-    box-shadow: 30px 0px 60px #fff; }
-  .section__slider::after {
-    right: 0;
-    box-shadow: -30px 0px 60px #fff; }
-
-.silder__box {
-  width: 80% !important;
-  position: relative; }
-  .silder__box-slide {
-    text-align: center;
-    font-size: 18px;
-    padding: 12px 24px !important;
-    width: fit-content !important;
-    text-align: start;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px; }
-    .silder__box-slide .slider__heading {
-      font-weight: 700; }
-    .silder__box-slide .slider__heading, .silder__box-slide .slider__text {
+  height: 75px;
+  background: #fff;
+  box-shadow: 0px 8px 30px rgba(21, 17, 58, 0.06);
+  display: grid;
+  grid-template-columns: 14.5% 56% 31%;
+  position: fixed;
+  z-index: 20;
+  font-family: "Manrope"; }
+  .navigation-logo-box {
+    align-items: center !important;
+    justify-content: flex-end; }
+  .navigation-nav {
+    padding-left: 2rem;
+    margin-left: 3rem; }
+  .navigation-item {
+    padding-right: 1rem; }
+  .navigation-list {
+    display: flex !important; }
+  .navigation-link {
+    color: #1D1C1F !important;
+    letter-spacing: -0.5px;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-left: 1.4rem !important;
+    padding-right: 1.5rem !important; }
+  .navigation-buttons {
+    justify-content: flex-start; }
+  .navigation-buttons button {
+    padding: 12px 30px !important; }
+  .navigation-mob--icon {
+    display: none;
+    opacity: 0;
+    visibility: hidden; }
+  .navigation-tryFree {
+    margin-left: 1.3rem;
+    font-family: "Manrope" !important;
+    font-weight: 500 !important;
+    border-radius: 4px !important;
+    background-color: #54C295 !important;
+    color: #fff !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -o-border-radius: 4px !important; }
+  .navigation-login {
+    font-weight: 800 !important; }
+  .navigation-open {
+    background-color: #fff !important;
+    height: max-content !important;
+    box-shadow: 0px 8px 30px rgba(21, 17, 58, 0.06) !important; }
+  @media only screen and (max-width: 988px) {
+    .navigation-nav {
+      padding-left: 2rem;
+      margin-left: 0rem; }
+    .navigation-link {
       font-size: 1.5rem;
-      letter-spacing: -0.6px;
-      font-family: "Inter", sans-serif; }
-    .silder__box-slide .slider__text {
-      color: #7b7b7b !important;
-      font-weight: 500; }
+      padding-left: 0rem !important;
+      padding-right: 1.5rem !important; }
+    .navigation-buttons button {
+      padding: 1.5rem 2.5rem !important; } }
+  @media only screen and (max-width: 842px) {
+    .navigation {
+      grid-template-columns: 13% 53% 32%; }
+      .navigation-item {
+        padding-right: 0.5rem; }
+      .navigation-buttons button {
+        padding: 1.3rem 2.3rem !important; } }
+  @media only screen and (max-width: 768px) {
+    .navigation {
+      grid-template-columns: 12% 53% 35%; }
+      .navigation-nav {
+        padding-left: 1rem;
+        margin-left: 0rem; }
+      .navigation-list {
+        margin-left: 1rem !important; }
+      .navigation-item {
+        padding-right: 0rem; }
+      .navigation-link {
+        font-size: 1.4rem;
+        padding-left: 0rem !important;
+        padding-right: 1.5rem !important; }
+      .navigation-buttons button {
+        padding: 10px 20px !important; } }
+  @media only screen and (max-width: 684px) {
+    .navigation {
+      grid-template-columns: 12% 54% 34%; }
+      .navigation-nav {
+        padding-left: 1rem;
+        margin-left: 0rem; }
+      .navigation-list {
+        margin-left: 1rem !important; }
+      .navigation-link {
+        font-size: 1.2rem; }
+      .navigation-buttons button {
+        padding: .8rem 1.8rem !important;
+        font-size: 1.2rem !important; } }
+  @media only screen and (max-width: 620px) {
+    .navigation {
+      position: absolute;
+      padding: 2rem 0;
+      background-color: #F7F7F9;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 35px repeat(2, 1fr);
+      box-shadow: 0px 8px 30px transparent;
+      height: 54px;
+      overflow: hidden; }
+      .navigation-logo-box {
+        justify-content: start !important;
+        padding-left: 2rem; }
+      .navigation-mob--icon {
+        right: 0;
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        justify-content: flex-end !important;
+        padding-right: 2rem;
+        align-items: center; }
+      .navigation-nav {
+        padding-top: 1rem;
+        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .navigation-item {
+        padding-right: 1rem; }
+      .navigation-list {
+        flex-direction: column; }
+      .navigation-link {
+        font-size: 1.4rem; }
+      .navigation-buttons {
+        grid-row: 3 / 4;
+        grid-column: 1 / -1;
+        justify-content: center;
+        flex-direction: column; }
+      .navigation-buttons button {
+        padding: 12px 30px !important;
+        font-size: 1.4rem; }
+      .navigation-tryFree {
+        margin-top: 2rem; } }
 
-.silder__box-slide--1,
-.silder__box-slide--6 {
-  background-color: #E1F8FB !important;
-  color: #000321 !important; }
-
-.silder__box-slide--2 {
-  background: #FFF0F7 !important;
-  color: #994167; }
-
-.silder__box-slide--3 {
-  background: #FEFCEB !important;
-  color: #615B17; }
-
-.silder__box-slide--4 {
-  background: #F5F6FA !important;
-  color: #474876; }
-
-.silder__box-slide--5 {
-  background: #EEF9F4 !important;
-  color: #2A614B; }
-
-.telehealth__helpCenter {
-  background-color: #F7F7F9;
-  height: 182vh;
-  display: flex;
-  justify-content: center;
-  position: relative; }
-  .telehealth__helpCenter .th__circle {
-    position: absolute;
-    align-self: center;
+.header {
+  width: 100%;
+  overflow-x: hidden;
+  min-height: max-content; }
+  .header-main {
+    width: 100%;
+    padding-top: 8rem; }
+  .header-Pattern1, .header-Pattern2 {
+    width: 100%;
     margin: 0 auto;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    background-size: contain;
+    background-repeat: no-repeat !important; }
+  .header-Pattern1 {
+    background: url("/images/main-general/Patterns1.png");
+    background-position: 7px 154px;
+    background-size: contain; }
+  .header-Pattern2 {
+    background: url("/images/main-general/Patterns2.png");
+    background-position: 6px 159px;
+    background-size: contain; }
+  .header-row {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0 auto; }
+    .header-row .col-1 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 61%;
+      text-align: start;
+      flex-direction: column; }
+      .header-row .col-1-box {
+        padding-bottom: 6rem;
+        padding-left: 0.8rem;
+        width: 74%;
+        max-width: 577px; }
+        .header-row .col-1-box h1 {
+          margin-bottom: 2rem; }
+        .header-row .col-1-box--button {
+          padding: 11px 29px;
+          font-size: 1.5rem; }
+    .header-row .col-2 {
+      padding: 5rem 0; }
+      .header-row .col-2 img {
+        position: relative;
+        left: -2.9rem;
+        min-width: 100%;
+        top: 0.7rem; }
+    .header-row .tablate-ver-btn {
+      display: none;
+      padding-bottom: 10px;
+      justify-content: center; }
+      .header-row .tablate-ver-btn button {
+        margin: 3rem  0 !important;
+        margin-left: 2.2rem !important; }
+  @media only screen and (max-width: 1022px) {
+    .header .col-1 {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 59%;
+      text-align: start;
+      flex-direction: column; }
+      .header .col-1-box {
+        padding-bottom: 7.1rem;
+        width: 89%; } }
+  @media only screen and (max-width: 964px) {
+    .header .col-2 {
+      padding: 5rem 0; }
+      .header .col-2 img {
+        width: 423px;
+        height: 446px;
+        left: -6rem; } }
+  @media only screen and (max-width: 964px) {
+    .header .col-2 {
+      padding: 4rem 0; }
+      .header .col-2 img {
+        left: -7rem; } }
+  @media only screen and (max-width: 866px) {
+    .header .col-2 img {
+      left: -6rem; } }
+  @media only screen and (max-width: 814px) {
+    .header .col-2 img {
+      left: -8rem; } }
+  @media only screen and (max-width: 768px) {
+    .header-Pattern1, .header-Pattern2 {
+      display: none; }
+    .header-row .col-1 {
+      width: 100%;
+      text-align: center;
+      padding-top: 7rem; }
+      .header-row .col-1-box {
+        width: 89%;
+        padding-bottom: 0 !important; }
+        .header-row .col-1-box h1 {
+          color: #1D1C1F !important; }
+        .header-row .col-1-box--button {
+          display: none !important; }
+    .header-row .col-2 {
+      padding: 0 !important;
+      width: 100%;
+      padding: 3rem 0 !important;
+      background: url("/images/main-general/Patterns-tab-1.png"), url("/images/main-general/Patterns-tab-2.png") !important;
+      background-position: center 47% !important;
+      background-repeat: no-repeat !important;
+      background-size: contain; }
+      .header-row .col-2 img {
+        width: 523px;
+        height: 546px;
+        margin-left: 50%;
+        transform: translateX(-32%);
+        -webkit-transform: translateX(-32%);
+        -moz-transform: translateX(-32%);
+        -ms-transform: translateX(-32%);
+        -o-transform: translateX(-32%); }
+    .header-row .tablate-ver-btn {
+      display: flex !important; }
+      .header-row .tablate-ver-btn button {
+        padding: 1.4rem 2.4rem !important;
+        font-weight: 700       !important;
+        line-height: 18px;
+        letter-spacing: 0.2px  !important;
+        margin-left: 50% !important;
+        transform: translateX(-101%);
+        -webkit-transform: translateX(-101%);
+        -moz-transform: translateX(-101%);
+        -ms-transform: translateX(-101%);
+        -o-transform: translateX(-101%); } }
+  @media only screen and (max-width: 676px) {
+    .header-row .tablate-ver-btn button {
+      transform: translateX(-77%);
+      -webkit-transform: translateX(-77%);
+      -moz-transform: translateX(-77%);
+      -ms-transform: translateX(-77%);
+      -o-transform: translateX(-77%); } }
+  @media only screen and (max-width: 554px) {
+    .header-row .tablate-ver-btn button {
+      margin-left: 0 !important;
+      transform: translateX(0);
+      width: 90%;
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0); } }
+  @media only screen and (max-width: 476px) {
+    .header-row .col-2 {
+      background: #F7F7F9 !important; }
+      .header-row .col-2 img {
+        margin-left: 46%; } }
+
+.footer {
+  width: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
+  border-top: 1px solid #E2E2EA;
+  padding-top: 6rem;
+  display: grid;
+  grid-template-columns: 33% repeat(3, 18.66667%);
+  grid-template-rows: max-content max-content; }
+  .footer-span {
+    font-family: "Inter", sans-serif;
+    letter-spacing: -0.38px;
+    font-weight: 400;
+    color: #697883; }
+  .footer-col-1 {
+    display: flex;
+    flex-direction: column; }
+    .footer-col-1--content {
+      width: 65%;
+      margin-left: auto; }
+  .footer .col-2--content {
+    width: 80%;
+    margin-left: auto; }
+    .footer .col-2--content .col-2--list {
+      text-align: center; }
+      .footer .col-2--content .col-2--list ul {
+        list-style: none; }
+        .footer .col-2--content .col-2--list ul .col-2--content-head span {
+          color: #222254;
+          letter-spacing: -0.72px;
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.8rem; }
+        .footer .col-2--content .col-2--list ul li {
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: inherit;
+          color: #697883;
+          padding-top: 1rem; }
+          .footer .col-2--content .col-2--list ul li a {
+            color: inherit; }
+  .footer-bottom-row {
+    grid-row: 2 / -1;
+    grid-column: 1  / -1;
+    padding-top: 2rem;
+    padding-bottom: 3rem; }
+    .footer-bottom-row--content {
+      width: 95%;
+      margin-left: 13rem;
+      display: flex; }
+      .footer-bottom-row--content-col1 {
+        margin-right: auto; }
+      .footer-bottom-row--content-col1 span, .footer-bottom-row--content-col2 span {
+        letter-spacing: -0.2px !important;
+        font-weight: 700 !important;
+        color: #140243 !important; }
+      .footer-bottom-row--content-col1 span a, .footer-bottom-row--content-col2 span a {
+        color: inherit; }
+  @media only screen and (max-width: 964px) {
+    .footer {
+      grid-template-columns: 28% repeat(3, 23.66667%); }
+      .footer-bottom-row--content {
+        width: 92%;
+        margin-left: 5rem; } }
+  @media only screen and (max-width: 768px) {
+    .footer {
+      grid-template-columns: 26% repeat(3, 21.66667%); }
+      .footer-col-1--content {
+        width: 87%;
+        margin-left: 3rem; }
+        .footer-col-1--content span {
+          font-size: 1.4rem !important;
+          line-height: 20px;
+          margin-top: 1rem;
+          letter-spacing: -0.4px; }
+      .footer-col-1 .col-1--footer-frame {
+        margin-bottom: 2rem !important; }
+      .footer .col-2--content {
+        width: 100%; }
+      .footer-col-2--content {
+        width: 68%;
+        margin-left: 3rem; }
+        .footer-col-2--content .col-2--list ul li {
+          font-size: 1.6rem !important;
+          line-height: 36px;
+          letter-spacing: -0.48px; }
+      .footer-col-4 {
+        width: max-content !important; }
+      .footer-col-2, .footer-col-3, .footer-colo-4 {
+        margin-left: 1.5rem !important; }
+      .footer-bottom-row--content {
+        margin-left: 3rem !important; } }
+  @media only screen and (max-width: 706px) {
+    .footer {
+      grid-template-columns: 22% repeat(3, 23.66667%); }
+      .footer-col-1--content {
+        width: 67%;
+        margin-left: 2rem; } }
+  @media only screen and (max-width: 636px) {
+    .footer {
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(4, max-content);
+      padding: 0 2rem; }
+      .footer-col-2 {
+        margin-top: 2.5rem;
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        text-align: left; }
+      .footer-col-3 {
+        margin-top: 2.5rem;
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        text-align: left; }
+      .footer-col-4 {
+        grid-row: 2 / 3;
+        grid-column: 1 /  -1;
+        text-align: left;
+        border-top: 1px solid #E2E2EA;
+        padding: 4rem 0; }
+        .footer-col-4 .col-2--content {
+          margin-left: 0 !important; }
+          .footer-col-4 .col-2--content .col-2--list ul .col-2--content-head {
+            margin-bottom: .5rem !important; }
+          .footer-col-4 .col-2--content .col-2--list ul .social-icon span {
+            margin-right: 3rem !important; }
+      .footer-col-1 {
+        grid-row: 3 / 4;
+        grid-column: 1 /  -1;
+        text-align: left;
+        flex-direction: row;
+        padding: 4rem 0;
+        border-top: 1px solid #E2E2EA; }
+        .footer-col-1--content {
+          display: inline;
+          width: 94%;
+          margin-left: 0rem;
+          display: flex; }
+          .footer-col-1--content .col-1--footer-frame {
+            width: 60%; }
+      .footer-bottom-row {
+        grid-row: 4 / 5;
+        grid-column: 1 /  -1;
+        text-align: left; } }
+
+.section-telemedicine {
+  padding: 11.3rem 0;
+  background-color: #fff;
+  height: 140vh;
+  height: max-content;
+  background-position: center 117%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.3rem; }
+  .section-telemedicine .telemedicine-row {
+    height: 120vh;
+    background: url("/images/sections/telemedicien/telemedicien-vector2.png"), #fff;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 80%;
+    margin: 0 auto; }
+    .section-telemedicine .telemedicine-row .col-border {
+      transform: scale(1.8);
+      -webkit-transform: scale(1.8);
+      -moz-transform: scale(1.8);
+      -ms-transform: scale(1.8);
+      -o-transform: scale(1.8); }
+    .section-telemedicine .telemedicine-row .telemedicine-col-hadding {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 6.4rem;
+      display: flex;
+      align-items: center;
+      letter-spacing: -3px;
+      display: inline-block; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-hadding span {
+        font-size: 2.5rem;
+        color: inherit; }
+    .section-telemedicine .telemedicine-row .telemedicine-col-text {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: -0.32px; }
+    .section-telemedicine .telemedicine-row .row--1 {
+      margin-top: 7rem;
+      height: 45%; }
+      .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 {
+        margin-left: 1rem; }
+        .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .owl-carousel-3 {
+          position: relative;
+          width: 84%; }
+          .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .owl-carousel-3::after {
+            content: '';
+            position: absolute;
+            z-index: 3;
+            width: 10rem;
+            height: 4rem;
+            top: 0.5rem;
+            right: -2.2rem;
+            background: linear-gradient(-90deg, #FFFFFF 44.59%, rgba(255, 255, 255, 0) 125%);
+            transform: matrix(1, 0, 0, -2, 0, 0);
+            -webkit-transform: matrix(1, 0, 0, -2, 0, 0);
+            -moz-transform: matrix(1, 0, 0, -2, 0, 0);
+            -ms-transform: matrix(1, 0, 0, -2, 0, 0);
+            -o-transform: matrix(1, 0, 0, -2, 0, 0); }
+        .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .telemedicine-col-btn {
+          padding: 1.2rem 2.4rem;
+          border: none;
+          border: 1px solid #E2E2EA;
+          color: #190354;
+          background-color: #fff;
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 700;
+          line-height: 22px;
+          letter-spacing: -0.12px;
+          border-radius: 6px;
+          -webkit-border-radius: 6px;
+          -moz-border-radius: 6px;
+          -ms-border-radius: 6px;
+          -o-border-radius: 6px; }
+        .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .telemedicine-btn-active {
+          background: #190354;
+          color: #F2E33A;
+          border: none !important; }
+        .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .telemedicine-col-1--card {
+          display: flex;
+          align-items: center;
+          padding: 1.2rem 1.4rem;
+          background: #FFFFFF;
+          box-shadow: 0px 10px 18px rgba(21, 17, 58, 0.03);
+          border-radius: 1.2rem;
+          -webkit-border-radius: 1.2rem;
+          -moz-border-radius: 1.2rem;
+          -ms-border-radius: 1.2rem;
+          -o-border-radius: 1.2rem;
+          opacity: 0.6;
+          box-shadow: 0px 10px 18px rgba(21, 17, 58, 0.03);
+          margin-left: 6rem;
+          width: 76%; }
+          .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .telemedicine-col-1--card .card--text h3 {
+            font-size: "Manrope";
+            font-weight: 700 !important;
+            font-size: 1.8rem;
+            line-height: 24px;
+            letter-spacing: -0.36px; }
+          .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .telemedicine-col-1--card .card--text span {
+            font-family: "Inter", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: -0.24px;
+            color: #697883; }
+          .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .telemedicine-col-1--card .card--button button {
+            padding: .8rem 1rem; }
+        .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .card--active {
+          padding: 1.2rem 2.4rem !important;
+          opacity: 1 !important;
+          margin-left: 3rem !important;
+          width: 80% !important; }
+      .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+        .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-2 .col-2--border {
+          border-left: 1px dashed #E2E2EA;
+          height: 88px; }
+      .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("/images/sections/telemedicien/video.png");
+        background-position: 0rem 3rem;
+        background-repeat: no-repeat;
+        background-size: 44%;
+        text-align: center; }
+        .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-3 .telemedicine-col-3--content h3 {
+          color: #222254; }
+        .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-3 .telemedicine-col-3--content p {
+          width: 67%;
+          margin: 0 auto; }
+    .section-telemedicine .telemedicine-row .row--2 {
+      height: 30%;
+      margin-top: 1rem;
+      width: 95%; }
+      .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-4 {
+        background: url("/images/sections/telemedicien/calendar-time.png");
+        background-position: 2rem 2.8rem;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: flex-end; }
+        .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-4 .telemedicine-col-4--content {
+          width: 85%;
+          text-align: center;
+          margin-left: auto; }
+          .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-4 .telemedicine-col-4--content h3 {
+            color: #615B17; }
+      .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+        .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-5 .col-5--border {
+          border-top: 1px dashed #E2E2EA;
+          width: 88px; }
+      .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-6 {
+        display: flex;
+        justify-content: center;
+        align-items: end; }
+        .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-6 .telemedicine-col-6--content {
+          background-color: #fff;
+          box-shadow: 0px 10px 20px rgba(21, 17, 58, 0.03);
+          border-radius: 12px;
+          width: 85%; }
+          .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-6 .telemedicine-col-6--content .col-6--content-row {
+            display: flex;
+            padding: 2rem;
+            padding-top: 0; }
+            .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-6 .telemedicine-col-6--content .col-6--content-row .content-row-col-1 {
+              width: 64%;
+              margin-right: 1rem; }
+            .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-6 .telemedicine-col-6--content .col-6--content-row .col-1-border {
+              border-bottom: 1px solid #E2E2EA;
+              padding-bottom: 0.5rem; }
+            .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-6 .telemedicine-col-6--content .col-6--content-row .text,
+            .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-6 .telemedicine-col-6--content .col-6--content-row .value {
+              font-family: "Inter", sans-serif;
+              font-style: normal; }
+            .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-6 .telemedicine-col-6--content .col-6--content-row .text {
+              font-weight: 400;
+              line-height: 20px;
+              margin: 0;
+              letter-spacing: -0.4px;
+              color: #697883; }
+            .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-6 .telemedicine-col-6--content .col-6--content-row .value {
+              font-weight: 500;
+              line-height: 22px;
+              letter-spacing: -0.24px; }
+            .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-6 .telemedicine-col-6--content .col-6--content-row .edit-btn {
+              padding: 1rem;
+              background-color: #fff;
+              line-height: 18px;
+              text-align: center;
+              letter-spacing: 0.2px; }
+  @media only screen and (max-width: 1012px) {
+    .section-telemedicine .telemedicine-row {
+      padding-top: 11.8rem;
+      padding-left: 2rem; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-1 {
+        width: 90%; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-1 .owl-carousel-3 {
+          margin-left: 0 !important; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-1 .telemedicine-col-1--card {
+          margin-left: 3rem; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-1 .card--active {
+          margin-left: 0rem !important; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-2 {
+        top: 2.7rem;
+        left: 5rem; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-2 .col-2--border {
+          height: 65px; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box {
+        background-position: 48% 3.4rem;
+        background-size: 45%; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box .telemedicine-col-3--content {
+          top: 62%;
+          left: 76%; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box {
+        top: -19.4rem; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box .telemedicine-col-text {
+          font-size: 1.4rem !important; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-5 {
+        left: 4rem; } }
+  @media only screen and (max-width: 872px) {
+    .section-telemedicine .telemedicine-row {
+      grid-template-columns: 50%  50%;
+      padding-top: 11.8rem;
+      padding-left: 2rem; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-2,
+      .section-telemedicine .telemedicine-row .telemedicine-col-5 {
+        display: none; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-1 {
+        width: 90%; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-1 .owl-carousel-3 {
+          margin-left: 0 !important; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-1 .telemedicine-col-1--card {
+          margin-left: 3rem; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-1 .card--active {
+          margin-left: 0rem !important; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box {
+        background-position: 48% 3.4rem;
+        background-size: 45%; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box .telemedicine-col-3--content {
+          top: 62%;
+          left: 76%; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box {
+        top: -19.4rem; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box .telemedicine-col-text {
+          font-size: 1.4rem !important; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-6--content-box {
+        top: -17rem;
+        left: 2rem; } }
+  @media only screen and (max-width: 768px) {
+    .section-telemedicine {
+      padding: 5.3rem 0;
+      background: url("/images/sections/telemedicien/vectortablet.png"), #fff;
+      background-repeat: no-repeat;
+      background-position: center 53%; }
+      .section-telemedicine .telemedicine-row {
+        display: grid;
+        height: 100%;
+        padding: 11.3rem;
+        padding-top: 17.8rem;
+        padding-bottom: 0;
+        grid-template-columns: 50%  50%; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-hadding {
+          font-size: 4.8rem; }
+          .section-telemedicine .telemedicine-row .telemedicine-col-hadding span {
+            font-size: 1.5rem; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-text {
+          font-size: 1.4rem !important;
+          line-height: 22px;
+          letter-spacing: -0.26px; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-1 {
+          margin-left: 0rem;
+          width: 100%; }
+          .section-telemedicine .telemedicine-row .telemedicine-col-1 .owl-carousel-3 {
+            position: relative;
+            margin-left: -3rem !important; }
+            .section-telemedicine .telemedicine-row .telemedicine-col-1 .owl-carousel-3::after {
+              width: 8rem;
+              height: 4rem; }
+          .section-telemedicine .telemedicine-row .telemedicine-col-1 .telemedicine-col-1--card {
+            margin-left: -2rem; }
+          .section-telemedicine .telemedicine-row .telemedicine-col-1 .card--active {
+            margin-left: -4rem !important; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box {
+          background-position: 43% 5.2rem;
+          background-size: 32%; }
+          .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box .telemedicine-col-3--content {
+            top: 63%;
+            left: 68%;
+            width: 86%; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box {
+          top: -9.4rem;
+          left: -5rem;
+          background-position: 3rem -2.2rem;
+          background-size: 32%; }
+          .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box .telemedicine-col-4--content {
+            width: 98%; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-6--content-box {
+          position: relative;
+          top: -11rem;
+          left: -2rem; }
+          .section-telemedicine .telemedicine-row .telemedicine-col-6--content-box .telemedicine-col-6--content {
+            width: 323px; }
+            .section-telemedicine .telemedicine-row .telemedicine-col-6--content-box .telemedicine-col-6--content .col-6--content-row .content-row-col-1 {
+              width: 64%;
+              margin-right: 1rem; } }
+  @media only screen and (max-width: 606px) {
+    .section-telemedicine .telemedicine-row .telemedicine-col-1 {
+      margin-left: 0rem;
+      width: 100%; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-1 .owl-carousel-3 {
+        position: relative;
+        margin-left: -8rem !important; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-1 .owl-carousel-3::after {
+          width: 8rem;
+          height: 4rem; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-1 .telemedicine-col-1--card {
+        margin-left: -9rem; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-1 .card--active {
+        margin-left: -12rem !important; }
+    .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box {
+      background-position: 78% 1.2rem;
+      background-size: 32%; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box .telemedicine-col-3--content {
+        top: 43%;
+        left: 100%; }
+    .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box {
+      top: -9.4rem;
+      left: -5rem;
+      background-position: 3rem -2.2rem;
+      background-size: 32%; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box .telemedicine-col-4--content {
+        width: 98%; }
+    .section-telemedicine .telemedicine-row .telemedicine-col-6--content-box {
+      position: relative;
+      top: -11rem;
+      left: -2rem; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-6--content-box .telemedicine-col-6--content {
+        width: 150%; }
+        .section-telemedicine .telemedicine-row .telemedicine-col-6--content-box .telemedicine-col-6--content .col-6--content-row .content-row-col-1 {
+          width: 64%;
+          margin-right: 1rem; } }
+
+.section-VdoTok-helpCenter {
+  background-color: #F7F7F9;
+  position: relative;
+  height: 1162px;
+  overflow-x: hidden; }
+  .section-VdoTok-helpCenter .VdoTok-helpCenter-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 36%;
+    margin: auto;
+    text-align: center;
+    height: max-content; }
+  .section-VdoTok-helpCenter .red-circle {
     width: 994px;
     height: 914px;
     border: 1px solid rgba(235, 85, 69, 0.3);
@@ -179,396 +981,1315 @@ section {
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     -ms-border-radius: 100%;
-    -o-border-radius: 100%; }
-    .telehealth__helpCenter .th__circle .th__box {
-      position: absolute; }
-      .telehealth__helpCenter .th__circle .th__box .th__popup--box {
+    -o-border-radius: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    .section-VdoTok-helpCenter .red-circle .tablet-img {
+      position: absolute;
+      top: 19rem;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      width: max-content;
+      height: max-content; }
+    .section-VdoTok-helpCenter .red-circle .VdoTok-helpCenter--box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      overflow: hidden;
+      width: max-content;
+      height: 194px;
+      padding-right: 2rem;
+      padding-left: .5rem;
+      text-align: center; }
+      .section-VdoTok-helpCenter .red-circle .VdoTok-helpCenter--box .msg-box {
         text-align: start;
         padding: 12px 16px;
         background-color: #fff;
         margin-top: 8px;
         box-shadow: 0px 10px 10px rgba(21, 17, 58, 0.06);
         border-radius: 32px 32px 32px 0px; }
-        .telehealth__helpCenter .th__circle .th__box .th__popup--box span {
+        .section-VdoTok-helpCenter .red-circle .VdoTok-helpCenter--box .msg-box span {
           font-size: 1.4rem;
           font-family: "Inter", sans-serif;
           letter-spacing: -0.24px;
           color: #190354; }
-          .telehealth__helpCenter .th__circle .th__box .th__popup--box span:first-child {
+          .section-VdoTok-helpCenter .red-circle .VdoTok-helpCenter--box .msg-box span:first-child {
             font-weight: 600 !important; }
-          .telehealth__helpCenter .th__circle .th__box .th__popup--box span:last-child {
+          .section-VdoTok-helpCenter .red-circle .VdoTok-helpCenter--box .msg-box span:last-child {
             font-weight: 300 !important; }
-    .telehealth__helpCenter .th__circle .th__box--1 {
-      top: -150px;
-      left: 121px; }
-    .telehealth__helpCenter .th__circle .th__box--2 {
-      top: -184px;
-      right: 134px; }
-    .telehealth__helpCenter .th__circle .th__box--3 {
-      top: 195px;
-      left: -121px; }
-    .telehealth__helpCenter .th__circle .th__box--4 {
-      bottom: 238px;
-      right: -134px; }
-    .telehealth__helpCenter .th__circle .th__box--5 {
-      bottom: -92px;
-      left: 23px; }
-    .telehealth__helpCenter .th__circle .th__box--6 {
-      bottom: -84px;
-      right: -24px; }
-  .telehealth__helpCenter .th__content {
-    position: absolute;
-    width: 100%;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0); }
-    .telehealth__helpCenter .th__content h2,
-    .telehealth__helpCenter .th__content span {
-      color: #190354; }
+    .section-VdoTok-helpCenter .red-circle .box--1 {
+      transform: rotate(409deg) translate(-411px) rotate(-409deg);
+      -webkit-transform: rotate(409deg) translate(-411px) rotate(-409deg);
+      -moz-transform: rotate(409deg) translate(-411px) rotate(-409deg);
+      -ms-transform: rotate(409deg) translate(-411px) rotate(-409deg);
+      -o-transform: rotate(409deg) translate(-411px) rotate(-409deg); }
+    .section-VdoTok-helpCenter .red-circle .box--2 {
+      transform: rotate(488deg) translate(-448px) rotate(-488deg);
+      -webkit-transform: rotate(488deg) translate(-448px) rotate(-488deg);
+      -moz-transform: rotate(488deg) translate(-448px) rotate(-488deg);
+      -ms-transform: rotate(488deg) translate(-448px) rotate(-488deg);
+      -o-transform: rotate(488deg) translate(-448px) rotate(-488deg); }
+      .section-VdoTok-helpCenter .red-circle .box--2 .msg-box {
+        padding-right: 3rem !important; }
+    .section-VdoTok-helpCenter .red-circle .box--3 {
+      height: 223px;
+      transform: rotate(356deg) translate(-486px) rotate(-356deg);
+      -webkit-transform: rotate(356deg) translate(-486px) rotate(-356deg);
+      -moz-transform: rotate(356deg) translate(-486px) rotate(-356deg);
+      -ms-transform: rotate(356deg) translate(-486px) rotate(-356deg);
+      -o-transform: rotate(356deg) translate(-486px) rotate(-356deg); }
+    .section-VdoTok-helpCenter .red-circle .box--4 {
+      height: 223px;
+      transform: rotate(188deg) translate(-506px) rotate(-188deg);
+      -webkit-transform: rotate(188deg) translate(-506px) rotate(-188deg);
+      -moz-transform: rotate(188deg) translate(-506px) rotate(-188deg);
+      -ms-transform: rotate(188deg) translate(-506px) rotate(-188deg);
+      -o-transform: rotate(188deg) translate(-506px) rotate(-188deg); }
+    .section-VdoTok-helpCenter .red-circle .box--5 {
+      transform: rotate(310deg) translate(-519px) rotate(-310deg);
+      -webkit-transform: rotate(310deg) translate(-519px) rotate(-310deg);
+      -moz-transform: rotate(310deg) translate(-519px) rotate(-310deg);
+      -ms-transform: rotate(310deg) translate(-519px) rotate(-310deg);
+      -o-transform: rotate(310deg) translate(-519px) rotate(-310deg); }
+    .section-VdoTok-helpCenter .red-circle .box--6 {
+      transform: rotate(231deg) translate(-528px) rotate(-231deg);
+      -webkit-transform: rotate(231deg) translate(-528px) rotate(-231deg);
+      -moz-transform: rotate(231deg) translate(-528px) rotate(-231deg);
+      -ms-transform: rotate(231deg) translate(-528px) rotate(-231deg);
+      -o-transform: rotate(231deg) translate(-528px) rotate(-231deg); }
+  @media only screen and (max-width: 1278px) {
+    .section-VdoTok-helpCenter {
+      height: 1000px; }
+      .section-VdoTok-helpCenter .red-circle {
+        width: 954px;
+        height: 874px; }
+        .section-VdoTok-helpCenter .red-circle .tablet-img img {
+          width: 684px;
+          height: 474px; }
+        .section-VdoTok-helpCenter .red-circle .box--1 {
+          transform: rotate(409deg) translate(-391px) rotate(-409deg);
+          -webkit-transform: rotate(409deg) translate(-391px) rotate(-409deg);
+          -moz-transform: rotate(409deg) translate(-391px) rotate(-409deg);
+          -ms-transform: rotate(409deg) translate(-391px) rotate(-409deg);
+          -o-transform: rotate(409deg) translate(-391px) rotate(-409deg); }
+        .section-VdoTok-helpCenter .red-circle .box--2 {
+          transform: rotate(488deg) translate(-426px) rotate(-488deg);
+          -webkit-transform: rotate(488deg) translate(-426px) rotate(-488deg);
+          -moz-transform: rotate(488deg) translate(-426px) rotate(-488deg);
+          -ms-transform: rotate(488deg) translate(-426px) rotate(-488deg);
+          -o-transform: rotate(488deg) translate(-426px) rotate(-488deg); }
+          .section-VdoTok-helpCenter .red-circle .box--2 .msg-box {
+            padding-right: 3rem !important; }
+        .section-VdoTok-helpCenter .red-circle .box--3 {
+          height: 223px;
+          transform: rotate(356deg) translate(-464px) rotate(-356deg);
+          -webkit-transform: rotate(356deg) translate(-464px) rotate(-356deg);
+          -moz-transform: rotate(356deg) translate(-464px) rotate(-356deg);
+          -ms-transform: rotate(356deg) translate(-464px) rotate(-356deg);
+          -o-transform: rotate(356deg) translate(-464px) rotate(-356deg); }
+        .section-VdoTok-helpCenter .red-circle .box--4 {
+          height: 223px;
+          transform: rotate(188deg) translate(-467px) rotate(-188deg);
+          -webkit-transform: rotate(188deg) translate(-467px) rotate(-188deg);
+          -moz-transform: rotate(188deg) translate(-467px) rotate(-188deg);
+          -ms-transform: rotate(188deg) translate(-467px) rotate(-188deg);
+          -o-transform: rotate(188deg) translate(-467px) rotate(-188deg); }
+        .section-VdoTok-helpCenter .red-circle .box--5 {
+          transform: rotate(310deg) translate(-498px) rotate(-310deg);
+          -webkit-transform: rotate(310deg) translate(-498px) rotate(-310deg);
+          -moz-transform: rotate(310deg) translate(-498px) rotate(-310deg);
+          -ms-transform: rotate(310deg) translate(-498px) rotate(-310deg);
+          -o-transform: rotate(310deg) translate(-498px) rotate(-310deg); }
+        .section-VdoTok-helpCenter .red-circle .box--6 {
+          transform: rotate(231deg) translate(-506px) rotate(-231deg);
+          -webkit-transform: rotate(231deg) translate(-506px) rotate(-231deg);
+          -moz-transform: rotate(231deg) translate(-506px) rotate(-231deg);
+          -ms-transform: rotate(231deg) translate(-506px) rotate(-231deg);
+          -o-transform: rotate(231deg) translate(-506px) rotate(-231deg); } }
+  @media only screen and (max-width: 1208px) {
+    .section-VdoTok-helpCenter .red-circle {
+      width: 894px;
+      height: 814px; }
+      .section-VdoTok-helpCenter .red-circle .tablet-img img {
+        width: 664px;
+        height: 454px; }
+      .section-VdoTok-helpCenter .red-circle .box--1 {
+        transform: rotate(409deg) translate(-360px) rotate(-409deg);
+        -webkit-transform: rotate(409deg) translate(-360px) rotate(-409deg);
+        -moz-transform: rotate(409deg) translate(-360px) rotate(-409deg);
+        -ms-transform: rotate(409deg) translate(-360px) rotate(-409deg);
+        -o-transform: rotate(409deg) translate(-360px) rotate(-409deg); }
+      .section-VdoTok-helpCenter .red-circle .box--2 {
+        transform: rotate(488deg) translate(-394px) rotate(-488deg);
+        -webkit-transform: rotate(488deg) translate(-394px) rotate(-488deg);
+        -moz-transform: rotate(488deg) translate(-394px) rotate(-488deg);
+        -ms-transform: rotate(488deg) translate(-394px) rotate(-488deg);
+        -o-transform: rotate(488deg) translate(-394px) rotate(-488deg); }
+      .section-VdoTok-helpCenter .red-circle .box--3 {
+        height: 223px;
+        transform: rotate(356deg) translate(-439px) rotate(-356deg);
+        -webkit-transform: rotate(356deg) translate(-439px) rotate(-356deg);
+        -moz-transform: rotate(356deg) translate(-439px) rotate(-356deg);
+        -ms-transform: rotate(356deg) translate(-439px) rotate(-356deg);
+        -o-transform: rotate(356deg) translate(-439px) rotate(-356deg); }
+        .section-VdoTok-helpCenter .red-circle .box--3 .msg-box {
+          margin-left: 6rem; }
+      .section-VdoTok-helpCenter .red-circle .box--4 {
+        height: 223px;
+        transform: rotate(188deg) translate(-447px) rotate(-188deg);
+        -webkit-transform: rotate(188deg) translate(-447px) rotate(-188deg);
+        -moz-transform: rotate(188deg) translate(-447px) rotate(-188deg);
+        -ms-transform: rotate(188deg) translate(-447px) rotate(-188deg);
+        -o-transform: rotate(188deg) translate(-447px) rotate(-188deg); }
+      .section-VdoTok-helpCenter .red-circle .box--5 {
+        transform: rotate(310deg) translate(-467px) rotate(-310deg);
+        -webkit-transform: rotate(310deg) translate(-467px) rotate(-310deg);
+        -moz-transform: rotate(310deg) translate(-467px) rotate(-310deg);
+        -ms-transform: rotate(310deg) translate(-467px) rotate(-310deg);
+        -o-transform: rotate(310deg) translate(-467px) rotate(-310deg); }
+      .section-VdoTok-helpCenter .red-circle .box--6 {
+        transform: rotate(231deg) translate(-476px) rotate(-231deg);
+        -webkit-transform: rotate(231deg) translate(-476px) rotate(-231deg);
+        -moz-transform: rotate(231deg) translate(-476px) rotate(-231deg);
+        -ms-transform: rotate(231deg) translate(-476px) rotate(-231deg);
+        -o-transform: rotate(231deg) translate(-476px) rotate(-231deg); } }
+  @media only screen and (max-width: 1162px) {
+    .section-VdoTok-helpCenter .red-circle {
+      width: 874px;
+      height: 784px; }
+      .section-VdoTok-helpCenter .red-circle .tablet-img img {
+        width: 624px;
+        height: 414px; }
+      .section-VdoTok-helpCenter .red-circle .box--1 {
+        transform: rotate(409deg) translate(-354px) rotate(-409deg);
+        -webkit-transform: rotate(409deg) translate(-354px) rotate(-409deg);
+        -moz-transform: rotate(409deg) translate(-354px) rotate(-409deg);
+        -ms-transform: rotate(409deg) translate(-354px) rotate(-409deg);
+        -o-transform: rotate(409deg) translate(-354px) rotate(-409deg); }
+      .section-VdoTok-helpCenter .red-circle .box--2 {
+        transform: rotate(488deg) translate(-379px) rotate(-488deg);
+        -webkit-transform: rotate(488deg) translate(-379px) rotate(-488deg);
+        -moz-transform: rotate(488deg) translate(-379px) rotate(-488deg);
+        -ms-transform: rotate(488deg) translate(-379px) rotate(-488deg);
+        -o-transform: rotate(488deg) translate(-379px) rotate(-488deg); }
+        .section-VdoTok-helpCenter .red-circle .box--2 .msg-box {
+          margin-left: 11rem !important; }
+      .section-VdoTok-helpCenter .red-circle .box--3 {
+        height: 223px;
+        transform: rotate(356deg) translate(-421px) rotate(-356deg);
+        -webkit-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+        -moz-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+        -ms-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+        -o-transform: rotate(356deg) translate(-421px) rotate(-356deg); }
+        .section-VdoTok-helpCenter .red-circle .box--3 .msg-box {
+          margin-left: 6rem; }
+      .section-VdoTok-helpCenter .red-circle .box--4 {
+        height: 223px;
+        transform: rotate(188deg) translate(-421px) rotate(-188deg);
+        -webkit-transform: rotate(188deg) translate(-421px) rotate(-188deg);
+        -moz-transform: rotate(188deg) translate(-421px) rotate(-188deg);
+        -ms-transform: rotate(188deg) translate(-421px) rotate(-188deg);
+        -o-transform: rotate(188deg) translate(-421px) rotate(-188deg); }
+      .section-VdoTok-helpCenter .red-circle .box--5 {
+        transform: rotate(310deg) translate(-456px) rotate(-310deg);
+        -webkit-transform: rotate(310deg) translate(-456px) rotate(-310deg);
+        -moz-transform: rotate(310deg) translate(-456px) rotate(-310deg);
+        -ms-transform: rotate(310deg) translate(-456px) rotate(-310deg);
+        -o-transform: rotate(310deg) translate(-456px) rotate(-310deg); }
+      .section-VdoTok-helpCenter .red-circle .box--6 {
+        transform: rotate(231deg) translate(-463px) rotate(-231deg);
+        -webkit-transform: rotate(231deg) translate(-463px) rotate(-231deg);
+        -moz-transform: rotate(231deg) translate(-463px) rotate(-231deg);
+        -ms-transform: rotate(231deg) translate(-463px) rotate(-231deg);
+        -o-transform: rotate(231deg) translate(-463px) rotate(-231deg); } }
+  @media only screen and (max-width: 1115px) {
+    .section-VdoTok-helpCenter .red-circle .tablet-img img {
+      width: 524px;
+      height: 414px; } }
+  @media only screen and (max-width: 1109px) {
+    .section-VdoTok-helpCenter {
+      height: 1150px; }
+      .section-VdoTok-helpCenter .VdoTok-helpCenter-content {
+        bottom: 86rem !important; }
+      .section-VdoTok-helpCenter .red-circle {
+        top: 14rem;
+        width: 844px;
+        height: 754px; }
+        .section-VdoTok-helpCenter .red-circle .tablet-img {
+          top: -3rem; }
+          .section-VdoTok-helpCenter .red-circle .tablet-img img {
+            width: 584px;
+            height: 374px; }
+        .section-VdoTok-helpCenter .red-circle .box--1 {
+          transform: rotate(409deg) translate(-336px) rotate(-409deg);
+          -webkit-transform: rotate(409deg) translate(-336px) rotate(-409deg);
+          -moz-transform: rotate(409deg) translate(-336px) rotate(-409deg);
+          -ms-transform: rotate(409deg) translate(-336px) rotate(-409deg);
+          -o-transform: rotate(409deg) translate(-336px) rotate(-409deg); }
+        .section-VdoTok-helpCenter .red-circle .box--2 {
+          transform: rotate(488deg) translate(-379px) rotate(-488deg);
+          -webkit-transform: rotate(488deg) translate(-379px) rotate(-488deg);
+          -moz-transform: rotate(488deg) translate(-379px) rotate(-488deg);
+          -ms-transform: rotate(488deg) translate(-379px) rotate(-488deg);
+          -o-transform: rotate(488deg) translate(-379px) rotate(-488deg); }
+          .section-VdoTok-helpCenter .red-circle .box--2 .msg-box {
+            margin-left: 11rem !important; }
+        .section-VdoTok-helpCenter .red-circle .box--3 {
+          height: 223px;
+          transform: rotate(356deg) translate(-421px) rotate(-356deg);
+          -webkit-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+          -moz-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+          -ms-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+          -o-transform: rotate(356deg) translate(-421px) rotate(-356deg); }
+          .section-VdoTok-helpCenter .red-circle .box--3 .msg-box {
+            margin-left: 6rem; }
+        .section-VdoTok-helpCenter .red-circle .box--4 {
+          height: 223px;
+          transform: rotate(188deg) translate(-408px) rotate(-188deg);
+          -webkit-transform: rotate(188deg) translate(-408px) rotate(-188deg);
+          -moz-transform: rotate(188deg) translate(-408px) rotate(-188deg);
+          -ms-transform: rotate(188deg) translate(-408px) rotate(-188deg);
+          -o-transform: rotate(188deg) translate(-408px) rotate(-188deg); }
+        .section-VdoTok-helpCenter .red-circle .box--5 {
+          transform: rotate(310deg) translate(-443px) rotate(-310deg);
+          -webkit-transform: rotate(310deg) translate(-443px) rotate(-310deg);
+          -moz-transform: rotate(310deg) translate(-443px) rotate(-310deg);
+          -ms-transform: rotate(310deg) translate(-443px) rotate(-310deg);
+          -o-transform: rotate(310deg) translate(-443px) rotate(-310deg); }
+        .section-VdoTok-helpCenter .red-circle .box--6 {
+          transform: rotate(231deg) translate(-451px) rotate(-231deg);
+          -webkit-transform: rotate(231deg) translate(-451px) rotate(-231deg);
+          -moz-transform: rotate(231deg) translate(-451px) rotate(-231deg);
+          -ms-transform: rotate(231deg) translate(-451px) rotate(-231deg);
+          -o-transform: rotate(231deg) translate(-451px) rotate(-231deg); } }
+  @media only screen and (max-width: 1059px) {
+    .section-VdoTok-helpCenter {
+      overflow: hidden; }
+      .section-VdoTok-helpCenter .red-circle .tablet-img .img-1 {
+        display: none; }
+      .section-VdoTok-helpCenter .red-circle .tablet-img .img-2 {
+        display: block !important; }
+      .section-VdoTok-helpCenter .red-circle .VdoTok-helpCenter--box img {
+        display: none; }
+      .section-VdoTok-helpCenter .red-circle .box--1 {
+        transform: rotate(409deg) translate(-336px) rotate(-409deg);
+        -webkit-transform: rotate(409deg) translate(-336px) rotate(-409deg);
+        -moz-transform: rotate(409deg) translate(-336px) rotate(-409deg);
+        -ms-transform: rotate(409deg) translate(-336px) rotate(-409deg);
+        -o-transform: rotate(409deg) translate(-336px) rotate(-409deg); }
+      .section-VdoTok-helpCenter .red-circle .box--2 {
+        transform: rotate(188deg) translate(-369px) rotate(-188deg);
+        -webkit-transform: rotate(188deg) translate(-369px) rotate(-188deg);
+        -moz-transform: rotate(188deg) translate(-369px) rotate(-188deg);
+        -ms-transform: rotate(188deg) translate(-369px) rotate(-188deg);
+        -o-transform: rotate(188deg) translate(-369px) rotate(-188deg); }
+        .section-VdoTok-helpCenter .red-circle .box--2 .msg-box {
+          margin-left: 11rem !important; }
+      .section-VdoTok-helpCenter .red-circle .box--3 {
+        height: 223px;
+        transform: rotate(310deg) translate(-443px) rotate(-310deg);
+        -webkit-transform: rotate(310deg) translate(-443px) rotate(-310deg);
+        -moz-transform: rotate(310deg) translate(-443px) rotate(-310deg);
+        -ms-transform: rotate(310deg) translate(-443px) rotate(-310deg);
+        -o-transform: rotate(310deg) translate(-443px) rotate(-310deg); }
+        .section-VdoTok-helpCenter .red-circle .box--3 .msg-box {
+          margin-left: 6rem; }
+      .section-VdoTok-helpCenter .red-circle .box--4 {
+        height: 223px;
+        transform: rotate(488deg) translate(-335px) rotate(-488deg);
+        -webkit-transform: rotate(488deg) translate(-335px) rotate(-488deg);
+        -moz-transform: rotate(488deg) translate(-335px) rotate(-488deg);
+        -ms-transform: rotate(488deg) translate(-335px) rotate(-488deg);
+        -o-transform: rotate(488deg) translate(-335px) rotate(-488deg); }
+      .section-VdoTok-helpCenter .red-circle .box--5 {
+        transform: rotate(356deg) translate(-421px) rotate(-356deg);
+        -webkit-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+        -moz-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+        -ms-transform: rotate(356deg) translate(-421px) rotate(-356deg);
+        -o-transform: rotate(356deg) translate(-421px) rotate(-356deg); }
+      .section-VdoTok-helpCenter .red-circle .box--6 {
+        transform: rotate(231deg) translate(-451px) rotate(-231deg);
+        -webkit-transform: rotate(231deg) translate(-451px) rotate(-231deg);
+        -moz-transform: rotate(231deg) translate(-451px) rotate(-231deg);
+        -ms-transform: rotate(231deg) translate(-451px) rotate(-231deg);
+        -o-transform: rotate(231deg) translate(-451px) rotate(-231deg); } }
+  @media only screen and (max-width: 869px) {
+    .section-VdoTok-helpCenter {
+      height: 932px; }
+      .section-VdoTok-helpCenter .VdoTok-helpCenter-content {
+        bottom: 72rem !important; }
+        .section-VdoTok-helpCenter .VdoTok-helpCenter-content h2 {
+          font-size: 4.5rem; }
+      .section-VdoTok-helpCenter .red-circle {
+        width: 656px;
+        height: 603px; }
+        .section-VdoTok-helpCenter .red-circle .tablet-img {
+          top: 4rem; }
+          .section-VdoTok-helpCenter .red-circle .tablet-img .img-2 {
+            width: 496px;
+            height: 335px; }
+        .section-VdoTok-helpCenter .red-circle .box--1 {
+          transform: rotate(402deg) translate(-261px) rotate(-402deg);
+          -webkit-transform: rotate(402deg) translate(-261px) rotate(-402deg);
+          -moz-transform: rotate(402deg) translate(-261px) rotate(-402deg);
+          -ms-transform: rotate(402deg) translate(-261px) rotate(-402deg);
+          -o-transform: rotate(402deg) translate(-261px) rotate(-402deg); }
+        .section-VdoTok-helpCenter .red-circle .box--2 {
+          transform: rotate(188deg) translate(-328px) rotate(-188deg);
+          -webkit-transform: rotate(188deg) translate(-328px) rotate(-188deg);
+          -moz-transform: rotate(188deg) translate(-328px) rotate(-188deg);
+          -ms-transform: rotate(188deg) translate(-328px) rotate(-188deg);
+          -o-transform: rotate(188deg) translate(-328px) rotate(-188deg); }
+          .section-VdoTok-helpCenter .red-circle .box--2 .msg-box {
+            margin-left: 11rem !important; }
+        .section-VdoTok-helpCenter .red-circle .box--3 {
+          height: 223px;
+          transform: rotate(296deg) translate(-383px) rotate(-296deg);
+          -webkit-transform: rotate(296deg) translate(-383px) rotate(-296deg);
+          -moz-transform: rotate(296deg) translate(-383px) rotate(-296deg);
+          -ms-transform: rotate(296deg) translate(-383px) rotate(-296deg);
+          -o-transform: rotate(296deg) translate(-383px) rotate(-296deg); }
+        .section-VdoTok-helpCenter .red-circle .box--4 {
+          height: 223px;
+          transform: rotate(488deg) translate(-250px) rotate(-488deg);
+          -moz-transform: rotate(488deg) translate(-250px) rotate(-488deg);
+          -ms-transform: rotate(488deg) translate(-250px) rotate(-488deg);
+          -o-transform: rotate(488deg) translate(-250px) rotate(-488deg);
+          -webkit-transform: rotate(488deg) translate(-250px) rotate(-488deg); }
+        .section-VdoTok-helpCenter .red-circle .box--5 {
+          transform: rotate(356deg) translate(-369px) rotate(-356deg);
+          -webkit-transform: rotate(356deg) translate(-369px) rotate(-356deg);
+          -moz-transform: rotate(356deg) translate(-369px) rotate(-356deg);
+          -ms-transform: rotate(356deg) translate(-369px) rotate(-356deg);
+          -o-transform: rotate(356deg) translate(-369px) rotate(-356deg); }
+        .section-VdoTok-helpCenter .red-circle .box--6 {
+          transform: rotate(230deg) translate(-386px) rotate(-230deg);
+          -webkit-transform: rotate(230deg) translate(-386px) rotate(-230deg);
+          -moz-transform: rotate(230deg) translate(-386px) rotate(-230deg);
+          -ms-transform: rotate(230deg) translate(-386px) rotate(-230deg);
+          -o-transform: rotate(230deg) translate(-386px) rotate(-230deg); } }
+  @media only screen and (max-width: 869px) {
+    .section-VdoTok-helpCenter .VdoTok-helpCenter-content h2 {
+      font-size: 3.2rem; }
+    .section-VdoTok-helpCenter .VdoTok-helpCenter-content span {
+      font-size: 1.8rem; }
+    .section-VdoTok-helpCenter .red-circle {
+      width: 556px;
+      height: 503px; }
+      .section-VdoTok-helpCenter .red-circle .tablet-img {
+        top: 2rem; }
+        .section-VdoTok-helpCenter .red-circle .tablet-img .img-2 {
+          width: 496px;
+          height: 335px; }
+      .section-VdoTok-helpCenter .red-circle .box--3 {
+        transform: rotate(296deg) translate(-339px) rotate(-296deg);
+        -webkit-transform: rotate(296deg) translate(-339px) rotate(-296deg);
+        -moz-transform: rotate(296deg) translate(-339px) rotate(-296deg);
+        -ms-transform: rotate(296deg) translate(-339px) rotate(-296deg);
+        -o-transform: rotate(296deg) translate(-339px) rotate(-296deg); } }
+  @media only screen and (max-width: 768px) {
+    .section-VdoTok-helpCenter {
+      height: 1000px; }
+      .section-VdoTok-helpCenter .VdoTok-helpCenter-content h2 {
+        font-size: 3.6rem !important; }
+      .section-VdoTok-helpCenter .red-circle {
+        width: 656px;
+        height: 603px; }
+        .section-VdoTok-helpCenter .red-circle .tablet-img img {
+          width: 501px;
+          height: 383px; }
+        .section-VdoTok-helpCenter .red-circle .box--1 {
+          transform: rotate(409deg) translate(-267px) rotate(-409deg);
+          -webkit-transform: rotate(409deg) translate(-267px) rotate(-409deg);
+          -moz-transform: rotate(409deg) translate(-267px) rotate(-409deg);
+          -ms-transform: rotate(409deg) translate(-267px) rotate(-409deg);
+          -o-transform: rotate(409deg) translate(-267px) rotate(-409deg); }
+        .section-VdoTok-helpCenter .red-circle .box--2 {
+          transform: rotate(188deg) translate(-355px) rotate(-188deg);
+          -webkit-transform: rotate(188deg) translate(-355px) rotate(-188deg);
+          -moz-transform: rotate(188deg) translate(-355px) rotate(-188deg);
+          -ms-transform: rotate(188deg) translate(-355px) rotate(-188deg);
+          -o-transform: rotate(188deg) translate(-355px) rotate(-188deg); }
+          .section-VdoTok-helpCenter .red-circle .box--2 .msg-box {
+            padding-right: 3rem; }
+        .section-VdoTok-helpCenter .red-circle .box--3 {
+          height: 223px;
+          transform: rotate(294deg) translate(-376px) rotate(-294deg);
+          -webkit-transform: rotate(294deg) translate(-376px) rotate(-294deg);
+          -moz-transform: rotate(294deg) translate(-376px) rotate(-294deg);
+          -ms-transform: rotate(294deg) translate(-376px) rotate(-294deg);
+          -o-transform: rotate(294deg) translate(-376px) rotate(-294deg); }
+        .section-VdoTok-helpCenter .red-circle .box--4 {
+          height: 223px;
+          transform: rotate(488deg) translate(-250px) rotate(-488deg);
+          -webkit-transform: rotate(488deg) translate(-250px) rotate(-488deg);
+          -moz-transform: rotate(488deg) translate(-250px) rotate(-488deg);
+          -ms-transform: rotate(488deg) translate(-250px) rotate(-488deg);
+          -o-transform: rotate(488deg) translate(-250px) rotate(-488deg); }
+        .section-VdoTok-helpCenter .red-circle .box--5 {
+          transform: rotate(356deg) translate(-398px) rotate(-356deg);
+          -webkit-transform: rotate(356deg) translate(-398px) rotate(-356deg);
+          -moz-transform: rotate(356deg) translate(-398px) rotate(-356deg);
+          -ms-transform: rotate(356deg) translate(-398px) rotate(-356deg);
+          -o-transform: rotate(356deg) translate(-398px) rotate(-356deg); }
+        .section-VdoTok-helpCenter .red-circle .box--6 {
+          transform: rotate(232deg) translate(-383px) rotate(-232deg);
+          -webkit-transform: rotate(232deg) translate(-383px) rotate(-232deg);
+          -moz-transform: rotate(232deg) translate(-383px) rotate(-232deg);
+          -ms-transform: rotate(232deg) translate(-383px) rotate(-232deg);
+          -o-transform: rotate(232deg) translate(-383px) rotate(-232deg); } }
+  @media only screen and (max-width: 670px) {
+    .section-VdoTok-helpCenter .red-circle {
+      width: 636px;
+      height: 583px; }
+      .section-VdoTok-helpCenter .red-circle .tablet-img img {
+        width: 501px;
+        height: 383px; }
+      .section-VdoTok-helpCenter .red-circle .box--1 {
+        transform: rotate(409deg) translate(-250px) rotate(-409deg);
+        -webkit-transform: rotate(409deg) translate(-250px) rotate(-409deg);
+        -moz-transform: rotate(409deg) translate(-250px) rotate(-409deg);
+        -ms-transform: rotate(409deg) translate(-250px) rotate(-409deg);
+        -o-transform: rotate(409deg) translate(-250px) rotate(-409deg); }
+      .section-VdoTok-helpCenter .red-circle .box--2 {
+        transform: rotate(188deg) translate(-326px) rotate(-188deg);
+        -webkit-transform: rotate(188deg) translate(-326px) rotate(-188deg);
+        -moz-transform: rotate(188deg) translate(-326px) rotate(-188deg);
+        -ms-transform: rotate(188deg) translate(-326px) rotate(-188deg);
+        -o-transform: rotate(188deg) translate(-326px) rotate(-188deg); }
+      .section-VdoTok-helpCenter .red-circle .box--3 {
+        height: 223px;
+        transform: rotate(294deg) translate(-357px) rotate(-294deg);
+        -webkit-transform: rotate(294deg) translate(-357px) rotate(-294deg);
+        -moz-transform: rotate(294deg) translate(-357px) rotate(-294deg);
+        -ms-transform: rotate(294deg) translate(-357px) rotate(-294deg);
+        -o-transform: rotate(294deg) translate(-357px) rotate(-294deg); }
+      .section-VdoTok-helpCenter .red-circle .box--4 {
+        transform: rotate(492deg) translate(-248px) rotate(-492deg);
+        -webkit-transform: rotate(492deg) translate(-248px) rotate(-492deg);
+        -moz-transform: rotate(492deg) translate(-248px) rotate(-492deg);
+        -ms-transform: rotate(492deg) translate(-248px) rotate(-492deg);
+        -o-transform: rotate(492deg) translate(-248px) rotate(-492deg); }
+      .section-VdoTok-helpCenter .red-circle .box--5 {
+        transform: rotate(356deg) translate(-370px) rotate(-356deg);
+        -webkit-transform: rotate(356deg) translate(-370px) rotate(-356deg);
+        -moz-transform: rotate(356deg) translate(-370px) rotate(-356deg);
+        -ms-transform: rotate(356deg) translate(-370px) rotate(-356deg);
+        -o-transform: rotate(356deg) translate(-370px) rotate(-356deg); }
+      .section-VdoTok-helpCenter .red-circle .box--6 {
+        transform: rotate(232deg) translate(-383px) rotate(-232deg);
+        -webkit-transform: rotate(232deg) translate(-383px) rotate(-232deg);
+        -moz-transform: rotate(232deg) translate(-383px) rotate(-232deg);
+        -ms-transform: rotate(232deg) translate(-383px) rotate(-232deg);
+        -o-transform: rotate(232deg) translate(-383px) rotate(-232deg); } }
+  @media only screen and (max-width: 640px) {
+    .section-VdoTok-helpCenter {
+      height: 719px; }
+      .section-VdoTok-helpCenter .VdoTok-helpCenter-content {
+        bottom: 46rem !important; }
+      .section-VdoTok-helpCenter .red-circle {
+        width: 398px;
+        height: 350px; }
+        .section-VdoTok-helpCenter .red-circle .tablet-img .img-2 {
+          width: 366px;
+          height: 248px; }
+        .section-VdoTok-helpCenter .red-circle .box--1,
+        .section-VdoTok-helpCenter .red-circle .box--6 {
+          display: none; }
+        .section-VdoTok-helpCenter .red-circle .box--2 {
+          transform: rotate(270deg) translate(-242px) rotate(-270deg);
+          -moz-transform: rotate(270deg) translate(-242px) rotate(-270deg);
+          -ms-transform: rotate(270deg) translate(-242px) rotate(-270deg);
+          -o-transform: rotate(270deg) translate(-242px) rotate(-270deg);
+          -webkit-transform: rotate(270deg) translate(-242px) rotate(-270deg); }
+        .section-VdoTok-helpCenter .red-circle .box--4 {
+          height: 223px;
+          transform: rotate(445deg) translate(-125px) rotate(-445deg);
+          -moz-transform: rotate(445deg) translate(-125px) rotate(-445deg);
+          -ms-transform: rotate(445deg) translate(-125px) rotate(-445deg);
+          -o-transform: rotate(445deg) translate(-125px) rotate(-445deg);
+          -webkit-transform: rotate(445deg) translate(-125px) rotate(-445deg); }
+        .section-VdoTok-helpCenter .red-circle .box--5 {
+          transform: rotate(352deg) translate(-312px) rotate(-352deg);
+          -webkit-transform: rotate(352deg) translate(-312px) rotate(-352deg);
+          -moz-transform: rotate(352deg) translate(-312px) rotate(-352deg);
+          -ms-transform: rotate(352deg) translate(-312px) rotate(-352deg);
+          -o-transform: rotate(352deg) translate(-312px) rotate(-352deg); }
+        .section-VdoTok-helpCenter .red-circle .box--3 {
+          transform: rotate(195deg) translate(-262px) rotate(-195deg);
+          -webkit-transform: rotate(195deg) translate(-262px) rotate(-195deg);
+          -moz-transform: rotate(195deg) translate(-262px) rotate(-195deg);
+          -ms-transform: rotate(195deg) translate(-262px) rotate(-195deg);
+          -o-transform: rotate(195deg) translate(-262px) rotate(-195deg); } }
 
-.section__telemedicine {
-  padding-top: 5.7rem;
-  padding-bottom: 33.7rem;
-  position: relative; }
-  .section__telemedicine .telemedicine__heading_box {
-    margin-top: 30px; }
-  .section__telemedicine .telemedicine__text_box {
-    height: fit-content; }
-    .section__telemedicine .telemedicine__text_box--row-1 {
-      margin-bottom: 10rem; }
-      .section__telemedicine .telemedicine__text_box--row-1 .col__1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        .section__telemedicine .telemedicine__text_box--row-1 .col__1 .silder__telemedicine-box {
-          width: 50% !important; }
-          .section__telemedicine .telemedicine__text_box--row-1 .col__1 .silder__telemedicine-box .silder__box-slide {
-            padding: 8px 23px !important;
-            border: 1px solid #E2E2EA;
-            border-radius: 6px; }
-            .section__telemedicine .telemedicine__text_box--row-1 .col__1 .silder__telemedicine-box .silder__box-slide span {
-              font-size: 1.5rem;
-              color: #1D1C1F !important;
-              font-weight: 800;
-              letter-spacing: -0.12px;
-              font-family: "Manrope"; }
-          .section__telemedicine .telemedicine__text_box--row-1 .col__1 .silder__telemedicine-box .telemedicine__active {
-            background-color: #190354 !important; }
-            .section__telemedicine .telemedicine__text_box--row-1 .col__1 .silder__telemedicine-box .telemedicine__active span {
-              color: #F2E33A !important; }
-        .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card {
-          width: 100%;
-          display: flex;
-          text-align: center;
-          flex-direction: column;
-          justify-content: center; }
-          .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card .card__box {
-            width: 49%;
-            display: flex;
-            padding: 10px;
-            background-color: #fff;
-            box-shadow: 0px 10px 18px rgba(21, 17, 58, 0.03);
-            border-radius: 12px;
-            position: relative; }
-            .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card .card__box .card__text {
-              margin-right: auto;
-              line-height: -2px;
-              text-align: start;
-              padding-left: 10px;
-              display: flex;
-              align-items: center; }
-              .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card .card__box .card__text h3 {
-                font-family: "Manrope";
-                font-size: 1.8rem;
-                font-weight: 800;
-                letter-spacing: -0.36px;
-                color: #1D1C1F;
-                margin: 0 !important; }
-              .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card .card__box .card__text span {
-                font-family: "Inter", sans-serif;
-                font-size: 1.4rem;
-                letter-spacing: -0.24px;
-                font-weight: 500;
-                color: #798085;
-                padding-left: 0; }
-            .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card .card__box .card__button button {
-              font-family: "Manrope" !important;
-              font-weight: 800 !important;
-              font-size: 1.3rem;
-              letter-spacing: 0.2px;
-              padding: 7px 10px;
-              border-radius: 6px !important;
-              -webkit-border-radius: 6px !important;
-              -moz-border-radius: 6px !important;
-              -ms-border-radius: 6px !important;
-              -o-border-radius: 6px !important; }
-          .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card .card__1 {
-            filter: drop-shadow(0px 0px 0px rgba(21, 17, 58, 0.1));
-            z-index: 2;
-            -webkit-filter: drop-shadow(0px 0px 0px rgba(21, 17, 58, 0.1)); }
-          .section__telemedicine .telemedicine__text_box--row-1 .col__1 .telemedicine_card .card__2 {
-            opacity: 0.7; }
-      .section__telemedicine .telemedicine__text_box--row-1 .col__2 {
-        width: 1.33333% !important;
-        border-left: 1px dashed #E2E2EA;
-        height: 80px;
-        transform: scale(1.7);
-        margin-top: 13rem; }
-      .section__telemedicine .telemedicine__text_box--row-1 .col__3 {
-        position: relative;
-        top: 45px;
-        left: 32px;
-        background: url(/images/video.png);
-        background-position: -2% -66%;
-        background-repeat: no-repeat; }
-        .section__telemedicine .telemedicine__text_box--row-1 .col__3 .col__content__box {
-          display: flex;
-          top: 50%;
-          left: 50%;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          transform: translate(-50%, -50%);
-          -webkit-transform: translate(-50%, -50%);
-          -moz-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          -o-transform: translate(-50%, -50%); }
-    .section__telemedicine .telemedicine__text_box--row-2 {
-      position: relative;
-      top: 5rem; }
-      .section__telemedicine .telemedicine__text_box--row-2 .col__1 {
-        left: 7rem; }
-        .section__telemedicine .telemedicine__text_box--row-2 .col__1 .col__content__box {
-          height: auto !important;
-          background: url(/images/calendar-time.png);
-          background-position: 19% 81%;
-          background-repeat: no-repeat; }
-          .section__telemedicine .telemedicine__text_box--row-2 .col__1 .col__content__box h3 {
-            background: url(/images/pers.png);
-            background-repeat: no-repeat;
-            background-position: 26rem 53%; }
-            .section__telemedicine .telemedicine__text_box--row-2 .col__1 .col__content__box h3 span:nth-child(1) {
-              font-size: 6.5rem; }
-            .section__telemedicine .telemedicine__text_box--row-2 .col__1 .col__content__box h3 span:nth-child(2) {
-              font-size: 2.9rem; }
-      .section__telemedicine .telemedicine__text_box--row-2 .col__2 .boder__box {
-        width: 70%;
-        position: relative;
-        left: -17px;
-        top: 6rem;
-        margin-right: 2rem;
-        border-top: 1px dashed #E2E2EA;
-        transform: scale(1.7);
-        -webkit-transform: scale(1.7);
-        -moz-transform: scale(1.7);
-        -ms-transform: scale(1.7);
-        -o-transform: scale(1.7); }
-      .section__telemedicine .telemedicine__text_box--row-2 .col__3 {
-        position: relative; }
-        .section__telemedicine .telemedicine__text_box--row-2 .col__3--card {
-          position: absolute;
-          top: 50%;
-          left: 45%;
-          width: 75%;
-          transform: translate(-50%, 0%);
-          -webkit-transform: translate(-50%, 0%);
-          -moz-transform: translate(-50%, 0%);
-          -ms-transform: translate(-50%, 0%);
-          -o-transform: translate(-50%, 0%); }
-          .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body {
-            background-color: #fff;
-            padding: 10px 18px;
-            box-shadow: 0px 10px 20px rgba(21, 17, 58, 0.03);
-            border-radius: 12px; }
-            .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row {
-              display: flex;
-              justify-content: space-between;
-              width: 100%; }
-              .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row:first-child .card__row--box {
-                border-bottom: 1px solid #E2E2EA; }
-              .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row--1 span, .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row--2 span {
-                font-size: 1.4rem; }
-              .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row--2 {
-                margin-right: 18px; }
-              .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row .text {
-                color: #697883; }
-              .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row .value {
-                color: #1D1C1F;
-                font-weight: 600; }
-              .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row--button {
-                text-align: center;
-                padding-right: 78px;
-                width: 5%; }
-                .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body .card__row--button button {
-                  background-color: #fff;
-                  padding: 5px 10px;
-                  font-size: 1.4rem;
-                  font-weight: 700 !important;
-                  border-radius: 4px !important;
-                  -webkit-border-radius: 4px !important;
-                  -moz-border-radius: 4px !important;
-                  -ms-border-radius: 4px !important;
-                  -o-border-radius: 4px !important; }
-            .section__telemedicine .telemedicine__text_box--row-2 .col__3--card .card__body hr {
-              width: 63%; }
-    .section__telemedicine .telemedicine__text_box--img {
-      position: absolute;
-      width: 100%;
-      display: flex;
-      padding-bottom: 20px;
-      justify-content: center;
-      align-items: center; }
-      .section__telemedicine .telemedicine__text_box--img-vector {
-        width: 80%; }
-  .section__telemedicine .col__content__box {
-    position: absolute;
-    font-family: "Manrope";
-    width: 100%;
-    height: 100%; }
-    .section__telemedicine .col__content__box h3 span:nth-child(1) {
-      color: inherit;
-      letter-spacing: -3px;
-      font-size: 5.5rem;
-      font-weight: 800; }
-    .section__telemedicine .col__content__box h3 span:nth-child(2) {
-      color: inherit;
-      font-size: 2.5rem;
-      font-weight: 800; }
-    .section__telemedicine .col__content__box span {
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #1D1C1F; }
-
-.telehealth__solution {
-  padding: 5rem 0;
-  margin-bottom: 5.5rem;
-  background-color: #fff; }
-  .telehealth__solution__heading_box h2 {
-    color: #222254;
-    font-weight: 700 !important; }
-  .telehealth__solution--container {
-    width: 78%;
-    margin: 0 auto; }
-    .telehealth__solution--container .row__1 .col__1 {
-      display: flex;
-      justify-content: start;
-      align-items: start;
-      flex-direction: column;
-      line-height: 1.4; }
-      .telehealth__solution--container .row__1 .col__1 p {
-        font-size: 2rem;
-        letter-spacing: -0.48px;
-        color: #697883;
-        padding-left: 6.4rem; }
-
-.telehealth__features {
-  height: 120%;
-  position: relative;
-  margin: 13px 0;
-  padding-bottom: 200px; }
-  .telehealth__features__heading_box span {
-    font-size: 1.9rem !important; }
-  .telehealth__features .tf__btn__list {
-    width: 70.8%;
-    margin: 0 auto; }
-    .telehealth__features .tf__btn__list .tf__btn {
-      padding: .8rem 2.2rem;
-      font-size: 1.4rem !important;
-      background: #F5F6FA;
-      font-weight: 650 !important;
-      color: #190354; }
-  .telehealth__features .tf__container {
-    width: 76%;
-    position: relative;
-    margin: 0 auto; }
-    .telehealth__features .tf__container--row {
-      width: 100%; }
-      .telehealth__features .tf__container--row .col__2--line div img {
-        padding-top: .1rem; }
-      .telehealth__features .tf__container--row .col__2--line div p {
-        font-size: 1.6rem;
-        font-weight: 500; }
-
-.header {
-  width: 100%;
-  height: 100vh;
-  background: url("/images/Patterns.png"), url("/images/Patterns2.png"), #F7F7F9;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 50px 0;
-  box-sizing: content-box;
-  position: relative; }
-  .header__content {
-    position: relative; }
-    .header__content-box {
-      position: absolute;
-      top: 48.6%;
-      left: 61%;
-      width: 80%;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%); }
-      .header__content-box--button {
-        padding: 11px 29px !important;
-        font-size: 1.5rem !important;
-        margin-top: 41px; }
-  .header__img-box {
-    padding-top: 12rem;
-    position: relative; }
-    .header__img-box img {
-      position: absolute; }
-  .header__img-phone {
-    right: 95px;
-    width: 61%;
-    height: 660px; }
-  .header__img-watch {
-    top: 23.5rem;
-    left: 9.8rem; }
-  .header__img-heartbeat {
-    bottom: 4px;
-    left: 49%; }
-
-.navigation {
+.section-telehealth-features {
+  height: 770px;
   background-color: #fff;
+  overflow-x: hidden; }
+  .section-telehealth-features .hadding--box {
+    padding-top: 11.3rem;
+    width: 68%;
+    margin: 0 auto; }
+  .section-telehealth-features .col-hadding--box img {
+    margin-right: 1.2rem; }
+  .section-telehealth-features .col-content-box {
+    max-width: 89%;
+    margin-left: 5.2rem; }
+    .section-telehealth-features .col-content-box p {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+      letter-spacing: -0.48px;
+      line-height: 28px;
+      color: #697883; }
+  .section-telehealth-features .telehealth-features-row {
+    width: 89%;
+    margin-left: auto; }
+    .section-telehealth-features .telehealth-features-row .tf-row-col-1 {
+      width: 47% !important;
+      margin-left: -5.4rem; }
+    .section-telehealth-features .telehealth-features-row .tf-row-col-2 {
+      flex: .8 0 0% !important; }
+  @media only screen and (max-width: 1183px) {
+    .section-telehealth-features {
+      height: 851px; } }
+  @media only screen and (max-width: 1081px) {
+    .section-telehealth-features {
+      height: max-content;
+      padding-bottom: 11.3rem; } }
+  @media only screen and (max-width: 768px) {
+    .section-telehealth-features {
+      padding-bottom: 5.3rem !important; }
+      .section-telehealth-features .tf-hadding-box--1 {
+        display: none !important; }
+      .section-telehealth-features .tf-hadding-box--2 {
+        display: flex !important; }
+      .section-telehealth-features .col-content-box {
+        max-width: 89%;
+        margin-left: 5.2rem; }
+        .section-telehealth-features .col-content-box p {
+          font-size: 1.6rem;
+          letter-spacing: -0.38px;
+          line-height: 24px; }
+      .section-telehealth-features .telehealth-features-row {
+        width: 90%; }
+        .section-telehealth-features .telehealth-features-row .tf-row-col-1 {
+          width: 50% !important;
+          margin-left: -5.4rem; }
+        .section-telehealth-features .telehealth-features-row .tf-row-col-2 {
+          flex: .9 0 0% !important; } }
+  @media only screen and (max-width: 653px) {
+    .section-telehealth-features .telehealth-features-row .tf-row-col-1,
+    .section-telehealth-features .telehealth-features-row .tf-row-col-2 {
+      width: 100% !important; }
+    .section-telehealth-features .telehealth-features-row .tf-row-col-2 {
+      flex: 1 0 0% !important;
+      margin-left: -5.4rem !important;
+      margin-top: 6rem; } }
+  @media only screen and (max-width: 438px) {
+    .section-telehealth-features .telehealth-features-row {
+      width: 82%; } }
+
+.section-VodTok-features {
   width: 100%;
-  height: 72px;
-  box-shadow: 0px 8px 80px #15113a29;
-  display: grid;
-  grid-template-columns: 14% 55% 31%;
-  position: fixed;
-  z-index: 20; }
-  .navigation__nav {
-    padding-left: 47px; }
-  .navigation__list {
-    list-style: none;
+  height: max-content;
+  background-color: #fff;
+  padding: 11.3rem 0; }
+  .section-VodTok-features .hadding--box {
+    margin: 0 auto; }
+    .section-VodTok-features .hadding--box span {
+      width: 75%;
+      max-width: 100rem;
+      margin: 0 auto; }
+  .section-VodTok-features .vf-button {
+    border: none !important;
+    letter-spacing: 0.2px !important; }
+  .section-VodTok-features .vf-buttons-1 {
+    margin-top: 4.5rem; }
+  .section-VodTok-features .Vdotok-features-buttons {
     width: 100%; }
-  .navigation__item {
-    display: inline-block;
-    font-size: 1.5rem;
-    padding-right: 30px; }
-  .navigation__link {
-    font-family: "Manrope" !important;
-    color: #1D1C1F !important;
-    font-weight: 550; }
-  .navigation__buttons button {
-    padding: 10px 29px !important;
-    font-size: 1.3rem  !important; }
-  .navigation__buttons button:focus {
-    outline: none    !important;
-    box-shadow: none !important; }
-  .navigation__login {
-    margin-right: 15px;
-    font-weight: 650 !important; }
-  .navigation__tryFree {
-    background-color: #54C295 !important;
-    color: #fff !important;
-    font-weight: 500    !important; }
+    .section-VodTok-features .Vdotok-features-buttons .vf-buttton-box {
+      padding-left: 3rem;
+      margin: 0 auto; }
+      .section-VodTok-features .Vdotok-features-buttons .vf-buttton-box div {
+        margin-right: 3rem; }
+  .section-VodTok-features .VodTok-features-content {
+    width: 100%;
+    margin-top: 5rem; }
+    .section-VodTok-features .VodTok-features-content .vf-content-row {
+      width: 71%;
+      margin: 0 auto;
+      display: flex; }
+      .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--1 {
+        width: 43%;
+        max-width: 50%;
+        margin-left: 1rem; }
+        .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--1 .vf-img-1 {
+          width: 360px;
+          height: 370px; }
+        .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--1 .vf-img-2 {
+          display: none; }
+      .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--2 {
+        width: 75%; }
+        .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--2 .vf-list {
+          list-style: none;
+          margin-top: .2rem; }
+          .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--2 .vf-list .vf-item {
+            text-decoration: none;
+            display: flex; }
+            .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--2 .vf-list .vf-item .vf-item-img {
+              margin-right: 0.7rem;
+              margin-top: 0.3rem; }
+            .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--2 .vf-list .vf-item .vf-list-content {
+              letter-spacing: -0.38px;
+              font-family: "Inter", sans-serif;
+              font-weight: 400; }
+  @media only screen and (max-width: 1214px) {
+    .section-VodTok-features .vf-content-row {
+      width: 81% !important; } }
+  @media only screen and (max-width: 1074px) {
+    .section-VodTok-features .vf-content-row {
+      width: 91% !important; }
+    .section-VodTok-features .vf-button {
+      letter-spacing: 0.1px !important;
+      font-size: 1.2rem !important; } }
+  @media only screen and (max-width: 1074px) {
+    .section-VodTok-features .vf-content-row {
+      width: 100% !important; }
+    .section-VodTok-features .Vdotok-features-buttons .vf-buttton-box div {
+      margin-right: 1rem; } }
+  @media only screen and (max-width: 868px) {
+    .section-VodTok-features .vf-list-content {
+      font-size: 1.4rem !important; } }
+  @media only screen and (max-width: 768px) {
+    .section-VodTok-features {
+      padding-bottom: 8.5rem; }
+      .section-VodTok-features .hadding--box {
+        width: 77%; }
+        .section-VodTok-features .hadding--box span {
+          margin: 0 3rem;
+          width: 92%; }
+      .section-VodTok-features .vf-button {
+        letter-spacing: 0.2px !important;
+        font-size: 1.4rem !important; }
+      .section-VodTok-features .Vdotok-features-buttons-tablet {
+        display: block !important; }
+      .section-VodTok-features .Vdotok-features-buttons-tablet .slider-2 .owl-carousel-2 .owl-stage-outer .owl-stage .owl-item {
+        width: max-content !important; }
+      .section-VodTok-features .Vdotok-features-buttons {
+        display: none; }
+      .section-VodTok-features .VodTok-features-content {
+        margin-top: 0rem; }
+        .section-VodTok-features .VodTok-features-content .vf-content-row {
+          width: 90% !important;
+          margin: 0 auto;
+          display: block;
+          position: relative; }
+          .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--1 {
+            width: 100%;
+            margin-left: 1rem; }
+            .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--1 .vf-img-2 {
+              display: block;
+              border-radius: 6px;
+              -webkit-border-radius: 6px;
+              -moz-border-radius: 6px;
+              -ms-border-radius: 6px;
+              -o-border-radius: 6px; }
+            .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--1 .vf-img-1 {
+              display: none; }
+          .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--2 {
+            width: 100%; }
+            .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--2 .vf-list {
+              list-style: none;
+              padding-left: 1rem;
+              margin-top: 3.2rem; }
+              .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--2 .vf-list .vf-item {
+                text-decoration: none;
+                display: flex; }
+                .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--2 .vf-list .vf-item .vf-item-img {
+                  margin-right: 0.7rem;
+                  margin-top: 0.3rem; }
+                .section-VodTok-features .VodTok-features-content .vf-content-row .vf-content-col--2 .vf-list .vf-item .vf-list-content {
+                  letter-spacing: -0.38px;
+                  font-family: "Inter", sans-serif;
+                  font-weight: 400; } }
+  @media only screen and (max-width: 597px) {
+    .section-VodTok-features {
+      padding-top: 6.5rem; }
+      .section-VodTok-features .Vdotok-features-buttons-tablet {
+        margin-bottom: 3rem; } }
+  @media only screen and (max-width: 480px) {
+    .section-VodTok-features .vf-content-row .vf-content-col--1 .vf-img-2 {
+      display: none !important; }
+    .section-VodTok-features .vf-content-row .vf-content-col--1 .vf-img-1 {
+      display: block !important;
+      width: 100% !important;
+      padding-right: 1rem; } }
+
+.section-testimonial {
+  width: 100%;
+  padding: 11.3rem 0;
+  background-color: #F7F7F9;
+  overflow-x: hidden; }
+  @media only screen and (max-width: 786px) {
+    .section-testimonial .hadding--box {
+      width: 75%;
+      margin: 0 auto; } }
+
+.section-Vdotok-advantages {
+  padding: 11.3rem 0;
+  background-color: #fff; }
+  .section-Vdotok-advantages .Vdotok-advantages-row {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 33.33333%);
+    grid-row-gap: 2.2rem;
+    margin-top: 6.3rem;
+    width: 80%;
+    margin: 0 auto; }
+    .section-Vdotok-advantages .Vdotok-advantages-row .Vdotok-advantages-col h5 {
+      font-family: "Manrope";
+      font-weight: 700;
+      font-size: 2rem;
+      letter-spacing: -0.48px;
+      margin-top: 2.1rem;
+      margin-bottom: 1.4rem; }
+    .section-Vdotok-advantages .Vdotok-advantages-row .Vdotok-advantages-col p {
+      font-family: "Inter", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.48px;
+      width: 87%;
+      margin: 0 auto; }
+  @media only screen and (max-width: 1264px) {
+    .section-Vdotok-advantages .Vdotok-advantages-row .Vdotok-advantages-col {
+      width: 262px; } }
+  @media only screen and (max-width: 1046px) {
+    .section-Vdotok-advantages {
+      padding-left: 7rem; }
+      .section-Vdotok-advantages .Vdotok-advantages-row {
+        grid-column-gap: 0rem; }
+        .section-Vdotok-advantages .Vdotok-advantages-row .Vdotok-advantages-col {
+          width: 262px; } }
+  @media only screen and (max-width: 1168px) {
+    .section-Vdotok-advantages {
+      padding-left: 3rem; }
+      .section-Vdotok-advantages .Vdotok-advantages-row {
+        grid-column-gap: 0rem; }
+        .section-Vdotok-advantages .Vdotok-advantages-row .Vdotok-advantages-col {
+          width: 262px; } }
+  @media only screen and (max-width: 998px) {
+    .section-Vdotok-advantages {
+      padding-left: 4rem;
+      padding-right: 4rem; }
+      .section-Vdotok-advantages .vd-hadding--box-1 {
+        display: none !important; }
+      .section-Vdotok-advantages .vd-hadding--box-2 {
+        display: flex !important; }
+      .section-Vdotok-advantages .Vdotok-advantages-row {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(2, 330px);
+        grid-column-gap: 3.2rem;
+        grid-row-gap: 1rem;
+        margin-top: 4.3rem;
+        justify-content: center; }
+        .section-Vdotok-advantages .Vdotok-advantages-row .Vdotok-advantages-col {
+          width: 320px; } }
+  @media only screen and (max-width: 692px) {
+    .section-Vdotok-advantages {
+      padding-left: 4rem;
+      padding-right: 4rem; }
+      .section-Vdotok-advantages .vd-hadding--box-1 {
+        display: none !important; }
+      .section-Vdotok-advantages .vd-hadding--box-2 {
+        display: flex !important; }
+      .section-Vdotok-advantages .Vdotok-advantages-row {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center; }
+        .section-Vdotok-advantages .Vdotok-advantages-row .Vdotok-advantages-col {
+          width: 100%; } }
+
+.section-success-story {
+  padding: 11.3rem;
+  background-color: #fff;
+  height: max-content; }
+  .section-success-story .success-story-row {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6.5rem; }
+    .section-success-story .success-story-row .success-story-col-1 {
+      position: relative;
+      width: 50% !important; }
+      .section-success-story .success-story-row .success-story-col-1 .customer-link {
+        position: absolute;
+        bottom: -1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10; }
+        .section-success-story .success-story-row .success-story-col-1 .customer-link a {
+          font-family: "Inter", sans-serif;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: -0.48px;
+          border-bottom: 2px solid #1D1C1F; }
+      .section-success-story .success-story-row .success-story-col-1 img {
+        width: 100%;
+        margin-top: 5rem; }
+    .section-success-story .success-story-row .success-story-col-2 {
+      position: relative;
+      height: 495px;
+      width: 50% !important; }
+      .section-success-story .success-story-row .success-story-col-2-img {
+        position: absolute;
+        top: 0;
+        left: 11rem; }
+      .section-success-story .success-story-row .success-story-col-2-img-categories {
+        position: absolute;
+        bottom: 3rem;
+        left: 50%;
+        transform: translateX(-50%); }
+      .section-success-story .success-story-row .success-story-col-2-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 7.5rem;
+        left: 2rem;
+        padding: 3rem;
+        background-color: #fff;
+        z-index: 10;
+        text-align: left;
+        box-shadow: 0px 8px 30px rgba(51, 38, 174, 0.04);
+        border-radius: 10px 0px 0px 10px; }
+        .section-success-story .success-story-row .success-story-col-2-content h5 {
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 2.4rem;
+          line-height: 32px; }
+        .section-success-story .success-story-row .success-story-col-2-content p {
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: -0.38px; }
+  @media only screen and (max-width: 1316px) {
+    .section-success-story {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
+  @media only screen and (max-width: 1108px) {
+    .section-success-story {
+      padding-left: 0rem;
+      padding-right: 0rem; }
+      .section-success-story .row {
+        --bs-gutter-x: 0rem !important; }
+      .section-success-story .success-story-col-1 {
+        left: -6rem; } }
+  @media only screen and (max-width: 1038px) {
+    .section-success-story .success-story-col-2-img {
+      left: 7rem !important; } }
+  @media only screen and (max-width: 992px) {
+    .section-success-story {
+      padding-left: 0rem;
+      padding-right: 1rem; }
+      .section-success-story .success-story-col-1 {
+        left: -7rem; } }
+  @media only screen and (max-width: 970px) {
+    .section-success-story .success-story-row {
+      margin-top: 2rem; }
+      .section-success-story .success-story-row .success-story-col-1 {
+        left: -7rem !important;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .section-success-story .success-story-row .success-story-col-1 img {
+          margin-left: 18%; }
+        .section-success-story .success-story-row .success-story-col-1 .customer-link {
+          margin-left: 23% !important;
+          position: absolute;
+          bottom: -10%; }
+          .section-success-story .success-story-row .success-story-col-1 .customer-link a {
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.48px;
+            border-bottom: 2px solid #1D1C1F; }
+      .section-success-story .success-story-row .success-story-col-2 {
+        position: relative;
+        margin-top: 4rem;
+        height: 495px;
+        width: 80% !important;
+        margin: 0 auto;
+        margin-top: 9rem; }
+        .section-success-story .success-story-row .success-story-col-2-img {
+          position: absolute;
+          top: 0;
+          left: 33% !important; }
+        .section-success-story .success-story-row .success-story-col-2-img-categories {
+          position: absolute;
+          bottom: 3rem;
+          left: 50%;
+          transform: translateX(-50%);
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%); }
+        .section-success-story .success-story-row .success-story-col-2-content {
+          text-align: center;
+          width: 100%; }
+          .section-success-story .success-story-row .success-story-col-2-content .ss-col-2-content-tablet {
+            display: inline-block !important; }
+          .section-success-story .success-story-row .success-story-col-2-content .ss-col-2-content-desk {
+            display: none; } }
+  @media only screen and (max-width: 660px) {
+    .section-success-story .success-story-row .success-story-col-1 img {
+      margin-left: 23%; }
+    .section-success-story .success-story-row .success-story-col-2-img {
+      left: 18%; } }
+  @media only screen and (max-width: 708px) {
+    .section-success-story .success-story-row .success-story-col-2-img {
+      left: 16% !important; } }
+
+.section-try-Vdotok {
+  background-color: #F7F7F9;
+  position: relative;
+  padding: 11.3rem 0; }
+  .section-try-Vdotok .try-Vdotok-content {
+    width: 100%;
+    background: url("/images/sections/Group 48095746.png");
+    background-position: -1rem center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative; }
+  .section-try-Vdotok .try-Vdotok-hero-img {
+    width: 96%; }
+    .section-try-Vdotok .try-Vdotok-hero-img img {
+      position: relative;
+      width: 67%;
+      margin-top: 3rem;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%); }
+  @media only screen and (max-width: 968px) {
+    .section-try-Vdotok {
+      padding-bottom: 10.3rem; }
+      .section-try-Vdotok .try-Vdotok-hero-img img {
+        width: 856px;
+        height: 532px; } }
+  @media only screen and (max-width: 870px) {
+    .section-try-Vdotok {
+      padding-bottom: 10rem; }
+      .section-try-Vdotok .try-Vdotok-hero-img img {
+        width: 756px;
+        height: 432px;
+        transform: translateX(-49%);
+        -webkit-transform: translateX(-49%);
+        -moz-transform: translateX(-49%);
+        -ms-transform: translateX(-49%);
+        -o-transform: translateX(-49%); } }
+  @media only screen and (max-width: 768px) {
+    .section-try-Vdotok {
+      padding-bottom: 9.3rem; }
+      .section-try-Vdotok .try-Vdotok-hadding--box-1 {
+        display: none; }
+      .section-try-Vdotok .try-Vdotok-hadding--box-2 {
+        display: flex !important;
+        width: 87%;
+        margin: 0 auto; }
+      .section-try-Vdotok .try-Vdotok-content {
+        background: url("/images/sections/patterns-lablet-sl.png");
+        background-position: 0rem 75%;
+        background-repeat: no-repeat;
+        background-size: 100%; }
+      .section-try-Vdotok .try-Vdotok-hero-img img {
+        width: 100%;
+        height: 100%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%); }
+      .section-try-Vdotok .try-Vdotok-tablet-btn-box {
+        display: flex !important;
+        justify-content: center;
+        margin-top: 5rem;
+        width: 100%; }
+        .section-try-Vdotok .try-Vdotok-tablet-btn-box .try-Vdotok-tablet-btn {
+          padding: 1.5rem 6.5rem !important;
+          background-color: #F2E33A;
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 700;
+          line-height: 18px;
+          text-align: center;
+          letter-spacing: 0.2px;
+          text-transform: uppercase;
+          color: #190354;
+          margin-right: 4rem;
+          border-radius: 6px !important;
+          -webkit-border-radius: 6px !important;
+          -moz-border-radius: 6px !important;
+          -ms-border-radius: 6px !important;
+          -o-border-radius: 6px !important; } }
+
+.slider-box {
+  width: 100%;
+  background-color: #fff; }
+
+.slider-1 {
+  padding-top: 3.2rem;
+  padding-bottom: 7.1rem;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff; }
+  .slider-1 .owl-carousel-1 .owl-stage-outer .owl-stage .owl-item {
+    width: max-content !important; }
+  .slider-1::before, .slider-1::after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    width: 315px;
+    height: 4rem;
+    top: 4.5rem;
+    transform: matrix(1, 0, 0, -2, 0, 0);
+    -webkit-transform: matrix(1, 0, 0, -2, 0, 0);
+    -moz-transform: matrix(1, 0, 0, -2, 0, 0);
+    -ms-transform: matrix(1, 0, 0, -2, 0, 0);
+    -o-transform: matrix(1, 0, 0, -2, 0, 0); }
+  .slider-1::before {
+    left: -1rem;
+    background: linear-gradient(90deg, #FFFFFF 44.59%, rgba(255, 255, 255, 0) 125%); }
+  .slider-1::after {
+    right: -2rem;
+    background: linear-gradient(-90deg, #FFFFFF 44.59%, rgba(255, 255, 255, 0) 125%); }
+  .slider-1 .silder-box {
+    width: 80% !important;
+    position: relative; }
+    .slider-1 .silder-box--slide {
+      text-align: center;
+      padding: 12px 24px !important;
+      width: fit-content !important;
+      text-align: start;
+      border-radius: 50px;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px; }
+      .slider-1 .silder-box--slide .slider-heading, .slider-1 .silder-box--slide .slider-text {
+        letter-spacing: -0.24px;
+        font-family: "Inter", sans-serif; }
+      .slider-1 .silder-box--slide .slider-heading {
+        font-weight: 700; }
+      .slider-1 .silder-box--slide .slider-text {
+        color: #7b7b7b !important;
+        font-weight: 500; }
+    .slider-1 .silder-box--slide-1 {
+      background-color: #E1F8FB !important;
+      color: #000321 !important; }
+    .slider-1 .silder-box--slide-2 {
+      background: #FFF0F7 !important;
+      color: #994167; }
+    .slider-1 .silder-box--slide-3 {
+      background: #FEFCEB !important;
+      color: #615B17; }
+    .slider-1 .silder-box--slide-4 {
+      background: #F5F6FA !important;
+      color: #474876; }
+    .slider-1 .silder-box--slide-5 {
+      background: #EEF9F4 !important;
+      color: #2A614B; }
+  @media only screen and (max-width: 1070px) {
+    .slider-1::before, .slider-1::after {
+      width: 215px; } }
+  @media only screen and (max-width: 978px) {
+    .slider-1::before, .slider-1::after {
+      width: 115px; }
+    .slider-1 .silder-box {
+      width: 90%; } }
+  @media only screen and (max-width: 768px) {
+    .slider-1::before, .slider-1::after {
+      display: none; }
+    .slider-1 .silder-box {
+      width: 100% !important; } }
+
+.testimonial-slider {
+  width: 85%;
+  margin: auto;
+  margin-top: 4.5rem !important;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; }
+  .testimonial-slider--box {
+    display: flex;
+    width: 100%; }
+    .testimonial-slider--box .testimonial-slider-slider {
+      width: 33.33333333333333%;
+      height: 246px;
+      transition: all .5s ease;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      position: relative; }
+      .testimonial-slider--box .testimonial-slider-slider .msg-box {
+        position: absolute;
+        width: 100%;
+        height: 255px; }
+      .testimonial-slider--box .testimonial-slider-slider .slider-content {
+        width: 82%;
+        position: relative;
+        z-index: 2;
+        flex-direction: column;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        margin: auto;
+        text-align: center;
+        margin-top: 5rem;
+        padding-left: 3rem; }
+        .testimonial-slider--box .testimonial-slider-slider .slider-content .slider-content-hadding {
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 2.4rem;
+          line-height: 32px;
+          text-align: center;
+          letter-spacing: -0.72px; }
+        .testimonial-slider--box .testimonial-slider-slider .slider-content p {
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: center;
+          letter-spacing: -0.4px;
+          color: #697883; }
+      .testimonial-slider--box .testimonial-slider-slider .testimonial-author {
+        display: flex;
+        margin-top: 9rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0rem; }
+        .testimonial-slider--box .testimonial-slider-slider .testimonial-author .author-name {
+          font-family: "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 1.8rem;
+          line-height: 26px;
+          letter-spacing: -0.72px; }
+        .testimonial-slider--box .testimonial-slider-slider .testimonial-author .authore-position {
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: center;
+          letter-spacing: -0.4px;
+          color: #697883; }
+    .testimonial-slider--box input {
+      display: none; }
+  .testimonial-slider .dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    margin: 5px;
+    padding-top: 12rem; }
+    .testimonial-slider .dots label {
+      height: 8px;
+      width: 8px;
+      background-color: #140243;
+      cursor: pointer;
+      margin: 5px;
+      transition: all 0.15s ease;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      -webkit-transition: all 0.15s ease;
+      -moz-transition: all 0.15s ease;
+      -ms-transition: all 0.15s ease;
+      -o-transition: all 0.15s ease; }
+
+.dot-active {
+  height: 1.4rem !important;
+  width: 1.4rem !important; }
+
+#img-1:checked ~ .testimonial-slider--1 {
+  transform: translate(38.8rem);
+  -webkit-transform: translate(38.8rem);
+  -moz-transform: translate(38.8rem);
+  -ms-transform: translate(38.8rem);
+  -o-transform: translate(38.8rem); }
+
+#img-1:checked ~ .testimonial-slider--2 {
+  transform: translate(38.8rem);
+  -webkit-transform: translate(38.8rem);
+  -moz-transform: translate(38.8rem);
+  -ms-transform: translate(38.8rem);
+  -o-transform: translate(38.8rem); }
+
+#img-1:checked ~ .testimonial-slider--3 {
+  transform: translate(38.8rem);
+  -webkit-transform: translate(38.8rem);
+  -moz-transform: translate(38.8rem);
+  -ms-transform: translate(38.8rem);
+  -o-transform: translate(38.8rem); }
+
+#img-2:checked ~ .testimonial-slider--1 {
+  transform: translate(0rem);
+  -webkit-transform: translate(0rem);
+  -moz-transform: translate(0rem);
+  -ms-transform: translate(0rem);
+  -o-transform: translate(0rem); }
+
+#img-2:checked ~ .testimonial-slider--2 {
+  transform: translate(0rem);
+  -webkit-transform: translate(0rem);
+  -moz-transform: translate(0rem);
+  -ms-transform: translate(0rem);
+  -o-transform: translate(0rem); }
+
+#img-2:checked ~ .testimonial-slider--3 {
+  transform: translate(0rem);
+  -webkit-transform: translate(0rem);
+  -moz-transform: translate(0rem);
+  -ms-transform: translate(0rem);
+  -o-transform: translate(0rem); }
+
+#img-3:checked ~ .testimonial-slider--1 {
+  transform: translate(-38.4rem);
+  -webkit-transform: translate(-38.4rem);
+  -moz-transform: translate(-38.4rem);
+  -ms-transform: translate(-38.4rem);
+  -o-transform: translate(-38.4rem); }
+
+#img-3:checked ~ .testimonial-slider--2 {
+  transform: translate(-38.4rem);
+  -webkit-transform: translate(-38.4rem);
+  -moz-transform: translate(-38.4rem);
+  -ms-transform: translate(-38.4rem);
+  -o-transform: translate(-38.4rem); }
+
+#img-3:checked ~ .testimonial-slider--3 {
+  transform: translate(-38.4rem);
+  -webkit-transform: translate(-38.4rem);
+  -moz-transform: translate(-38.4rem);
+  -ms-transform: translate(-38.4rem);
+  -o-transform: translate(-38.4rem); }

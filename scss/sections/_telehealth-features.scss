@@ -1,0 +1,115 @@
+.section-telehealth-features{
+    height: 770px;
+    background-color: $color-white;
+    overflow-x: hidden;
+
+    .hadding--box{
+        padding-top: 11.3rem;
+        width: 68%;
+        margin: 0 auto;
+    }
+    
+    .col-hadding--box{
+        img{
+            margin-right: 1.2rem;
+        }
+    }
+
+    .col-content-box{
+        max-width: 89%;
+        margin-left: 5.2rem;
+        p{
+            font-family: $font-Inter;
+            font-weight: 400;
+            font-size: 2rem;
+            letter-spacing: -0.48px;
+            line-height: 28px;
+            color: $color-gray-1;
+        }
+    }
+
+    .telehealth-features-row{
+        width: 89%;
+        margin-left:  auto;
+
+        .tf-row-col-1{
+            width: 47% !important; 
+            margin-left: -5.4rem;
+        }
+
+        .tf-row-col-2{
+            flex: .8 0 0% !important;
+        }
+
+    }
+
+// ---------------------- Media Querys ------------------------ //
+
+    @media only screen and (max-width: 1183px){
+        height: 851px;
+    }
+
+    @media only screen and (max-width: 1081px){
+        height: max-content;
+        padding-bottom: 11.3rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+        padding-bottom: 5.3rem !important;
+
+        .tf-hadding-box--1{
+            display: none !important;
+        }
+
+        .tf-hadding-box--2{
+            display: flex !important ;
+        }
+
+        .col-content-box{
+            max-width: 89%;
+            margin-left: 5.2rem;
+            p{
+                font-size: 1.6rem;
+                letter-spacing: -0.38px;
+                line-height: 24px;
+            }
+        }
+
+        .telehealth-features-row{
+            width: 90%;
+
+            .tf-row-col-1{
+                width: 50% !important; 
+                margin-left: -5.4rem;
+            }
+
+            .tf-row-col-2{
+                flex: .9 0 0% !important;
+            }
+
+        }
+    }
+
+    @media only screen and (max-width: 653px){
+        .telehealth-features-row{
+    
+            .tf-row-col-1,
+            .tf-row-col-2{
+                width: 100% !important; 
+            }
+    
+            .tf-row-col-2{
+                flex: 1 0 0% !important;     
+                margin-left: -5.4rem !important;
+                margin-top: 6rem;
+            }
+    
+        }
+    }
+
+    @media only screen and (max-width: 438px){
+        .telehealth-features-row{
+            width: 82%;
+        }
+    }
+}

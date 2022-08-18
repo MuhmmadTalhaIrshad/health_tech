@@ -1,0 +1,111 @@
+.section-Vdotok-advantages{
+    padding: 11.3rem 0;
+    background-color: $color-white;
+
+    .Vdotok-advantages-row{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(3, 33.33333333333333%);
+        grid-row-gap: 2.2rem;
+        margin-top: 6.3rem;
+        width: 80%;
+        margin: 0 auto;
+
+        .Vdotok-advantages-col{
+            // width: 350px;
+            h5{
+                font-family: $font-Manrope;
+                font-weight: 700;
+                font-size: 2rem;
+                letter-spacing: -0.48px;            
+                margin-top: 2.1rem;
+                margin-bottom: 1.4rem;
+            }
+
+            p{
+                font-family: $font-Inter;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.48px;
+                width: 87%;
+                margin: 0 auto;
+            }
+        }
+    }
+// ---------------------- Media Querys ------------------------ //
+    @media only screen and (max-width: 1264px){
+        .Vdotok-advantages-row{
+
+            .Vdotok-advantages-col{
+                width: 262px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1046px){
+        padding-left: 7rem;
+        .Vdotok-advantages-row{
+            grid-column-gap: 0rem ;
+
+            .Vdotok-advantages-col{
+                width: 262px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1168px){
+        padding-left: 3rem;
+        .Vdotok-advantages-row{
+            grid-column-gap: 0rem ;
+
+            .Vdotok-advantages-col{
+                width: 262px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 998px){
+        padding-left: 4rem;
+        padding-right: 4rem;
+        .vd-hadding--box-1{
+            display: none !important;
+        }
+        .vd-hadding--box-2{
+            display: flex !important;
+        }
+        .Vdotok-advantages-row{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: repeat(2, 330px);
+            grid-column-gap: 3.2rem ;
+            grid-row-gap: 1rem;
+            margin-top: 4.3rem;
+            justify-content: center;
+
+            .Vdotok-advantages-col{
+                width: 320px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 692px){
+        padding-left: 4rem;
+        padding-right: 4rem;
+        .vd-hadding--box-1{
+            display: none !important;
+        }
+        .vd-hadding--box-2{
+            display: flex !important;
+        }
+        .Vdotok-advantages-row{
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            align-items: center;
+
+            .Vdotok-advantages-col{
+                width: 100%;
+            }
+        }
+    }
+}
