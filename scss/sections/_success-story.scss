@@ -43,7 +43,8 @@
             &-img{
                 position: absolute;
                 top: 0;
-                left:11rem;
+                left: 50%;
+                transform: translateX(-50%);
             }
 
             &-img-categories{
@@ -98,43 +99,27 @@
         .row{
             --bs-gutter-x: 0rem !important;
         }
-        .success-story-col-1{
-            left: -6rem;
-        }
     }
-
-    @media only screen and (max-width: 1038px){
-        .success-story-col-2{
-            &-img{
-                left: 7rem !important;
-            }
-        }
-    }
-
     @media only screen and (max-width: 992px){
         padding-left: 0rem;
         padding-right: 1rem;
-
-        .success-story-col-1{
-            left: -7rem;
-        }
     }
 
     @media only screen and (max-width: 970px){
         .success-story-row{
             margin-top: 2rem;
             .success-story-col-1{
-                left: -7rem !important;
-                width: 100%;
+                left: 0rem !important;
+                width: 100% !important;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
                 img{
-                    margin-left: 18%;
+                    width: auto !important;
                 }
                 .customer-link{
-                    margin-left: 23% !important;
+                    // margin-left: 23% !important;
                     position: absolute;
                     bottom: -10%;
     
@@ -156,12 +141,6 @@
                 width: 80% !important;    
                 margin: 0 auto;
                 margin-top: 9rem;
-    
-                &-img{
-                    position: absolute;
-                    top: 0;
-                    left:33% !important;
-                }
     
                 &-img-categories{
                     position: absolute;
@@ -190,29 +169,21 @@
         } 
     }
 
-    @media only screen and (max-width: 660px){
+    @media only screen and (max-width: 632px){
         .success-story-row{
-            .success-story-col-1{
-                img{
-                    margin-left: 23%;
-                }
-            }
-
+            width: 100% !important;
             .success-story-col-2{
-
-                &-img{
-                    left: 18%;
-                }
+                width: 100% !important;
             }
         }
     }
 
-    @media only screen and (max-width: 708px){
+    @media only screen and (max-width: 590px){
         .success-story-row{
-            .success-story-col-2{
-
-                &-img{
-                    left: 16% !important;
+            width: 100% !important;
+            .success-story-col-1{
+                img{
+                    width: 80% !important;
                 }
             }
         }

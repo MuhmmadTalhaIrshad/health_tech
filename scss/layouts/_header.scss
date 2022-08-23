@@ -20,13 +20,13 @@
     }
 
     &-Pattern1{
-        background: url('/images/main-general/Patterns1.png');
+        background: url('../images/main-general/Patterns1.png');
         background-position: 7px 154px;
         background-size: contain;
     }
 
     &-Pattern2{
-        background: url('/images/main-general/Patterns2.png');
+        background: url('../images/main-general/Patterns2.png');
         background-position: 6px 159px;
         background-size: contain;
     }
@@ -103,17 +103,6 @@
 
     @media only screen and (max-width: 964px){
         .col-2{
-            padding: 5rem 0;
-            img{
-                width: 423px;
-                height: 446px;
-                left: -6rem;
-            }
-        }
-    }
-
-    @media only screen and (max-width: 964px){
-        .col-2{
             padding: 4rem 0;
             img{
                 left: -7rem;
@@ -121,23 +110,15 @@
         }
     }
     
-    @media only screen and (max-width: 866px){
+    @media only screen and (max-width: 1017px){
         .col-2{
             img{
-                left: -6rem;
+                left: -7.9rem;
             }
         }
     }
 
-    @media only screen and (max-width: 814px){
-        .col-2{
-            img{
-                left: -8rem;
-            }
-        }
-    }
-
-    @media only screen and (max-width: 768px){
+    @media only screen and (max-width: 964px){
         &-Pattern1,
         &-Pattern2{
             display: none;
@@ -167,21 +148,17 @@
                 padding: 0 !important;
                 width: 100%;
                 padding: 3rem 0 !important;
-                background: url('/images/main-general/Patterns-tab-1.png'), url('/images/main-general/Patterns-tab-2.png')  !important;
+                background: url('../images/main-general/Patterns-tab-1.png'), url('../images/main-general/Patterns-tab-2.png')  !important;
                 background-position: center 47% !important;
                 background-repeat: no-repeat !important;
                 background-size: contain;
     
 
                 img{
-                    width: 523px;
+                    width: auto;
+                    min-width: auto;
                     height: 546px;
-                    margin-left: 50%;
-                    transform: translateX(-32%);
-                    -webkit-transform: translateX(-32%);
-                    -moz-transform: translateX(-32%);
-                    -ms-transform: translateX(-32%);
-                    -o-transform: translateX(-32%);
+                    left: auto;
                 }
             }
 
@@ -193,12 +170,6 @@
                     font-weight: 700       !important;
                     line-height: 18px;
                     letter-spacing: 0.2px  !important;
-                    margin-left: 50% !important;
-                    transform: translateX(-101%);
-                    -webkit-transform: translateX(-101%);
-                    -moz-transform: translateX(-101%);
-                    -ms-transform: translateX(-101%);
-                    -o-transform: translateX(-101%);
                 }
             }
         }
@@ -225,12 +196,6 @@
 
                 button{
                     margin-left: 0 !important;
-                    transform: translateX(0);
-                    width:90%;
-                    -webkit-transform: translateX(0);
-                    -moz-transform: translateX(0);
-                    -ms-transform: translateX(0);
-                    -o-transform: translateX(0);
                 }
             }
         }

@@ -318,11 +318,11 @@ section {
     background-size: contain;
     background-repeat: no-repeat !important; }
   .header-Pattern1 {
-    background: url("/images/main-general/Patterns1.png");
+    background: url("../images/main-general/Patterns1.png");
     background-position: 7px 154px;
     background-size: contain; }
   .header-Pattern2 {
-    background: url("/images/main-general/Patterns2.png");
+    background: url("../images/main-general/Patterns2.png");
     background-position: 6px 159px;
     background-size: contain; }
   .header-row {
@@ -375,23 +375,13 @@ section {
         width: 89%; } }
   @media only screen and (max-width: 964px) {
     .header .col-2 {
-      padding: 5rem 0; }
-      .header .col-2 img {
-        width: 423px;
-        height: 446px;
-        left: -6rem; } }
-  @media only screen and (max-width: 964px) {
-    .header .col-2 {
       padding: 4rem 0; }
       .header .col-2 img {
         left: -7rem; } }
-  @media only screen and (max-width: 866px) {
+  @media only screen and (max-width: 1017px) {
     .header .col-2 img {
-      left: -6rem; } }
-  @media only screen and (max-width: 814px) {
-    .header .col-2 img {
-      left: -8rem; } }
-  @media only screen and (max-width: 768px) {
+      left: -7.9rem; } }
+  @media only screen and (max-width: 964px) {
     .header-Pattern1, .header-Pattern2 {
       display: none; }
     .header-row .col-1 {
@@ -409,32 +399,22 @@ section {
       padding: 0 !important;
       width: 100%;
       padding: 3rem 0 !important;
-      background: url("/images/main-general/Patterns-tab-1.png"), url("/images/main-general/Patterns-tab-2.png") !important;
+      background: url("../images/main-general/Patterns-tab-1.png"), url("../images/main-general/Patterns-tab-2.png") !important;
       background-position: center 47% !important;
       background-repeat: no-repeat !important;
       background-size: contain; }
       .header-row .col-2 img {
-        width: 523px;
+        width: auto;
+        min-width: auto;
         height: 546px;
-        margin-left: 50%;
-        transform: translateX(-32%);
-        -webkit-transform: translateX(-32%);
-        -moz-transform: translateX(-32%);
-        -ms-transform: translateX(-32%);
-        -o-transform: translateX(-32%); }
+        left: auto; }
     .header-row .tablate-ver-btn {
       display: flex !important; }
       .header-row .tablate-ver-btn button {
         padding: 1.4rem 2.4rem !important;
         font-weight: 700       !important;
         line-height: 18px;
-        letter-spacing: 0.2px  !important;
-        margin-left: 50% !important;
-        transform: translateX(-101%);
-        -webkit-transform: translateX(-101%);
-        -moz-transform: translateX(-101%);
-        -ms-transform: translateX(-101%);
-        -o-transform: translateX(-101%); } }
+        letter-spacing: 0.2px  !important; } }
   @media only screen and (max-width: 676px) {
     .header-row .tablate-ver-btn button {
       transform: translateX(-77%);
@@ -444,13 +424,7 @@ section {
       -o-transform: translateX(-77%); } }
   @media only screen and (max-width: 554px) {
     .header-row .tablate-ver-btn button {
-      margin-left: 0 !important;
-      transform: translateX(0);
-      width: 90%;
-      -webkit-transform: translateX(0);
-      -moz-transform: translateX(0);
-      -ms-transform: translateX(0);
-      -o-transform: translateX(0); } }
+      margin-left: 0 !important; } }
   @media only screen and (max-width: 476px) {
     .header-row .col-2 {
       background: #F7F7F9 !important; }
@@ -615,7 +589,7 @@ section {
   gap: 3.3rem; }
   .section-telemedicine .telemedicine-row {
     height: 120vh;
-    background: url("/images/sections/telemedicien/telemedicien-vector2.png"), #fff;
+    background: url("../images/sections/telemedicien/telemedicien-vector2.png"), #fff;
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -734,7 +708,7 @@ section {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: url("/images/sections/telemedicien/video.png");
+        background: url("../images/sections/telemedicien/video.png");
         background-position: 0rem 3rem;
         background-repeat: no-repeat;
         background-size: 44%;
@@ -749,7 +723,7 @@ section {
       margin-top: 1rem;
       width: 95%; }
       .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-4 {
-        background: url("/images/sections/telemedicien/calendar-time.png");
+        background: url("../images/sections/telemedicien/calendar-time.png");
         background-position: 2rem 2.8rem;
         background-repeat: no-repeat;
         display: flex;
@@ -807,157 +781,100 @@ section {
               line-height: 18px;
               text-align: center;
               letter-spacing: 0.2px; }
-  @media only screen and (max-width: 1012px) {
+  @media only screen and (max-width: 1176px) {
     .section-telemedicine .telemedicine-row {
-      padding-top: 11.8rem;
-      padding-left: 2rem; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-1 {
-        width: 90%; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-1 .owl-carousel-3 {
-          margin-left: 0 !important; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-1 .telemedicine-col-1--card {
-          margin-left: 3rem; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-1 .card--active {
-          margin-left: 0rem !important; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-2 {
-        top: 2.7rem;
-        left: 5rem; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-2 .col-2--border {
-          height: 65px; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box {
-        background-position: 48% 3.4rem;
-        background-size: 45%; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box .telemedicine-col-3--content {
-          top: 62%;
-          left: 76%; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box {
-        top: -19.4rem; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box .telemedicine-col-text {
-          font-size: 1.4rem !important; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-5 {
-        left: 4rem; } }
-  @media only screen and (max-width: 872px) {
+      background-size: 104%;
+      width: 86%; } }
+  @media only screen and (max-width: 1052px) {
     .section-telemedicine .telemedicine-row {
-      grid-template-columns: 50%  50%;
-      padding-top: 11.8rem;
-      padding-left: 2rem; }
+      background-size: 102% 104%;
+      width: 93%; }
+      .section-telemedicine .telemedicine-row .row--2 {
+        width: 100%;
+        margin-top: 0rem; }
+        .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-4 {
+          width: 33.33333333% !important; }
+        .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-5 .col-5--border {
+          width: 70px;
+          margin-left: 5rem; }
+        .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-6 {
+          width: 50% !important; } }
+  @media only screen and (max-width: 910px) {
+    .section-telemedicine .telemedicine-row {
+      background-size: 102% 104%;
+      width: 93%; }
       .section-telemedicine .telemedicine-row .telemedicine-col-2,
       .section-telemedicine .telemedicine-row .telemedicine-col-5 {
-        display: none; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-1 {
-        width: 90%; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-1 .owl-carousel-3 {
-          margin-left: 0 !important; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-1 .telemedicine-col-1--card {
-          margin-left: 3rem; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-1 .card--active {
-          margin-left: 0rem !important; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box {
-        background-position: 48% 3.4rem;
-        background-size: 45%; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box .telemedicine-col-3--content {
-          top: 62%;
-          left: 76%; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box {
-        top: -19.4rem; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box .telemedicine-col-text {
-          font-size: 1.4rem !important; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-6--content-box {
-        top: -17rem;
-        left: 2rem; } }
-  @media only screen and (max-width: 768px) {
-    .section-telemedicine {
-      padding: 5.3rem 0;
-      background: url("/images/sections/telemedicien/vectortablet.png"), #fff;
-      background-repeat: no-repeat;
-      background-position: center 53%; }
-      .section-telemedicine .telemedicine-row {
-        display: grid;
-        height: 100%;
-        padding: 11.3rem;
-        padding-top: 17.8rem;
-        padding-bottom: 0;
-        grid-template-columns: 50%  50%; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-hadding {
-          font-size: 4.8rem; }
-          .section-telemedicine .telemedicine-row .telemedicine-col-hadding span {
-            font-size: 1.5rem; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-text {
-          font-size: 1.4rem !important;
-          line-height: 22px;
-          letter-spacing: -0.26px; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-1 {
-          margin-left: 0rem;
-          width: 100%; }
-          .section-telemedicine .telemedicine-row .telemedicine-col-1 .owl-carousel-3 {
-            position: relative;
-            margin-left: -3rem !important; }
-            .section-telemedicine .telemedicine-row .telemedicine-col-1 .owl-carousel-3::after {
-              width: 8rem;
-              height: 4rem; }
-          .section-telemedicine .telemedicine-row .telemedicine-col-1 .telemedicine-col-1--card {
-            margin-left: -2rem; }
-          .section-telemedicine .telemedicine-row .telemedicine-col-1 .card--active {
-            margin-left: -4rem !important; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box {
-          background-position: 43% 5.2rem;
-          background-size: 32%; }
-          .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box .telemedicine-col-3--content {
-            top: 63%;
-            left: 68%;
-            width: 86%; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box {
-          top: -9.4rem;
-          left: -5rem;
-          background-position: 3rem -2.2rem;
-          background-size: 32%; }
-          .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box .telemedicine-col-4--content {
-            width: 98%; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-6--content-box {
-          position: relative;
-          top: -11rem;
-          left: -2rem; }
-          .section-telemedicine .telemedicine-row .telemedicine-col-6--content-box .telemedicine-col-6--content {
-            width: 323px; }
-            .section-telemedicine .telemedicine-row .telemedicine-col-6--content-box .telemedicine-col-6--content .col-6--content-row .content-row-col-1 {
-              width: 64%;
-              margin-right: 1rem; } }
-  @media only screen and (max-width: 606px) {
-    .section-telemedicine .telemedicine-row .telemedicine-col-1 {
-      margin-left: 0rem;
-      width: 100%; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-1 .owl-carousel-3 {
+        display: none !important; }
+      .section-telemedicine .telemedicine-row .telemedicine-col-1,
+      .section-telemedicine .telemedicine-row .telemedicine-col-3 {
+        width: 50%;
+        margin: 0 !important; }
+      .section-telemedicine .telemedicine-row .row--2 {
+        width: 100%;
+        margin-top: 0rem; }
+        .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-4 {
+          width: 50% !important; } }
+  @media only screen and (max-width: 782px) {
+    .section-telemedicine .telemedicine-row {
+      background: url("../images/sections/telemedicien/vectortablet.png");
+      background-position: top;
+      background-size: 110% 100%;
+      background-repeat: no-repeat; }
+      .section-telemedicine .telemedicine-row .row--1 {
+        margin-top: 9.5rem; }
+      .section-telemedicine .telemedicine-row .row--2 {
+        margin-top: 1rem; }
+        .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-6 .telemedicine-col-6--content {
+          width: 100%; } }
+  @media only screen and (max-width: 666px) {
+    .section-telemedicine .telemedicine-row .telemedicine-col-hadding {
+      font-size: 5.4rem !important; }
+    .section-telemedicine .telemedicine-row .telemedicine-col-text {
+      font-size: 1.4rem !important; }
+    .section-telemedicine .telemedicine-row .row--1 {
+      margin-top: 12.5rem; }
+      .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .owl-carousel-3 {
+        width: 182% !important; }
+      .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .telemedicine-btn-active {
+        background: #190354;
+        color: #F2E33A;
+        border: none !important; }
+      .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .telemedicine-col-1--card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: max-content !important;
+        margin-top: -9rem;
+        margin-left: 9.5rem; }
+        .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .telemedicine-col-1--card .card--text {
+          text-align: center;
+          margin: 0 !important; }
+        .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .telemedicine-col-1--card .card--button button {
+          display: none; }
+      .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-1 .card--active {
+        padding: 1.2rem 2.4rem !important;
+        opacity: 1 !important;
+        margin-left: 3rem !important;
+        margin-top: 0rem !important;
+        margin-left: 3rem !important;
+        background: #fff;
         position: relative;
-        margin-left: -8rem !important; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-1 .owl-carousel-3::after {
-          width: 8rem;
-          height: 4rem; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-1 .telemedicine-col-1--card {
-        margin-left: -9rem; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-1 .card--active {
-        margin-left: -12rem !important; }
-    .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box {
-      background-position: 78% 1.2rem;
-      background-size: 32%; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-3--content-box .telemedicine-col-3--content {
-        top: 43%;
-        left: 100%; }
-    .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box {
-      top: -9.4rem;
-      left: -5rem;
-      background-position: 3rem -2.2rem;
-      background-size: 32%; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-4--content-box .telemedicine-col-4--content {
-        width: 98%; }
-    .section-telemedicine .telemedicine-row .telemedicine-col-6--content-box {
-      position: relative;
-      top: -11rem;
-      left: -2rem; }
-      .section-telemedicine .telemedicine-row .telemedicine-col-6--content-box .telemedicine-col-6--content {
-        width: 150%; }
-        .section-telemedicine .telemedicine-row .telemedicine-col-6--content-box .telemedicine-col-6--content .col-6--content-row .content-row-col-1 {
-          width: 64%;
-          margin-right: 1rem; } }
+        z-index: 2; }
+      .section-telemedicine .telemedicine-row .row--1 .telemedicine-col-3 {
+        background-position: 4rem 4rem;
+        background-size: 34%; }
+    .section-telemedicine .telemedicine-row .row--2 {
+      margin-top: -2rem; }
+      .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-4 {
+        width: 65% !important; }
+        .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-4 .telemedicine-col-4--content {
+          margin-left: 2rem;
+          margin-bottom: 3rem; }
+      .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-6 {
+        width: 35% !important; }
+        .section-telemedicine .telemedicine-row .row--2 .telemedicine-col-6 .telemedicine-col-6--content {
+          width: max-content; } }
 
 .section-VdoTok-helpCenter {
   background-color: #F7F7F9;
@@ -1732,7 +1649,7 @@ section {
       display: none !important; }
     .section-VodTok-features .vf-content-row .vf-content-col--1 .vf-img-1 {
       display: block !important;
-      width: 100% !important;
+      width: 200% !important;
       padding-right: 1rem; } }
 
 .section-testimonial {
@@ -1854,7 +1771,8 @@ section {
       .section-success-story .success-story-row .success-story-col-2-img {
         position: absolute;
         top: 0;
-        left: 11rem; }
+        left: 50%;
+        transform: translateX(-50%); }
       .section-success-story .success-story-row .success-story-col-2-img-categories {
         position: absolute;
         bottom: 3rem;
@@ -1893,31 +1811,23 @@ section {
       padding-left: 0rem;
       padding-right: 0rem; }
       .section-success-story .row {
-        --bs-gutter-x: 0rem !important; }
-      .section-success-story .success-story-col-1 {
-        left: -6rem; } }
-  @media only screen and (max-width: 1038px) {
-    .section-success-story .success-story-col-2-img {
-      left: 7rem !important; } }
+        --bs-gutter-x: 0rem !important; } }
   @media only screen and (max-width: 992px) {
     .section-success-story {
       padding-left: 0rem;
-      padding-right: 1rem; }
-      .section-success-story .success-story-col-1 {
-        left: -7rem; } }
+      padding-right: 1rem; } }
   @media only screen and (max-width: 970px) {
     .section-success-story .success-story-row {
       margin-top: 2rem; }
       .section-success-story .success-story-row .success-story-col-1 {
-        left: -7rem !important;
-        width: 100%;
+        left: 0rem !important;
+        width: 100% !important;
         display: flex;
         justify-content: center;
         align-items: center; }
         .section-success-story .success-story-row .success-story-col-1 img {
-          margin-left: 18%; }
+          width: auto !important; }
         .section-success-story .success-story-row .success-story-col-1 .customer-link {
-          margin-left: 23% !important;
           position: absolute;
           bottom: -10%; }
           .section-success-story .success-story-row .success-story-col-1 .customer-link a {
@@ -1933,10 +1843,6 @@ section {
         width: 80% !important;
         margin: 0 auto;
         margin-top: 9rem; }
-        .section-success-story .success-story-row .success-story-col-2-img {
-          position: absolute;
-          top: 0;
-          left: 33% !important; }
         .section-success-story .success-story-row .success-story-col-2-img-categories {
           position: absolute;
           bottom: 3rem;
@@ -1953,14 +1859,16 @@ section {
             display: inline-block !important; }
           .section-success-story .success-story-row .success-story-col-2-content .ss-col-2-content-desk {
             display: none; } }
-  @media only screen and (max-width: 660px) {
-    .section-success-story .success-story-row .success-story-col-1 img {
-      margin-left: 23%; }
-    .section-success-story .success-story-row .success-story-col-2-img {
-      left: 18%; } }
-  @media only screen and (max-width: 708px) {
-    .section-success-story .success-story-row .success-story-col-2-img {
-      left: 16% !important; } }
+  @media only screen and (max-width: 632px) {
+    .section-success-story .success-story-row {
+      width: 100% !important; }
+      .section-success-story .success-story-row .success-story-col-2 {
+        width: 100% !important; } }
+  @media only screen and (max-width: 590px) {
+    .section-success-story .success-story-row {
+      width: 100% !important; }
+      .section-success-story .success-story-row .success-story-col-1 img {
+        width: 80% !important; } }
 
 .section-try-Vdotok {
   background-color: #F7F7F9;
@@ -2132,16 +2040,15 @@ section {
 .testimonial-slider {
   width: 85%;
   margin: auto;
-  margin-top: 4.5rem !important;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem; }
+  margin-top: 4.5rem !important; }
   .testimonial-slider--box {
     display: flex;
     width: 100%; }
     .testimonial-slider--box .testimonial-slider-slider {
       width: 33.33333333333333%;
-      height: 246px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       transition: all .5s ease;
       -webkit-transition: all .5s ease;
       -moz-transition: all .5s ease;
@@ -2149,9 +2056,7 @@ section {
       -o-transition: all .5s ease;
       position: relative; }
       .testimonial-slider--box .testimonial-slider-slider .msg-box {
-        position: absolute;
-        width: 100%;
-        height: 255px; }
+        position: absolute; }
       .testimonial-slider--box .testimonial-slider-slider .slider-content {
         width: 82%;
         position: relative;
@@ -2162,8 +2067,7 @@ section {
         align-self: center;
         margin: auto;
         text-align: center;
-        margin-top: 5rem;
-        padding-left: 3rem; }
+        margin-top: 5rem; }
         .testimonial-slider--box .testimonial-slider-slider .slider-content .slider-content-hadding {
           font-family: "Manrope";
           font-style: normal;
@@ -2179,14 +2083,17 @@ section {
           line-height: 20px;
           text-align: center;
           letter-spacing: -0.4px;
-          color: #697883; }
+          color: #697883;
+          width: 85%;
+          margin: 0 auto; }
       .testimonial-slider--box .testimonial-slider-slider .testimonial-author {
         display: flex;
-        margin-top: 9rem;
+        width: 82%;
+        margin: 0 auto;
+        margin-top: 8rem;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        margin-left: 0rem; }
+        align-items: center; }
         .testimonial-slider--box .testimonial-slider-slider .testimonial-author .author-name {
           font-family: "Inter", sans-serif;
           font-weight: 600;
@@ -2207,9 +2114,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10rem;
-    margin: 5px;
-    padding-top: 12rem; }
+    height: 10rem; }
     .testimonial-slider .dots label {
       height: 8px;
       width: 8px;
@@ -2226,70 +2131,107 @@ section {
       -moz-transition: all 0.15s ease;
       -ms-transition: all 0.15s ease;
       -o-transition: all 0.15s ease; }
+  @media only screen and (max-width: 1300px) {
+    .testimonial-slider {
+      width: 100%; } }
+  @media only screen and (max-width: 1110px) {
+    .testimonial-slider--box {
+      width: 115%;
+      position: relative;
+      left: -8%; } }
+  @media only screen and (max-width: 956px) {
+    .testimonial-slider--box {
+      width: 139%;
+      left: -18%; }
+      .testimonial-slider--box .testimonial-author {
+        margin-top: 9rem !important; }
+    .testimonial-slider .dots {
+      width: 103%; } }
+  @media only screen and (max-width: 788px) {
+    .testimonial-slider--box {
+      width: 167%;
+      left: -32%; } }
+  @media only screen and (max-width: 662px) {
+    .testimonial-slider--box {
+      width: 193%;
+      left: -45%; }
+      .testimonial-slider--box .testimonial-author {
+        margin-top: 10rem !important; }
+      .testimonial-slider--box .testimonial-slider-slider .msg-box {
+        width: 111%;
+        height: 260px; }
+      .testimonial-slider--box .testimonial-slider-slider .slider-content {
+        width: 100%; } }
+  @media only screen and (max-width: 474px) {
+    .testimonial-slider--box {
+      width: 262%;
+      left: -81%; }
+    .testimonial-slider .dots {
+      height: 7rem; } }
 
 .dot-active {
   height: 1.4rem !important;
   width: 1.4rem !important; }
 
 #img-1:checked ~ .testimonial-slider--1 {
-  transform: translate(38.8rem);
-  -webkit-transform: translate(38.8rem);
-  -moz-transform: translate(38.8rem);
-  -ms-transform: translate(38.8rem);
-  -o-transform: translate(38.8rem); }
+  transform: translate(100%);
+  -webkit-transform: translate(100%);
+  -moz-transform: translate(100%);
+  -ms-transform: translate(100%);
+  -o-transform: translate(100%); }
 
 #img-1:checked ~ .testimonial-slider--2 {
-  transform: translate(38.8rem);
-  -webkit-transform: translate(38.8rem);
-  -moz-transform: translate(38.8rem);
-  -ms-transform: translate(38.8rem);
-  -o-transform: translate(38.8rem); }
+  transform: translate(100%);
+  -webkit-transform: translate(100%);
+  -moz-transform: translate(100%);
+  -ms-transform: translate(100%);
+  -o-transform: translate(100%); }
 
 #img-1:checked ~ .testimonial-slider--3 {
-  transform: translate(38.8rem);
-  -webkit-transform: translate(38.8rem);
-  -moz-transform: translate(38.8rem);
-  -ms-transform: translate(38.8rem);
-  -o-transform: translate(38.8rem); }
+  transform: translate(100%);
+  -webkit-transform: translate(100%);
+  -moz-transform: translate(100%);
+  -ms-transform: translate(100%);
+  -o-transform: translate(100%); }
 
 #img-2:checked ~ .testimonial-slider--1 {
-  transform: translate(0rem);
-  -webkit-transform: translate(0rem);
-  -moz-transform: translate(0rem);
-  -ms-transform: translate(0rem);
-  -o-transform: translate(0rem); }
+  transform: translate(0%);
+  -webkit-transform: translate(0%);
+  -moz-transform: translate(0%);
+  -ms-transform: translate(0%);
+  -o-transform: translate(0%); }
 
 #img-2:checked ~ .testimonial-slider--2 {
-  transform: translate(0rem);
-  -webkit-transform: translate(0rem);
-  -moz-transform: translate(0rem);
-  -ms-transform: translate(0rem);
-  -o-transform: translate(0rem); }
+  transform: translate(0%);
+  -webkit-transform: translate(0%);
+  -moz-transform: translate(0%);
+  -ms-transform: translate(0%);
+  -o-transform: translate(0%); }
 
 #img-2:checked ~ .testimonial-slider--3 {
-  transform: translate(0rem);
-  -webkit-transform: translate(0rem);
-  -moz-transform: translate(0rem);
-  -ms-transform: translate(0rem);
-  -o-transform: translate(0rem); }
+  transform: translate(0%);
+  -webkit-transform: translate(0%);
+  -moz-transform: translate(0%);
+  -ms-transform: translate(0%);
+  -o-transform: translate(0%); }
 
 #img-3:checked ~ .testimonial-slider--1 {
-  transform: translate(-38.4rem);
-  -webkit-transform: translate(-38.4rem);
-  -moz-transform: translate(-38.4rem);
-  -ms-transform: translate(-38.4rem);
-  -o-transform: translate(-38.4rem); }
+  transform: translate(-100%);
+  -webkit-transform: translate(-100%);
+  -moz-transform: translate(-100%);
+  -ms-transform: translate(-100%);
+  -o-transform: translate(-100%); }
 
 #img-3:checked ~ .testimonial-slider--2 {
-  transform: translate(-38.4rem);
-  -webkit-transform: translate(-38.4rem);
-  -moz-transform: translate(-38.4rem);
-  -ms-transform: translate(-38.4rem);
-  -o-transform: translate(-38.4rem); }
+  transform: translate(-100%);
+  -webkit-transform: translate(-100%);
+  -moz-transform: translate(-100%);
+  -ms-transform: translate(-100%);
+  -o-transform: translate(-100%); }
 
 #img-3:checked ~ .testimonial-slider--3 {
-  transform: translate(-38.4rem);
-  -webkit-transform: translate(-38.4rem);
-  -moz-transform: translate(-38.4rem);
-  -ms-transform: translate(-38.4rem);
-  -o-transform: translate(-38.4rem); }
+  transform: translate(-100%);
+  -webkit-transform: translate(-100%);
+  -moz-transform: translate(-100%);
+  -ms-transform: translate(-100%);
+  -o-transform: translate(-100%); }
