@@ -4,6 +4,7 @@ const nav      = document.querySelector('.navigation');
 const nav_list = document.querySelector('.navigation-nav');
 
 nav_icon.addEventListener('click', (e)=>{
+    e.preventDefault();
     nav.classList.toggle('navigation-open');
 });
 

@@ -175,21 +175,6 @@
         }
     }
 
-    @media only screen and (max-width: 676px){
-        &-row{
-            .tablate-ver-btn{
-
-                button{
-                    transform: translateX(-77%);
-                    -webkit-transform: translateX(-77%);
-                    -moz-transform: translateX(-77%);
-                    -ms-transform: translateX(-77%);
-                    -o-transform: translateX(-77%);
-                }
-            }
-        }
-    }
-
     @media only screen and (max-width: 554px){
         &-row{
             .tablate-ver-btn{
@@ -201,13 +186,14 @@
         }
     }
 
-    @media only screen and (max-width: 476px){
+    @media only screen and (max-width: 492px){
         &-row{
             .col-2{
                 background: $color-light-1 !important;
 
                 img{
-                    margin-left: 46%;
+                    width: 360px;
+                    height: 446px;
                 }
             }
         }

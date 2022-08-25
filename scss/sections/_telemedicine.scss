@@ -1,26 +1,13 @@
 .section-telemedicine{
+    width: 100%;
     padding: 11.3rem 0;
     background-color: $color-white;
-    height: 140vh;
-    height: max-content;
-    // background: url('/images/sections/telemedicien/telemedicien-vector2.png'), $color-white;
-    // background-position: center 77%;
-    background-position: center 117%;
-    background-repeat: no-repeat;
-    // background-size: 1136px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3.3rem;
 
     .telemedicine-row{
-        height: 120vh;
-        background: url('../images/sections/telemedicien/telemedicien-vector2.png'), #fff;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: center;
-        width: 80%;
+        width: 88%;
         margin: 0 auto;
-        
+        padding-top: 4.5rem;
+        position: relative;
 
         .col-border{
             transform: scale(1.8);
@@ -29,7 +16,7 @@
             -ms-transform: scale(1.8);
             -o-transform: scale(1.8);
         }
-
+        
         .telemedicine-col-hadding{
             font-family: $font-Manrope;
             font-style: normal;
@@ -55,16 +42,13 @@
         }
 
         .row--1{
-            margin-top: 7rem;
-            height: 45%;
+            position: absolute;
+            width: 100%;
+            top: 15rem;
 
             .telemedicine-col-1{
-                margin-left: 1rem;
-                // width: 73%;
                 .owl-carousel-3{
-                    position: relative;
-                    width: 84%;
-
+                    width: 82%;
                     &::after{
                         content: '' ;
                         position: absolute;
@@ -79,9 +63,8 @@
                         -moz-transform: matrix(1, 0, 0, -2, 0, 0);
                         -ms-transform: matrix(1, 0, 0, -2, 0, 0);
                         -o-transform: matrix(1, 0, 0, -2, 0, 0);
-                    }    
+                    } 
                 }
-                
                 .telemedicine-col-btn{
                     padding: 1.2rem 2.4rem;
                     border: none;
@@ -99,14 +82,12 @@
                     -ms-border-radius: 6px;
                     -o-border-radius: 6px;
                 }
-    
                 .telemedicine-btn-active{
                     background: $siteColor-sec;
                     color: $siteColor-tri;
                     border: none !important;
                 }
-    
-                .telemedicine-col-1--card{
+                &--card{
                     display: flex;
                     align-items: center;
                     padding: 1.2rem 1.4rem;
@@ -120,8 +101,8 @@
                     opacity: 0.6;
                     box-shadow: 0px 10px 18px rgba(21, 17, 58, 0.03);
                     margin-left: 6rem;
-                    width: 76%;
-    
+                    width: 66%;
+
                     .card--text{
                         h3{
                             font-size: $font-Manrope;
@@ -142,286 +123,13 @@
     
                     .card--button{
                         button{
-                            padding: .8rem 1rem;
+                            padding: .8rem 1.5rem;
                         }
                     }
+                
                 }
-    
                 .card--active{
-                    padding: 1.2rem 2.4rem !important;
                     opacity: 1 !important;
-                    margin-left: 3rem !important;
-                    width: 80% !important;
-                }
-            }
-    
-            .telemedicine-col-2{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                
-                .col-2--border{
-                    border-left: 1px dashed #E2E2EA;
-                    height: 88px;
-                }
-            }
-    
-            .telemedicine-col-3{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background: url('../images/sections/telemedicien/video.png');
-                background-position: 0rem 3rem;
-                background-repeat: no-repeat;
-                background-size: 44%;
-                text-align: center;
-
-                .telemedicine-col-3--content{
-                    h3{
-                        color: $siteColor-pri;
-                    }
-
-                    p{
-                        width: 67%;
-                        margin: 0 auto;
-                    }
-                }
-                
-            }
-        }
-
-        .row--2{
-            height:30%;
-            margin-top: 1rem;
-            width: 95%;
-
-            .telemedicine-col-4{
-                background: url('../images/sections/telemedicien/calendar-time.png');
-                background-position: 2rem 2.8rem;
-                background-repeat: no-repeat;
-                display: flex;
-                align-items: flex-end;
-    
-                .telemedicine-col-4--content{
-                    width: 85%;
-                    text-align: center;
-                    margin-left: auto;
-
-                    h3{
-                        color: #615B17;
-                    }
-                }
-                
-            }
-    
-            .telemedicine-col-5{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                position: relative;
-    
-                .col-5--border{
-                    border-top: 1px dashed #E2E2EA;
-                    width: 88px;
-                }
-            }
-    
-            .telemedicine-col-6{
-                display: flex;
-                justify-content: center;
-                align-items: end;
-
-                    .telemedicine-col-6--content{
-                        background-color: $color-white;
-                        box-shadow: 0px 10px 20px rgba(21, 17, 58, 0.03);
-                        border-radius: 12px;
-                        width: 85%;
-    
-                        .col-6--content-row{
-                            display: flex;
-                            padding: 2rem;
-                            padding-top: 0;
-    
-                            .content-row-col-1{
-                                width: 64%;
-                                margin-right: 1rem;
-                            }
-    
-                            .col-1-border{
-                                border-bottom: 1px solid #E2E2EA;
-                                padding-bottom: 0.5rem;
-                            }
-    
-                            .text,
-                            .value{
-                                font-family: $font-Inter;
-                                font-style: normal;
-                            }
-    
-                            .text{
-                                font-weight: 400;
-                                line-height: 20px;
-                                margin: 0;
-                                letter-spacing: -0.4px;
-                                color: $color-gray-1;
-                            }
-    
-                            .value{
-                                font-weight: 500;
-                                line-height: 22px;
-                                letter-spacing: -0.24px;
-                            }
-    
-                            .edit-btn{
-                                padding: 1rem;
-                                background-color: $color-white;
-                                line-height: 18px;
-                                text-align: center;
-                                letter-spacing: 0.2px;
-                            }
-                        }
-                    }
-                
-            }
-        }
-
-    }
-
-
-// ---------------------- Media Querys ------------------------ //
-@media only screen and (max-width: 1176px){
-    .telemedicine-row{
-        background-size: 104%;
-        width: 86%;
-    }
-}
-
-@media only screen and (max-width: 1052px){
-    .telemedicine-row{
-        background-size: 102% 104%;
-        width: 93%;
-
-        .row--2{
-            width: 100%;
-            margin-top: 0rem;
-
-            .telemedicine-col-4{
-                width: 33.33333333% !important;
-            }
-            
-            .telemedicine-col-5{
-                .col-5--border{
-                    width: 70px;
-                    margin-left: 5rem;
-                }
-            }
-
-            .telemedicine-col-6{
-                width: 50% !important;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 910px){
-    .telemedicine-row{
-        background-size: 102% 104%;
-        width: 93%;
-
-        .telemedicine-col-2,
-        .telemedicine-col-5{
-            display: none !important;
-        }
-
-        .telemedicine-col-1,
-        .telemedicine-col-3{
-            width: 50%;
-            margin: 0 !important;
-        }
-
-        .row--2{
-            width: 100%;
-            margin-top: 0rem;
-
-            .telemedicine-col-4{
-                width: 50% !important;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 782px){
-    .telemedicine-row{
-        background: url('../images/sections/telemedicien/vectortablet.png');
-        background-position: top;
-        background-size: 110% 100%;
-        background-repeat: no-repeat;
-        
-        .row--1{
-            margin-top: 9.5rem;
-        }
-        .row--2{
-            margin-top: 1rem;
-
-            .telemedicine-col-6{
-                .telemedicine-col-6--content{
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 666px){
-    .telemedicine-row{
-        .telemedicine-col-hadding{
-            font-size: 5.4rem !important;
-        }
-
-        .telemedicine-col-text{
-            font-size: 1.4rem !important; 
-        }
-
-        .row--1{
-            margin-top: 12.5rem;
-
-            .telemedicine-col-1{
-
-                .owl-carousel-3{
-                    width: 182% !important;  
-                }
-    
-                .telemedicine-btn-active{
-                    background: $siteColor-sec;
-                    color: $siteColor-tri;
-                    border: none !important;
-                }
-    
-                .telemedicine-col-1--card{
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    width: max-content !important;
-                    margin-top: -9rem;
-                    margin-left: 9.5rem;
-    
-                    .card--text{
-                        text-align: center;
-                        margin: 0 !important;
-                    }
-    
-                    .card--button{
-                        button{
-                            display: none;
-                        }
-                    }
-                }
-    
-                .card--active{
-                    padding: 1.2rem 2.4rem !important;
-                    opacity: 1 !important;
-                    margin-left: 3rem !important;
                     margin-top: 0rem !important;
                     margin-left: 3rem !important;
                     background: #fff;
@@ -430,31 +138,325 @@
                 }
             }
 
-            .telemedicine-col-3{
-                background-position: 4rem 4rem;
-                background-size: 34%;
-            }
-
-        }
-        .row--2{
-            margin-top: -2rem;
-
-            .telemedicine-col-4{
-                width: 65% !important;
-
-                .telemedicine-col-4--content{
-                    margin-left: 2rem;
-                    margin-bottom: 3rem;
+            .telemedicine-col-2{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 7rem;
+                .col-2--border{
+                    width: 1.5rem;
+                    border-left: 1px dashed #E2E2EA;
+                    height: 10rem;
+                    margin-left: 4rem;
                 }
             }
+
+            .telemedicine-col-3{
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                background: url('../images/sections/telemedicien/video.png');
+                background-position: 1rem 3rem;
+                background-repeat: no-repeat;
+                background-size: 43%;
+
+                &--content{
+                    text-align: center;
+                    width: 70%;
+                    margin-top: 10rem;
+                }
+            }
+        }
+
+        .row--2{
+            position: absolute;
+            top: 61%;
+            height: 34%;
+            width: 100%;
+
+            .telemedicine-col-4{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                background: url('../images/sections/telemedicien/calendar-time.png');
+                background-position: 6rem -1rem;
+                background-repeat: no-repeat;
+                background-size: 42%;
+                &--content{
+                    width: 73%;
+                    h3{
+                        color: #615B17;
+                    }
+                }
+            }
+
+            .telemedicine-col-5{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .col-border{
+                    border-top: 1px dashed #E2E2EA;
+                    height: 1rem;
+                    width: 50%;
+                }
+            }
+
             .telemedicine-col-6{
-                width: 35% !important;
-                .telemedicine-col-6--content{
-                    width: max-content;
+                .card{
+                    padding: 2rem;
+                    padding-right: 0rem;
+                    border: none !important;
+                    width: 80%;
+                    margin: 0 auto;
+                    background: $color-white;
+                    box-shadow: 0px 10px 20px #15113a08;
+                    border-radius: 1.2rem;
+                    -webkit-border-radius: 1.2rem;
+                    -moz-border-radius: 1.2rem;
+                    -ms-border-radius: 1.2rem;
+                    -o-border-radius: 1.2rem;
+
+                    .card-row-1{
+                        .text{
+                            font-weight: 400;
+                            line-height: 20px;
+                            margin: 0;
+                            letter-spacing: -0.4px;
+                            color: $color-gray-1;
+                        }
+                        .value{
+                            font-weight: 500;
+                            line-height: 22px;
+                            letter-spacing: -0.24px;
+                        }
+                        .card-button-box{
+                            button{
+                                padding: 1rem;
+                                background-color: $color-white;
+                                line-height: 18px;
+                                text-align: center;
+                                letter-spacing: 0.2px;
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+
+    }
+
+    @media only screen and (max-width: 1247px){
+
+        .row--1{
+            .telemedicine-col-2{
+                margin-top: 1rem !important;
+                .col-2--border{
+                    height: 8rem !important;
+                    margin-top: 2rem !important;
+                }
+            }
+            .telemedicine-col-3{
+                background-position: 0rem 1rem;
+                align-items: center;
+                &--content{
+                    margin-top: 0 !important;
                 }
             }
         }
     }
-}
 
+    @media only screen and (max-width: 1199px) {
+        .telemedicine-row{
+            .telemedicien-vector-img{
+                height: 649.5px;
+            }
+        }
+
+        .row--1{
+            .telemedicine-col-1{
+                &--card{
+                    width: 80% !important;
+                }
+            }
+        }
+
+        .row--2{
+            .telemedicine-col-6{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        .row--1{
+            .owl-carousel-3{
+                width: 91%;
+            }
+            .telemedicine-col-1{
+                &--card{
+                    width: 90% !important;
+                }
+            }
+        }
+
+        .row--2{
+            .telemedicine-col-6{
+                .card{
+                    width: 90% !important;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 939px){
+        .telemedicine-row{
+            width: 100%;
+        }
+
+        .row--1{
+            .telemedicine-col-1{
+                &--card{
+                    width: 85% !important;
+                }
+            }
+
+            .telemedicine-col-3{
+                background-position: 4rem 1rem !important;
+                background-size: 35% !important;
+            }
+        }
+
+        .telemedicine-col-2,
+        .telemedicine-col-5{
+            display: none !important;
+        }
+        .telemedicine-col-1,
+        .telemedicine-col-3,
+        .telemedicine-col-4,
+        .telemedicine-col-6{
+            width: 50% !important;
+        }
+
+        .telemedicine-col-4{
+            background-position: 14rem 1rem !important;
+            background-size: 24% !important;
+        }
+
+        .telemedicine-col-6{
+            .card{
+                width: 74% !important;
+                margin-left: 1rem !important;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 695px) {
+        .telemedicien-vector-img{
+            height: 689.5px !important;
+        }
+        .telemedicine-col-4{
+            &--content{
+                width: 91% !important;
+            }
+        }
+        .row--1{
+            .telemedicine-col-1{
+                .owl-carousel-3{    
+                    width: 100% !important;
+                    margin-top: 2rem;
+                }
+                &--card{
+                    width: 100% !important;
+                }
+            }
+            .telemedicine-col-3{
+                background-position: 6rem 3rem !important;
+                // justify-content: flex-end !important;
+            }
+        }
+
+    }
+
+    @media only screen and (max-width: 595px){
+        .telemedicine-row{
+            overflow: hidden;
+        }
+        .telemedicine-col-hadding{
+            font-size: 4.4rem !important;
+        }
+        .telemedicine-col-text{
+            font-size: 1.3rem !important;
+        }
+        .row--1{
+            .telemedicine-col-1{
+                .owl-carousel-3{
+                    width: 175% !important;
+                }
+                &--card{
+                    width: max-content !important;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-top: -10rem;
+                    margin-left: 8rem;
+
+                    .card--text{
+                        text-align: center;
+                    }
+
+                    .card--button{
+                        display: none !important;
+                    }
+                }
+            }
+            .telemedicine-col-3{
+                width: 40% !important;
+                background-position: 0rem 9rem !important;
+                &--content{
+                    width: 100% !important;
+                    margin-top: 7rem !important;
+                }
+            }
+        }
+        .row--2{
+            width: 137% !important;
+            .telemedicine-col-4{
+                background-position: 4rem 3rem !important;
+                background-size: 27% !important;
+            }
+            .telemedicine-col-6{
+                .value, .text{
+                    font-size: 1.2rem !important;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 436px) {
+        .telemedicine-row{
+            .telemedicien-vector-img{
+                width: 105% !important;
+            }
+
+            .row--1{
+                .telemedicine-col-1{
+                    &--card{
+                        margin-left: 4rem !important;
+                    }
+                    .card--active{
+                        margin-left: 1rem !important;
+                    }
+                }
+                .telemedicine-col-3{
+                    width: 50% !important;
+                }
+            }
+        }
+
+    }
 }
